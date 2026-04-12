@@ -458,8 +458,7 @@ def _read_json_list(path: str):
         if "detection_type" not in e or not e.get("detection_type"):
             e["detection_type"] = "TP" if e.get("phishing") else "Safe"
             changed = True
-        # ✅ only TP or FN count as phishing-present
-        desired_badge = e.get("detection_type", "Safe") in ("TP", "FN")
+        desired_badge = e.get("detection_type", "Safe") in ("TP", "FN", "Suspicious")
         if e.get("phishing") != desired_badge:
             e["phishing"] = desired_badge
             changed = True
@@ -1166,9 +1165,29 @@ def obfuscation_present(s: str) -> bool:
     s_lower = s.lower()
     return any(tok in s_lower for tok in tokens)
 
+def repair_broken_urls(text: str) -> str:
+    if not text:
+        return ""
+
+    # Fix spaces around dots in domains
+    text = re.sub(r'(?i)\b([a-z0-9-]+)\s*\.\s*([a-z0-9-]+)\s*\.\s*([a-z]{2,})\b', r'\1.\2.\3', text)
+    text = re.sub(r'(?i)\b([a-z0-9-]+)\s*\.\s*([a-z]{2,})\b', r'\1.\2', text)
+
+    # Fix broken protocol
+    text = re.sub(r'(?i)https?\s*:\s*/\s*/', 'https://', text)
+
+    # Fix spaces around slashes
+    text = re.sub(r'\s*/\s*', '/', text)
+
+    return text
+
+
 def normalize_email_text(txt: str) -> str:
-    if not txt: return txt
-    return deobfuscate_text(txt).replace('**','').replace('__','')
+    if not txt:
+        return txt
+    txt = deobfuscate_text(txt)
+    txt = repair_broken_urls(txt)
+    return txt.replace('**', '').replace('__', '')
 
 def content_hash(text: str) -> str:
     return hashlib.sha256(text.encode('utf-8')).hexdigest()
@@ -1191,11 +1210,19 @@ def idn_to_ascii(host: str) -> str:
 
 def extract_links(text: str):
     clean = normalize_email_text(text)
+
     rx = re.compile(
         r'((?:https?://|www\.)[^\s<>"\'\)\]]+|\b[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(?:/[^\s<>"\')\]]*)?)'
     )
     candidates = rx.findall(clean)
-    return [c for c in candidates if '.' in c and re.search(r'[a-zA-Z0-9]', c)]
+
+    links = []
+    for c in candidates:
+        c = c.strip().strip(').,;\'"<>]')
+        if '.' in c and re.search(r'[a-zA-Z0-9]', c):
+            links.append(c)
+
+    return links
 
 def extract_domain(url: str) -> str:
     try:
@@ -1308,7 +1335,7 @@ TRUSTED_DOMAINS = {
 def is_trusted_domain(url: str) -> bool:
     try:
         parsed = _urlparse(url if "://" in url else "http://" + url)
-        domain = parsed.netloc.split(":")[0].lower()  
+        domain = parsed.netloc.split(":")[0].lower()
 
         return any(
             domain == d or domain.endswith("." + d)
@@ -1316,6 +1343,43 @@ def is_trusted_domain(url: str) -> bool:
         )
     except Exception:
         return False
+
+
+from urllib.parse import urlparse
+
+def has_trusted_link(email_text):
+    links = extract_links(email_text)
+
+    for link in links:
+        try:
+            domain = extract_domain(link)
+            if any(domain == d or domain.endswith("." + d) for d in TRUSTED_DOMAINS):
+                return True
+        except Exception:
+            continue
+
+    return False
+
+
+def is_official_security_alert(email_text: str) -> bool:
+    text = normalize_email_text(email_text).lower()
+
+    trusted_google = (
+        "google" in text and
+        ("myaccount.google.com" in text or "accounts.google.com" in text or "google.com" in text)
+    )
+
+    security_context = any(
+        phrase in text for phrase in [
+            "new sign-in",
+            "security activity",
+            "we noticed a new sign-in",
+            "secure your account",
+            "check activity"
+        ]
+    )
+
+    return trusted_google and security_context
 
 
 def analyze_url(url: str):
@@ -1798,9 +1862,9 @@ def build_signal_explanations(
                  else "<li><code>malware_kw=False</code>: no malware indicators detected.</li>")
     return "<ul>" + "\n".join(parts) + "</ul>"
 
+
 def detect_with_scoring(email_text):
     email_text = normalize_email_text(email_text)
-
     links = extract_links(email_text)
 
     max_link_score = 0
@@ -1810,15 +1874,129 @@ def detect_with_scoring(email_text):
             max_link_score = score
 
     lower = email_text.lower()
-    safe_hits = [word for word in safe_business_words if word in lower]
+
+    trusted_link_found = has_trusted_link(email_text)
+    official_alert = is_official_security_alert(email_text)
 
     high_kws = [kw for kw in HIGH_RISK_KEYWORDS if kw in lower]
     med_kws = [kw for kw in MEDIUM_RISK_KEYWORDS if kw in lower]
     mal_hits = [kw for kw in MALWARE_KEYWORDS if kw in lower]
 
-    has_cred_path = any(x in lower for x in ["login", "verify", "password", "account"])
-    has_tld = any(tld in lower for tld in SUSPICIOUS_TLDS)
-    has_puny = "xn--" in lower
+    has_cred_path = any(x in lower for x in [
+        "login", "verify", "password", "reset password"
+    ])
+
+    credential_request = any(x in lower for x in [
+        "verify your account",
+        "confirm your password",
+        "reset your password",
+        "login now",
+        "sign in now",
+        "update your password"
+    ])
+
+    domains = [extract_domain(link) for link in links]
+    tlds = [d.split(".")[-1] for d in domains if "." in d]
+    has_tld = any(tld in SUSPICIOUS_TLDS for tld in tlds)
+    has_puny = any("xn--" in d for d in domains)
+
+    dangerous_file = any(ext in lower for ext in [
+        ".exe", ".bat", ".cmd", ".scr", ".js", ".vbs", ".ps1", ".lnk"
+    ])
+
+    archive_delivery = any(x in lower for x in [
+        ".zip", ".rar", ".7z"
+    ]) and any(x in lower for x in [
+        "attached", "download", "file", "invoice", "document", "shared"
+    ])
+
+    try:
+        ml_prob = float(model.predict_proba([email_text])[0][1])
+    except Exception:
+        ml_prob = 0.0
+
+    risk_score = (
+        len(high_kws) * 8 +
+        len(med_kws) * 4 +
+        (35 if mal_hits else 0) +
+        max_link_score +
+        (10 if has_cred_path else 0) +
+        (15 if credential_request else 0) +
+        (30 if dangerous_file else 0) +
+        (25 if archive_delivery else 0) +
+        (10 if has_puny else 0) +
+        (10 if has_tld else 0)
+    )
+
+    strong_malicious_signal = (
+        bool(mal_hits) or
+        dangerous_file or
+        archive_delivery or
+        max_link_score >= STRONG_LINK_THRESHOLD or
+        has_puny or
+        has_tld
+    )
+
+    if trusted_link_found and not strong_malicious_signal:
+        risk_score -= 25
+
+    if official_alert and not strong_malicious_signal:
+        risk_score -= 20
+
+    risk_score = max(risk_score, 0)
+
+    hard_tp = (
+        bool(mal_hits) or
+        dangerous_file or
+        archive_delivery or
+        (credential_request and max_link_score >= STRONG_LINK_THRESHOLD and not trusted_link_found) or
+        has_puny
+    )
+
+    if hard_tp:
+        detection_type = "TP"
+        risk_color = "red"
+        result = "True Positive: Phishing/Malware detected."
+        detection_reason = "Hard rule triggered"
+        warning = True
+
+    elif trusted_link_found and official_alert and not strong_malicious_signal:
+        detection_type = "Safe"
+        risk_color = "green"
+        result = "Safe: Trusted official alert"
+        detection_reason = "Trusted domain with official security wording"
+        warning = False
+
+    elif risk_score >= SUSP_RISK_THRESHOLD and (strong_malicious_signal or credential_request):
+        detection_type = "TP"
+        risk_color = "red"
+        result = "True Positive: Phishing detected."
+        detection_reason = "High risk indicators"
+        warning = True
+
+    elif risk_score >= REVIEW_RISK_THRESHOLD:
+        detection_type = "Suspicious"
+        risk_color = "orange"
+        result = "Suspicious: Needs review."
+        detection_reason = "Moderate risk"
+        warning = True
+
+    else:
+        detection_type = "Safe"
+        risk_color = "green"
+        result = "Safe"
+        detection_reason = "Low risk"
+        warning = False
+
+    return {
+        "result": result,
+        "detection_type": detection_type,
+        "risk_color": risk_color,
+        "risk_score": risk_score,
+        "warning": warning,
+        "detection_reason": detection_reason,
+        "details": f"Risk Score: {risk_score}, ML: {ml_prob:.2f}"
+    }
 
     try:
         ml_prob = float(model.predict_proba([email_text])[0][1])
@@ -2232,6 +2410,7 @@ def index():
     detection_reason = ''
     email_text = ''
     risk_color = 'green'
+
     if request.method == 'POST':
         email_text = normalize_email_text(request.form.get('email_text', '').strip())
         if not email_text:
@@ -2243,25 +2422,39 @@ def index():
             detection_reason = detection_result['detection_reason']
             risk_color = detection_result['risk_color']
             detection_type = detection_result['detection_type']
+            warning = detection_result['warning']
 
-            log_result(email_text, detection_result['tp'], detection_type, details, detection_reason)
+            log_result(
+                email_text,
+                detection_type in ("TP", "FN", "Suspicious"),
+                detection_type,
+                details,
+                detection_reason
+            )
+
             key = content_hash(email_text)
             cache_db[key] = {
                 'result': result,
                 'details': details,
-                'warning': detection_result['tp'],
+                'warning': warning,
                 'risk': risk_color,
                 'detection_type': detection_type,
                 'detection_reason': detection_reason,
                 'cache_version': 'explain_signals_v1'
             }
             save_cache()
+
     stats = count_by_period()
     display_email_text = make_readable_email(email_text) if email_text else ""
     return render_template(
         'index.html',
-        email_text=display_email_text, result=result, details=details,
-        warning=(risk_color in ('orange','red')), risk=risk_color, stats=stats, detection_reason=detection_reason
+        email_text=display_email_text,
+        result=result,
+        details=details,
+        warning=(risk_color in ('orange', 'red')),
+        risk=risk_color,
+        stats=stats,
+        detection_reason=detection_reason
     )
 
 @app.route('/feedback', methods=['POST'])
