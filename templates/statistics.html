@@ -1,0 +1,321 @@
+{% extends "base.html" %}
+
+{% block title %}Statistics{% endblock %}
+
+{% block content %}
+<div class="dashboard-card stats-card">
+    <div class="dashboard-header">
+        <h4>Phishing Detection Statistics</h4>
+        <small>Detection trends, distribution, and security insights</small>
+    </div>
+
+    <div class="card-body-custom">
+        <div class="row g-3 text-center mb-4">
+            <div class="col-md-3">
+                <div class="stat-card red">
+                    <div class="stat-number red">{{ phish_total }}</div>
+                    <p class="stat-label">Phishing Detected</p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="stat-card blue">
+                    <div class="stat-number blue">{{ tp_total }}</div>
+                    <p class="stat-label">True Positive</p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="stat-card yellow">
+                    <div class="stat-number yellow">{{ fn_total }}</div>
+                    <p class="stat-label">False Negative</p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="stat-card green">
+                    <div class="stat-number green">{{ safe_total }}</div>
+                    <p class="stat-label">Safe</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-8">
+                <div class="chart-panel">
+                    <h5 class="chart-title">Detection Breakdown Per Day</h5>
+                    <div class="chart-wrap large-chart">
+                        <canvas id="detectionTrend"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="chart-panel">
+                    <h5 class="chart-title">Detection Type Distribution</h5>
+                    <div class="chart-wrap pie-chart">
+                        <canvas id="detectionPie"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="stats-summary mt-4">
+            <span class="summary-item red-text">Phishing Detected: <strong>{{ phish_total }}</strong></span>
+            <span class="summary-item blue-text">True Positive: <strong>{{ tp_total }}</strong></span>
+            <span class="summary-item yellow-text">False Negative: <strong>{{ fn_total }}</strong></span>
+            <span class="summary-item green-text">Safe: <strong>{{ safe_total }}</strong></span>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+    .stats-card {
+        max-width: 1180px;
+    }
+
+    .stat-card {
+        background: rgba(255,255,255,0.02);
+        border-radius: 12px;
+        padding: 20px;
+        height: 100%;
+        border: 1px solid rgba(255,255,255,0.08);
+        box-shadow: 0 0 12px rgba(255,255,255,0.03);
+    }
+
+    .stat-card.red {
+        border-color: rgba(255, 107, 125, 0.35);
+        box-shadow: 0 0 12px rgba(255, 107, 125, 0.06);
+    }
+
+    .stat-card.blue {
+        border-color: rgba(89, 208, 255, 0.35);
+        box-shadow: 0 0 12px rgba(89, 208, 255, 0.06);
+    }
+
+    .stat-card.yellow {
+        border-color: rgba(255, 217, 90, 0.35);
+        box-shadow: 0 0 12px rgba(255, 217, 90, 0.06);
+    }
+
+    .stat-card.green {
+        border-color: rgba(87, 255, 177, 0.35);
+        box-shadow: 0 0 12px rgba(87, 255, 177, 0.06);
+    }
+
+    .stat-number {
+        font-size: 32px;
+        font-weight: 800;
+        line-height: 1;
+        margin-bottom: 8px;
+    }
+
+    .stat-number.red { color: #ff6b7d; }
+    .stat-number.blue { color: #59d0ff; }
+    .stat-number.yellow { color: #ffd95a; }
+    .stat-number.green { color: #57ffb1; }
+
+    .stat-label {
+        margin: 0;
+        color: #9db0bd;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.7px;
+    }
+
+    .chart-panel {
+        background: rgba(255,255,255,0.02);
+        border: 1px solid rgba(0, 255, 159, 0.12);
+        border-radius: 14px;
+        padding: 18px;
+        height: 100%;
+    }
+
+    .chart-title {
+        color: #ffffff;
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 16px;
+        font-weight: 700;
+    }
+
+    .chart-wrap {
+        position: relative;
+        width: 100%;
+    }
+
+    .large-chart {
+        height: 420px;
+    }
+
+    .pie-chart {
+        height: 320px;
+    }
+
+    .stats-summary {
+        text-align: center;
+        font-size: 15px;
+        color: #b4c4cc;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .summary-item strong {
+        font-weight: 800;
+    }
+
+    .red-text { color: #ff6b7d; }
+    .blue-text { color: #59d0ff; }
+    .yellow-text { color: #ffd95a; }
+    .green-text { color: #57ffb1; }
+
+    @media (max-width: 768px) {
+        .large-chart {
+            height: 320px;
+        }
+
+        .pie-chart {
+            height: 280px;
+        }
+
+        .stats-summary {
+            gap: 10px;
+            font-size: 14px;
+        }
+    }
+</style>
+{% endblock %}
+
+{% block extra_js %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script>
+    const labels   = {{ dates|tojson }};
+    const dataPH   = {{ phish_counts|default([])|tojson }};
+    const dataTP   = {{ tp_counts|tojson }};
+    const dataFN   = {{ fn_counts|tojson }};
+    const dataSAFE = {{ safe_counts|tojson }};
+    const totalTP   = {{ tp_total|int }};
+    const totalFN   = {{ fn_total|int }};
+    const totalSAFE = {{ safe_total|int }};
+
+    const textColor = '#d6e7ee';
+    const gridColor = 'rgba(255,255,255,0.08)';
+
+    const cPhish = 'rgba(255, 107, 125, 0.82)';
+    const cTP    = 'rgba(89, 208, 255, 0.82)';
+    const cFN    = 'rgba(255, 217, 90, 0.82)';
+    const cSAFE  = 'rgba(87, 255, 177, 0.82)';
+
+    const trendCtx = document.getElementById('detectionTrend').getContext('2d');
+    new Chart(trendCtx, {
+        type: 'bar',
+        data: {
+            labels,
+            datasets: [
+                {
+                    label: 'Phishing Detected',
+                    data: dataPH,
+                    backgroundColor: cPhish,
+                    borderWidth: 0,
+                    maxBarThickness: 26
+                },
+                {
+                    label: 'True Positive',
+                    data: dataTP,
+                    backgroundColor: cTP,
+                    borderWidth: 0,
+                    maxBarThickness: 26
+                },
+                {
+                    label: 'False Negative',
+                    data: dataFN,
+                    backgroundColor: cFN,
+                    borderWidth: 0,
+                    maxBarThickness: 26
+                },
+                {
+                    label: 'Safe',
+                    data: dataSAFE,
+                    backgroundColor: cSAFE,
+                    borderWidth: 0,
+                    maxBarThickness: 26
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            animation: { duration: 400 },
+            plugins: {
+                legend: {
+                    position: 'top',
+                    labels: {
+                        color: textColor
+                    }
+                },
+                tooltip: {
+                    mode: 'index',
+                    intersect: false
+                }
+            },
+            scales: {
+                x: {
+                    ticks: {
+                        color: textColor,
+                        maxRotation: 0,
+                        autoSkip: true,
+                        maxTicksLimit: 14
+                    },
+                    grid: {
+                        display: false
+                    }
+                },
+                y: {
+                    beginAtZero: true,
+                    ticks: {
+                        color: textColor
+                    },
+                    title: {
+                        display: true,
+                        text: 'Detections',
+                        color: textColor
+                    },
+                    grid: {
+                        color: gridColor
+                    }
+                }
+            }
+        }
+    });
+
+    const pieCtx = document.getElementById('detectionPie').getContext('2d');
+    new Chart(pieCtx, {
+        type: 'pie',
+        data: {
+            labels: ['True Positive', 'False Negative', 'Safe'],
+            datasets: [{
+                data: [totalTP, totalFN, totalSAFE],
+                backgroundColor: [cTP, cFN, cSAFE],
+                borderColor: '#0a0f18',
+                borderWidth: 2
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    position: 'bottom',
+                    labels: {
+                        color: textColor
+                    }
+                }
+            }
+        }
+    });
+</script>
+{% endblock %}

@@ -1,0 +1,135 @@
+{% extends "base.html" %}
+
+{% block title %}My Profile{% endblock %}
+
+{% block content %}
+
+<div class="dashboard-card profile-card">
+
+    <!-- HEADER -->
+    <div class="dashboard-header">
+        <h4>My Profile</h4>
+        <small>User identity and account activity</small>
+    </div>
+
+    <!-- BODY -->
+    <div class="card-body-custom">
+
+        <div class="profile-panel">
+
+            <div class="profile-row">
+                <span class="label">Name</span>
+                <span class="value">{{ user.name }}</span>
+            </div>
+
+            <div class="profile-row">
+                <span class="label">Email</span>
+                <span class="value">{{ user.email }}</span>
+            </div>
+
+            <div class="profile-row">
+                <span class="label">Role</span>
+                <span class="value role">{{ user.role }}</span>
+            </div>
+
+            <div class="profile-row">
+                <span class="label">Account Created</span>
+                <span class="value">{{ user.created_at }}</span>
+            </div>
+
+            <div class="profile-row">
+                <span class="label">Last Login</span>
+                <span class="value">{{ user.last_login or '—' }}</span>
+            </div>
+
+        </div>
+
+        <!-- ACTIONS -->
+        <div class="profile-actions mt-4">
+            <a href="{{ url_for('index') }}" class="btn-cyber-secondary">Go to Dashboard</a>
+            <a href="{{ url_for('account_change_password') }}" class="btn-cyber-secondary">Change Password</a>
+            <a href="{{ url_for('auth_logout') }}" class="btn-cyber-danger">Log Out</a>
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
+
+{% block extra_css %}
+<style>
+
+.profile-card {
+    max-width: 800px;
+}
+
+/* PANEL */
+.profile-panel {
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(0,255,159,0.12);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+/* ROW */
+.profile-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.profile-row:last-child {
+    border-bottom: none;
+}
+
+/* LABEL */
+.label {
+    color: #00ff9f;
+    font-weight: bold;
+}
+
+/* VALUE */
+.value {
+    color: #dbe9ee;
+    text-align: right;
+}
+
+/* ROLE BADGE */
+.value.role {
+    color: #59d0ff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* ACTION BUTTONS */
+.profile-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .profile-row {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .value {
+        text-align: left;
+    }
+
+    .profile-actions {
+        flex-direction: column;
+    }
+
+    .profile-actions a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+</style>
+{% endblock %}

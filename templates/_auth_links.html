@@ -1,0 +1,20 @@
+{% if session.get('user_id') %}
+    <a href="{{ url_for('auth_profile') }}"
+       class="{% if request.endpoint == 'auth_profile' %}active{% endif %}">
+        👤 Profile
+    </a>
+
+    <a href="{{ url_for('auth_logout') }}" class="logout-link">
+        ⏻ Logout
+    </a>
+{% else %}
+    <a href="{{ url_for('auth_login', next=request.path) }}"
+       class="{% if request.endpoint == 'auth_login' %}active{% endif %}">
+        🔐 Login
+    </a>
+
+    <a href="{{ url_for('auth_signup') }}"
+       class="{% if request.endpoint == 'auth_signup' %}active{% endif %}">
+        📝 Sign Up
+    </a>
+{% endif %}

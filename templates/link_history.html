@@ -1,0 +1,161 @@
+{% extends "base.html" %}
+
+{% block title %}Link History{% endblock %}
+
+{% block content %}
+
+<div class="dashboard-card history-card">
+
+    <!-- HEADER -->
+    <div class="dashboard-header">
+        <h4>Phishing Link History</h4>
+        <small>Previously analyzed links and detection results</small>
+    </div>
+
+    <!-- BODY -->
+    <div class="card-body-custom">
+
+        <div class="table-responsive">
+            <table class="table cyber-table align-middle mb-0">
+                <thead>
+                    <tr>
+                        <th style="width: 60px;">#</th>
+                        <th>Link / Text</th>
+                        <th style="width: 160px;">Status</th>
+                        <th style="width: 200px;">Timestamp</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    {% if link_detections and link_detections|length > 0 %}
+                        {% for item in link_detections %}
+                        <tr>
+                            <td>{{ loop.index }}</td>
+
+                            <td class="url-cell">
+                                {{ item.link_text }}
+                            </td>
+
+                            <td>
+                                {% if item.suspicious %}
+                                    <span class="status-badge danger">⚠ Suspicious</span>
+                                {% else %}
+                                    <span class="status-badge safe">✔ Safe</span>
+                                {% endif %}
+                            </td>
+
+                            <td class="timestamp">
+                                {{ item.timestamp }}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    {% else %}
+                        <tr>
+                            <td colspan="4" class="empty-state">
+                                No link history yet.
+                            </td>
+                        </tr>
+                    {% endif %}
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
+
+{% block extra_css %}
+<style>
+
+.history-card {
+    max-width: 1100px;
+}
+
+/* TABLE */
+.cyber-table {
+    color: #e6fef5;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+/* HEADER */
+.cyber-table thead tr {
+    background: #0b1220;
+}
+
+.cyber-table thead th {
+    color: #00ff9f;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 16px;
+    border-bottom: 1px solid rgba(0,255,159,0.18) !important;
+}
+
+/* BODY */
+.cyber-table td {
+    padding: 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.06) !important;
+    background: #0a0f18 !important;
+    color: #d8e6ee;
+}
+
+.cyber-table tbody tr:hover td {
+    background: #101827 !important;
+}
+
+/* URL TEXT */
+.url-cell {
+    word-break: break-word;
+    color: #9fe3ff;
+    font-family: monospace;
+}
+
+/* STATUS BADGE */
+.status-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    border: 1px solid transparent;
+}
+
+/* SAFE */
+.status-badge.safe {
+    color: #57ffb1;
+    background: rgba(0,255,159,0.12);
+    border-color: rgba(87,255,177,0.30);
+}
+
+/* DANGER */
+.status-badge.danger {
+    color: #ff6b7d;
+    background: rgba(220,53,69,0.12);
+    border-color: rgba(255,107,125,0.30);
+}
+
+/* TIMESTAMP */
+.timestamp {
+    color: #9db0bd;
+    font-size: 13px;
+}
+
+/* EMPTY STATE */
+.empty-state {
+    text-align: center;
+    color: #7f95a3 !important;
+    padding: 30px !important;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .cyber-table th,
+    .cyber-table td {
+        font-size: 13px;
+        padding: 12px;
+    }
+}
+
+</style>
+{% endblock %}

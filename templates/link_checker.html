@@ -1,0 +1,291 @@
+{% extends "base.html" %}
+
+{% block title %}Phishing Link Checker{% endblock %}
+
+{% block content %}
+<div class="dashboard-card checker-card">
+    <div class="dashboard-header">
+        <h4>Phishing Link Checker</h4>
+        <small>Analyze links and detect suspicious URL behavior</small>
+    </div>
+
+    <div class="card-body-custom">
+        <form method="POST">
+            <div class="mb-3">
+                <label for="linktext" class="form-label">Paste Text or URLs</label>
+                <textarea
+                    id="linktext"
+                    name="linktext"
+                    rows="5"
+                    class="form-control mono-input"
+                    placeholder="Paste URLs or suspicious text here...">{{ linktext }}</textarea>
+            </div>
+
+            <div class="action-row">
+                <button type="submit" class="btn-cyber action-btn">🔎 CHECK LINKS</button>
+                <a href="{{ url_for('link_history') }}" class="btn-cyber-secondary action-btn-secondary">VIEW LINK HISTORY</a>
+            </div>
+        </form>
+
+        {% if result %}
+        <div class="text-center mt-4">
+            <div class="risk-badge
+                {% if risk=='green' %}risk-green
+                {% elif risk=='yellow' %}risk-yellow
+                {% elif risk=='orange' %}risk-orange
+                {% else %}risk-red{% endif %}">
+                {% if risk=='green' %}✅ {{ result }}
+                {% elif risk=='yellow' %}⚠️ {{ result }}
+                {% elif risk=='orange' %}🚨 {{ result }}
+                {% else %}❌ {{ result }}{% endif %}
+            </div>
+        </div>
+        {% endif %}
+
+        <div class="analysis-panel mt-4">
+            <h5 class="panel-title">Per-URL Analysis</h5>
+
+            <div class="table-responsive">
+                <table class="table align-middle cyber-table mb-0">
+                    <thead>
+                        <tr>
+                            <th style="width: 60px;">#</th>
+                            <th>Link / Text</th>
+                            <th style="width: 140px;">Score</th>
+                            <th>Reasons</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% if per_url and per_url|length > 0 %}
+                            {% for item in per_url %}
+                            <tr>
+                                <td>{{ loop.index }}</td>
+                                <td class="url-cell">{{ item.url }}</td>
+                                <td>
+                                    {% set s = item.score %}
+                                    {% if s >= 60 %}
+                                        <span class="score-badge score-danger">{{ s }}</span>
+                                    {% elif s >= 25 %}
+                                        <span class="score-badge score-warning">{{ s }}</span>
+                                    {% elif s > 0 %}
+                                        <span class="score-badge score-mid">{{ s }}</span>
+                                    {% else %}
+                                        <span class="score-badge score-safe">{{ s }}</span>
+                                    {% endif %}
+                                </td>
+                                <td>
+                                    {% if item.reasons %}
+                                        {% for r in item.reasons %}
+                                            <span class="reason-badge">{{ r }}</span>
+                                        {% endfor %}
+                                    {% else %}
+                                        <span class="empty-reason">No issues detected</span>
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        {% else %}
+                            <tr>
+                                <td colspan="4" class="empty-state">
+                                    No URLs detected yet. Paste some links above and click “Check Links”.
+                                </td>
+                            </tr>
+                        {% endif %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+    .checker-card {
+        max-width: 1150px;
+    }
+
+    .mono-input {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+    }
+
+    .action-row {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .action-btn {
+        flex: 1 1 260px;
+    }
+
+    .action-btn-secondary {
+        flex: 1 1 220px;
+        text-align: center;
+    }
+
+    .risk-badge {
+        display: inline-block;
+        padding: 14px 22px;
+        border-radius: 12px;
+        font-weight: bold;
+        margin-top: 6px;
+    }
+
+    .risk-green {
+        color: #57ffb1;
+        background: rgba(0,255,159,0.12);
+        border: 1px solid rgba(87,255,177,0.30);
+    }
+
+    .risk-yellow {
+        color: #ffd95a;
+        background: rgba(255,193,7,0.12);
+        border: 1px solid rgba(255,217,90,0.30);
+    }
+
+    .risk-orange {
+        color: #ffab66;
+        background: rgba(253,126,20,0.12);
+        border: 1px solid rgba(255,171,102,0.30);
+    }
+
+    .risk-red {
+        color: #ff6b7d;
+        background: rgba(220,53,69,0.12);
+        border: 1px solid rgba(255,107,125,0.30);
+    }
+
+    .analysis-panel {
+        background: rgba(255,255,255,0.02);
+        border: 1px solid rgba(0,255,159,0.12);
+        border-radius: 14px;
+        overflow: hidden;
+    }
+
+    .panel-title {
+        margin: 0;
+        padding: 18px 20px;
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: 700;
+        border-bottom: 1px solid rgba(0,255,159,0.10);
+        background: rgba(0,255,159,0.04);
+    }
+
+    .cyber-table {
+        color: #e6fef5;
+        border-collapse: separate;
+        border-spacing: 0;
+    }
+
+    .cyber-table thead tr {
+        background: #0b1220;
+    }
+
+    .cyber-table thead th {
+        color: #00ff9f;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 16px;
+        border-bottom: 1px solid rgba(0,255,159,0.16) !important;
+        background: #0b1220 !important;
+    }
+
+    .cyber-table td {
+        padding: 16px;
+        vertical-align: middle;
+        color: #d8e6ee;
+        border-bottom: 1px solid rgba(255,255,255,0.06) !important;
+        background: #0a0f18 !important;
+    }
+
+    .cyber-table tbody tr:hover td {
+        background: #101827 !important;
+    }
+
+    .url-cell {
+        word-break: break-word;
+        color: #bfefff;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+    }
+
+    .score-badge {
+        display: inline-block;
+        min-width: 48px;
+        text-align: center;
+        padding: 7px 12px;
+        border-radius: 999px;
+        font-size: 12px;
+        font-weight: 700;
+        border: 1px solid transparent;
+    }
+
+    .score-danger {
+        color: #ff6b7d;
+        background: rgba(255,77,109,0.14);
+        border-color: rgba(255,107,125,0.35);
+    }
+
+    .score-warning {
+        color: #ffd95a;
+        background: rgba(255,193,7,0.14);
+        border-color: rgba(255,217,90,0.35);
+    }
+
+    .score-mid {
+        color: #c6d3da;
+        background: rgba(255,255,255,0.08);
+        border-color: rgba(255,255,255,0.14);
+    }
+
+    .score-safe {
+        color: #57ffb1;
+        background: rgba(0,255,159,0.12);
+        border-color: rgba(87,255,177,0.30);
+    }
+
+    .reason-badge {
+        display: inline-block;
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: rgba(89,208,255,0.10);
+        color: #8edfff;
+        border: 1px solid rgba(89,208,255,0.20);
+        margin: 4px 6px 4px 0;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .empty-reason {
+        color: #8fa3b0;
+        font-size: 13px;
+    }
+
+    .empty-state {
+        text-align: center;
+        color: #7f95a3 !important;
+        padding: 26px !important;
+        background: #0a0f18 !important;
+    }
+
+    @media (max-width: 768px) {
+        .action-row {
+            flex-direction: column;
+        }
+
+        .action-btn,
+        .action-btn-secondary {
+            width: 100%;
+            flex: none;
+        }
+
+        .cyber-table thead th,
+        .cyber-table td {
+            font-size: 13px;
+            padding: 12px;
+        }
+    }
+</style>
+{% endblock %}

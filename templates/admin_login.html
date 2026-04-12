@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Login • SmartSpace</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: #020817;
+            color: #e6fef5;
+            font-family: Consolas, "Courier New", monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background:
+                radial-gradient(circle at left center, rgba(0,255,159,0.08), transparent 28%),
+                radial-gradient(circle at right center, rgba(0,191,255,0.08), transparent 28%);
+            pointer-events: none;
+        }
+
+        .login-shell {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            max-width: 460px;
+            padding: 24px;
+        }
+
+        .login-card {
+            background: rgba(4, 12, 24, 0.96);
+            border: 1px solid rgba(0, 255, 159, 0.28);
+            border-radius: 16px;
+            padding: 38px 32px;
+            box-shadow:
+                0 0 25px rgba(0, 255, 159, 0.08),
+                inset 0 0 20px rgba(0, 255, 159, 0.02);
+        }
+
+        .eyebrow {
+            text-align: center;
+            color: #8ea5b3;
+            font-size: 14px;
+            letter-spacing: 1px;
+            margin-bottom: 14px;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 30px;
+            font-weight: 800;
+            color: #ffffff;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #b3c7d1;
+            font-size: 15px;
+            margin: 10px 0 28px;
+        }
+
+        .alert-danger {
+            background: rgba(255, 107, 125, 0.10);
+            border: 1px solid rgba(255, 107, 125, 0.35);
+            color: #ff6b7d;
+            padding: 12px 14px;
+            border-radius: 10px;
+            margin-bottom: 18px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .hint {
+            background: rgba(89, 208, 255, 0.08);
+            border: 1px solid rgba(89, 208, 255, 0.18);
+            color: #8edfff;
+            padding: 10px 12px;
+            border-radius: 10px;
+            margin-bottom: 18px;
+            font-size: 13px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-group label {
+            display: block;
+            color: #00ff9f;
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+        }
+
+        .form-control {
+            width: 100%;
+            background: #07111f;
+            border: 1px solid #1a2a3d;
+            color: #e6fef5;
+            padding: 14px 15px;
+            border-radius: 10px;
+            font-size: 15px;
+            outline: none;
+            transition: 0.25s ease;
+        }
+
+        .form-control::placeholder {
+            color: #7b8d98;
+        }
+
+        .form-control:focus {
+            border-color: #00ff9f;
+            box-shadow: 0 0 10px rgba(0, 255, 159, 0.18);
+        }
+
+        .btn-login {
+            width: 100%;
+            background: transparent;
+            border: 1px solid #00ff9f;
+            color: #00ff9f;
+            padding: 14px;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: 800;
+            font-family: Consolas, "Courier New", monospace;
+            cursor: pointer;
+            transition: 0.25s ease;
+            letter-spacing: 1px;
+            margin-top: 10px;
+        }
+
+        .btn-login:hover {
+            background: #00ff9f;
+            color: #000;
+            box-shadow: 0 0 14px rgba(0, 255, 159, 0.25);
+        }
+
+        .back-link {
+            text-align: center;
+            margin-top: 18px;
+            font-size: 14px;
+        }
+
+        .back-link a {
+            color: #7fcfff;
+            text-decoration: none;
+        }
+
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-shell">
+    <div class="login-card">
+        <div class="eyebrow">[ ADMIN AUTHENTICATION REQUIRED ]</div>
+        <h1 class="title">ADMIN LOGIN</h1>
+        <div class="subtitle">Restricted cybersecurity administrator access</div>
+
+        {% if error %}
+            <div class="alert-danger">{{ error }}</div>
+        {% endif %}
+
+        <div class="hint">
+            Use your admin username and password.
+        </div>
+
+        <form method="POST" action="{{ url_for('admin_login') }}">
+            <div class="form-group">
+                <label for="username">ADMIN USERNAME</label>
+                <input
+                    id="username"
+                    type="text"
+                    name="username"
+                    class="form-control"
+                    placeholder="Enter admin username"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">ADMIN PASSWORD</label>
+                <input
+                    id="password"
+                    type="password"
+                    name="password"
+                    class="form-control"
+                    placeholder="Enter admin password"
+                    required>
+            </div>
+
+            <button type="submit" class="btn-login">ACCESS ADMIN PANEL</button>
+        </form>
+
+        <div class="back-link">
+            <a href="{{ url_for('auth_login') }}">Back to user login</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

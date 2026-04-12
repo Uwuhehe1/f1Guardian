@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+
+{% block title %}Sign Up{% endblock %}
+
+{% block content %}
+
+<div class="dashboard-card auth-card">
+
+    <!-- HEADER -->
+    <div class="dashboard-header">
+        <h4>Create Account</h4>
+        <small>Join SmartSpace Phishing Detection System</small>
+    </div>
+
+    <!-- BODY -->
+    <div class="card-body-custom">
+
+        {% if error %}
+            <div class="alert-cyber-danger mb-3">
+                {{ error }}
+            </div>
+        {% endif %}
+
+        <form method="POST">
+
+            <div class="mb-3">
+                <label class="form-label">Full Name</label>
+                <input type="text" name="name" class="form-control"
+                       value="{{ name or '' }}" placeholder="John Doe" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Username</label>
+                <input type="text" name="username" class="form-control"
+                       value="{{ username or '' }}"
+                       placeholder="yourusername" minlength="3" maxlength="24" required>
+
+                <small class="text-muted-cyber">
+                    3–24 characters, letters, numbers, underscore only
+                </small>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Email Address</label>
+                <input type="email" name="email" class="form-control"
+                       value="{{ email or '' }}" placeholder="you@example.com" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input type="password" name="password" class="form-control"
+                       placeholder="••••••••" minlength="8" required>
+            </div>
+
+            <div class="d-grid">
+                <button type="submit" class="btn-cyber">🚀 CREATE ACCOUNT</button>
+            </div>
+
+        </form>
+
+        <div class="auth-footer">
+            Already have an account?
+            <a href="{{ url_for('auth_login') }}">Sign in</a>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
+
+{% block extra_css %}
+<style>
+
+/* CARD WIDTH */
+.auth-card {
+    max-width: 500px;
+}
+
+/* ERROR */
+.alert-cyber-danger {
+    background: rgba(255, 107, 125, 0.12);
+    border: 1px solid rgba(255, 107, 125, 0.35);
+    color: #ff6b7d;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* FOOTER */
+.auth-footer {
+    margin-top: 18px;
+    text-align: center;
+    color: #9db0bd;
+    font-size: 14px;
+}
+
+.auth-footer a {
+    color: #00ff9f;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+
+/* TEXT */
+.text-muted-cyber {
+    color: #7f95a3;
+    font-size: 12px;
+}
+
+</style>
+{% endblock %}

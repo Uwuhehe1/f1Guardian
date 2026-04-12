@@ -1,0 +1,605 @@
+[
+  {
+    "link_text": "https://chatgpt.com/c/6819ba76-ba80-8010-8d99-93a047ce7cee",
+    "suspicious": false,
+    "timestamp": "2025-05-14T20:07:59.661121"
+  },
+  {
+    "link_text": "http://facebo0k.com/",
+    "suspicious": false,
+    "timestamp": "2025-05-14T23:04:42.210811"
+  },
+  {
+    "link_text": "https://secure-google-account.com/login",
+    "suspicious": false,
+    "timestamp": "2025-05-15T08:30:27.453394"
+  },
+  {
+    "link_text": "https://bit.ly/3fakeurl",
+    "suspicious": true,
+    "timestamp": "2025-05-15T08:30:46.670017"
+  },
+  {
+    "link_text": "https://google.com.secure-login.net\r\n\r\n",
+    "suspicious": false,
+    "timestamp": "2025-05-15T08:31:02.582849"
+  },
+  {
+    "link_text": "http://faceboo0k.com/",
+    "suspicious": false,
+    "timestamp": "2025-05-15T11:18:32.385328"
+  },
+  {
+    "link_text": "http://faceboo0k.com/url",
+    "suspicious": false,
+    "timestamp": "2025-05-15T11:18:38.230182"
+  },
+  {
+    "link_text": "https://mail.google.com/mail/u/0/#inbox/FMfcgzQbfBvttJTHWgTxVFckxjDWBHJD",
+    "result": "No suspicious links detected.",
+    "timestamp": "2025-05-15T19:04:06.907751"
+  },
+  {
+    "link_text": "http://192.168.254.112:5000/link_checker\r\n",
+    "result": "No suspicious links detected.",
+    "timestamp": "2025-05-15T19:08:26.754436"
+  },
+  {
+    "link_text": "https://www.facebook.com/Charity-Works-Alliance-Network-1542422192664215/?ref=page_internal",
+    "suspicious": false,
+    "timestamp": "2025-05-15T19:14:23.850763"
+  },
+  {
+    "link_text": "https//:www.faceb0ok.com/\r\n",
+    "suspicious": false,
+    "timestamp": "2025-05-15T19:15:21.221954"
+  },
+  {
+    "link_text": "faceb00k.com\r\n",
+    "suspicious": false,
+    "timestamp": "2025-05-15T19:34:34.302974"
+  },
+  {
+    "link_text": "https://www.facebook.com/",
+    "suspicious": false,
+    "timestamp": "2025-05-20T19:19:49.559462"
+  },
+  {
+    "link_text": "https://www.faceb0ok.com/",
+    "suspicious": false,
+    "timestamp": "2025-05-20T19:19:54.860479"
+  },
+  {
+    "link_text": "https://www.linkedin.com/help/linkedin/answer/a1339266/phishing-emails?lang=en",
+    "suspicious": false,
+    "timestamp": "2025-06-02T20:16:06.079786"
+  },
+  {
+    "link_text": "google.secure-login.net",
+    "suspicious": false,
+    "timestamp": "2025-06-12T22:01:51.054861"
+  },
+  {
+    "link_text": "www.google.secure-login.net",
+    "suspicious": false,
+    "timestamp": "2025-06-12T22:01:57.180831"
+  },
+  {
+    "link_text": "https://google.secure-login.net",
+    "suspicious": true,
+    "timestamp": "2025-06-12T22:02:25.250438"
+  },
+  {
+    "link_text": "www.facebo0k.com",
+    "suspicious": false,
+    "timestamp": "2025-06-13T17:02:35.989755"
+  },
+  {
+    "link_text": "www.facebook.com",
+    "suspicious": false,
+    "timestamp": "2025-06-13T17:12:42.083315"
+  },
+  {
+    "link_text": "www.facebo0k.com",
+    "suspicious": false,
+    "timestamp": "2025-06-13T17:12:48.405405"
+  },
+  {
+    "link_text": "www.facebo0k.com",
+    "suspicious": false,
+    "timestamp": "2025-06-13T17:12:49.043713"
+  },
+  {
+    "link_text": "https://www.facebo0k.com",
+    "suspicious": false,
+    "timestamp": "2025-06-13T17:13:09.652830"
+  },
+  {
+    "link_text": "https://aad/g/g-p-6825aa4aec948191a6a3c5442c7834c3-phishing-detection-system-project/c/684be427-bf74-8010-a0ef-0f0941e5dfc6",
+    "suspicious": false,
+    "timestamp": "2025-06-13T17:25:42.284670"
+  },
+  {
+    "link_text": "money",
+    "suspicious": false,
+    "timestamp": "2025-06-13T17:30:09.729268"
+  },
+  {
+    "link_text": "http://127.0.0.1:5000/statistics",
+    "suspicious": false,
+    "timestamp": "2025-06-13T17:31:18.529706"
+  },
+  {
+    "link_text": "google.secure-login.net",
+    "suspicious": false,
+    "timestamp": "2025-06-13T17:35:49.624232"
+  },
+  {
+    "link_text": "https//www.google.secure-login.net",
+    "suspicious": false,
+    "timestamp": "2025-06-13T17:36:11.634336"
+  },
+  {
+    "link_text": "https//www.google.secure-login.net",
+    "suspicious": false,
+    "timestamp": "2025-06-13T17:36:12.988552"
+  },
+  {
+    "link_text": "https//www.facebook.com",
+    "suspicious": false,
+    "timestamp": "2025-06-13T17:38:52.511139"
+  },
+  {
+    "link_text": "https//www.facebo0k.com",
+    "suspicious": false,
+    "timestamp": "2025-06-13T17:39:00.785508"
+  },
+  {
+    "link_text": "www.facebo0k.com",
+    "suspicious": false,
+    "timestamp": "2025-06-13T17:39:05.755031"
+  },
+  {
+    "link_text": "facebo0k.com",
+    "suspicious": false,
+    "timestamp": "2025-06-13T18:02:55.568814"
+  },
+  {
+    "link_text": "www.faceb0ok.com",
+    "suspicious": false,
+    "timestamp": "2025-06-13T18:11:37.513378"
+  },
+  {
+    "link_text": "www.facebo0k.com",
+    "suspicious": false,
+    "timestamp": "2025-06-13T18:11:42.722168"
+  },
+  {
+    "link_text": "https//www.facebo0k.com",
+    "suspicious": false,
+    "timestamp": "2025-06-13T18:11:51.604825"
+  },
+  {
+    "link_text": "facebook.com",
+    "suspicious": false,
+    "timestamp": "2025-06-13T18:22:46.509901"
+  },
+  {
+    "link_text": "facebo0k.com",
+    "suspicious": false,
+    "timestamp": "2025-06-13T18:22:50.628105"
+  },
+  {
+    "link_text": "www.facebo0k.com",
+    "suspicious": false,
+    "timestamp": "2025-06-13T18:22:55.530305"
+  },
+  {
+    "link_text": "https//www.facebo0k.com",
+    "suspicious": false,
+    "timestamp": "2025-06-13T18:23:02.323430"
+  },
+  {
+    "link_text": "\thttps://google.secure-login.net",
+    "suspicious": true,
+    "timestamp": "2025-06-13T18:23:13.837032"
+  },
+  {
+    "link_text": "\tgoogle.secure-login.net",
+    "suspicious": false,
+    "timestamp": "2025-06-13T18:23:26.419374"
+  },
+  {
+    "link_text": "google.secure-login.net",
+    "suspicious": false,
+    "timestamp": "2025-06-13T18:23:33.969693"
+  },
+  {
+    "link_text": "https://faceb0ok.com",
+    "suspicious": true,
+    "timestamp": "2025-06-13T18:24:46.851439"
+  },
+  {
+    "link_text": "abc123.com",
+    "suspicious": false,
+    "timestamp": "2025-06-13T18:25:22.474350"
+  },
+  {
+    "link_text": "\tabc123.com",
+    "suspicious": false,
+    "timestamp": "2025-06-13T18:27:30.467893"
+  },
+  {
+    "link_text": "\thttps//abc123.com",
+    "suspicious": false,
+    "timestamp": "2025-06-13T18:27:37.887826"
+  },
+  {
+    "link_text": "\thttps//www.abc123.com",
+    "suspicious": false,
+    "timestamp": "2025-06-13T18:27:41.898549"
+  },
+  {
+    "link_text": "abc123.com",
+    "suspicious": true,
+    "timestamp": "2025-06-13T18:29:31.165822"
+  },
+  {
+    "link_text": "\thttps//www.abc123.com",
+    "suspicious": true,
+    "timestamp": "2025-06-13T18:29:43.243518"
+  },
+  {
+    "link_text": "https://faceb0ok.com",
+    "suspicious": true,
+    "timestamp": "2025-06-13T18:29:56.648206"
+  },
+  {
+    "link_text": "https://facebook.com",
+    "suspicious": false,
+    "timestamp": "2025-06-13T18:29:59.978222"
+  },
+  {
+    "link_text": "https://bit.ly/3fakeurl",
+    "suspicious": true,
+    "timestamp": "2025-06-13T18:30:23.317808"
+  },
+  {
+    "link_text": "www.youtube.com\r\n",
+    "suspicious": false,
+    "timestamp": "2025-06-13T18:31:54.661867"
+  },
+  {
+    "link_text": "www.youtub3.com\r\n",
+    "suspicious": false,
+    "timestamp": "2025-06-13T18:32:00.050163"
+  },
+  {
+    "link_text": "youtube.com\r\n",
+    "suspicious": false,
+    "timestamp": "2025-06-13T18:32:07.367891"
+  },
+  {
+    "link_text": "https//www.youtube.com\r\n",
+    "suspicious": false,
+    "timestamp": "2025-06-13T18:32:14.867211"
+  },
+  {
+    "link_text": "x.com",
+    "suspicious": true,
+    "timestamp": "2025-06-13T18:33:55.707901"
+  },
+  {
+    "link_text": "https//www.x.com",
+    "suspicious": true,
+    "timestamp": "2025-06-13T18:34:06.293360"
+  },
+  {
+    "link_text": "youtube.com",
+    "suspicious": true,
+    "timestamp": "2025-06-13T18:34:11.997136"
+  },
+  {
+    "link_text": "www.youtube.com",
+    "suspicious": true,
+    "timestamp": "2025-06-13T18:34:16.987495"
+  },
+  {
+    "link_text": "https//www.youtube.com",
+    "suspicious": true,
+    "timestamp": "2025-06-13T18:34:24.948589"
+  },
+  {
+    "link_text": "youtube.com",
+    "suspicious": false,
+    "timestamp": "2025-06-13T18:45:29.829356"
+  },
+  {
+    "link_text": "y0utube.com",
+    "suspicious": true,
+    "timestamp": "2025-06-13T18:45:37.542617"
+  },
+  {
+    "link_text": "x.com",
+    "suspicious": true,
+    "timestamp": "2025-06-13T18:45:44.386099"
+  },
+  {
+    "link_text": "tiktok.com",
+    "suspicious": false,
+    "timestamp": "2025-06-13T18:46:05.212234"
+  },
+  {
+    "link_text": "https//www.tiktok.com",
+    "suspicious": false,
+    "timestamp": "2025-06-13T18:46:22.067691"
+  },
+  {
+    "link_text": "tiktok.com",
+    "suspicious": false,
+    "timestamp": "2025-06-13T18:48:42.412418"
+  },
+  {
+    "link_text": "facebook.com",
+    "suspicious": false,
+    "timestamp": "2025-06-13T18:48:47.810217"
+  },
+  {
+    "link_text": "facebook.com",
+    "suspicious": false,
+    "timestamp": "2025-06-13T18:48:48.611341"
+  },
+  {
+    "link_text": "facebook.com",
+    "suspicious": false,
+    "timestamp": "2025-06-14T10:30:16.973161"
+  },
+  {
+    "link_text": "faceb0ok.com",
+    "suspicious": true,
+    "timestamp": "2025-06-14T10:30:25.349928"
+  },
+  {
+    "link_text": "www.y0utube.com",
+    "suspicious": true,
+    "timestamp": "2025-06-16T21:15:41.067751"
+  },
+  {
+    "link_text": "facebook.com\r\n",
+    "suspicious": false,
+    "timestamp": "2025-06-25T09:27:59.475184"
+  },
+  {
+    "link_text": "faceb0ok.com",
+    "suspicious": true,
+    "timestamp": "2025-06-25T09:28:10.679829"
+  },
+  {
+    "link_text": "\thttps//www.tikt0k.com",
+    "suspicious": false,
+    "timestamp": "2025-06-27T10:33:38.912195"
+  },
+  {
+    "link_text": "https//www.tikt0k.com",
+    "suspicious": false,
+    "timestamp": "2025-06-27T10:33:46.895907"
+  },
+  {
+    "link_text": "tikt0k.com",
+    "suspicious": true,
+    "timestamp": "2025-06-27T10:34:37.409117"
+  },
+  {
+    "link_text": "https//:www.tikt0k.com",
+    "suspicious": true,
+    "timestamp": "2025-06-27T10:34:49.799692"
+  },
+  {
+    "link_text": "https//:www.tikt0k.com",
+    "suspicious": true,
+    "timestamp": "2025-06-27T10:34:50.789907"
+  },
+  {
+    "link_text": "https//www.y0utube.com",
+    "suspicious": true,
+    "timestamp": "2025-07-03T13:56:58.368161"
+  },
+  {
+    "link_text": "https//www.yah00.com",
+    "suspicious": false,
+    "timestamp": "2025-07-03T13:57:09.975307"
+  },
+  {
+    "link_text": "\thttps//www.yah00.com",
+    "suspicious": false,
+    "timestamp": "2025-07-04T12:24:55.467639"
+  },
+  {
+    "link_text": "https//www.yah00.com",
+    "suspicious": false,
+    "timestamp": "2025-07-04T12:24:59.485243"
+  },
+  {
+    "link_text": "yah00.com",
+    "suspicious": false,
+    "timestamp": "2025-07-04T12:43:03.716097"
+  },
+  {
+    "link_text": "\thttps//www.yah00.com",
+    "suspicious": false,
+    "timestamp": "2025-07-04T12:43:13.066702"
+  },
+  {
+    "link_text": "yah00.com",
+    "suspicious": false,
+    "timestamp": "2025-07-04T12:43:44.756386"
+  },
+  {
+    "link_text": "\thttps//www.yah00.com",
+    "suspicious": false,
+    "timestamp": "2025-07-04T12:43:55.586730"
+  },
+  {
+    "link_text": "https//:www.tikt0k.com",
+    "suspicious": true,
+    "timestamp": "2025-07-04T12:44:02.659545"
+  },
+  {
+    "link_text": "https//www.yahoo.com",
+    "suspicious": false,
+    "timestamp": "2025-07-04T12:47:16.860060"
+  },
+  {
+    "link_text": "https//www.yah00.com",
+    "suspicious": false,
+    "timestamp": "2025-07-04T12:47:20.850303"
+  },
+  {
+    "link_text": "facebook.com",
+    "suspicious": false,
+    "timestamp": "2025-08-02T13:48:29.418539"
+  },
+  {
+    "link_text": "facebook0.com",
+    "suspicious": true,
+    "timestamp": "2025-08-02T13:48:39.621539"
+  },
+  {
+    "link_text": "www.facebook0.com",
+    "suspicious": true,
+    "timestamp": "2025-08-02T13:48:45.952590"
+  },
+  {
+    "link_text": "https://www.youtube.com/watch?",
+    "suspicious": false,
+    "timestamp": "2025-08-02T13:48:59.859269"
+  },
+  {
+    "link_text": "https://www.youtube.com0/watch?",
+    "suspicious": true,
+    "timestamp": "2025-08-02T13:49:13.960275"
+  },
+  {
+    "link_text": "https://www.youtube.com/admin/",
+    "suspicious": false,
+    "timestamp": "2025-08-02T13:49:43.937191"
+  },
+  {
+    "link_text": "http://127.0.0.1:5000/link_checker",
+    "suspicious": true,
+    "timestamp": "2025-08-02T13:50:26.724701"
+  },
+  {
+    "link_text": "192.168.199.0",
+    "suspicious": false,
+    "timestamp": "2025-08-02T13:51:15.132940"
+  },
+  {
+    "link_text": "http://127.0.0.1:5000/link_checker",
+    "suspicious": true,
+    "link_score": 1,
+    "timestamp": "2025-08-13T18:28:51.177740"
+  },
+  {
+    "link_text": "http://127.0.0.1:5000/link_checker",
+    "suspicious": true,
+    "link_score": 1,
+    "timestamp": "2025-08-13T18:28:58.575508"
+  },
+  {
+    "link_text": "\thttps://www.youtube.com0/watch?",
+    "suspicious": true,
+    "link_score": 1,
+    "timestamp": "2025-08-13T18:29:09.672255"
+  },
+  {
+    "link_text": "\thttps://www.youtube.com0/watch?",
+    "suspicious": true,
+    "link_score": 1,
+    "timestamp": "2025-08-13T18:29:15.006647"
+  },
+  {
+    "link_text": "\thttps://www.youtube.com/watch?",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2025-08-13T18:29:48.524421"
+  },
+  {
+    "link_text": "\thttps://www.youtube.com0/watch?",
+    "suspicious": true,
+    "link_score": 1,
+    "timestamp": "2025-08-13T18:32:47.077133"
+  },
+  {
+    "link_text": "https//www.yah00.com",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2025-08-13T18:32:58.800647"
+  },
+  {
+    "link_text": "https//www.yaho0.com",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2025-08-13T18:33:02.775619"
+  },
+  {
+    "link_text": "http://paypal-login.com/verify",
+    "suspicious": true,
+    "link_score": 52,
+    "timestamp": "2025-08-13T19:00:24.930922"
+  },
+  {
+    "link_text": "\thttp://paypal-login.com/verify",
+    "suspicious": true,
+    "link_score": 52,
+    "timestamp": "2025-08-13T19:02:46.042406"
+  },
+  {
+    "link_text": "\thttp://paypal-login.com/verify",
+    "suspicious": true,
+    "link_score": 52,
+    "timestamp": "2025-08-13T19:02:50.484363"
+  },
+  {
+    "link_text": "https://paypal-security-",
+    "suspicious": true,
+    "link_score": 12,
+    "timestamp": "2025-08-13T19:05:04.782371"
+  },
+  {
+    "link_text": "https://xn--pple-43d.com/itunes,",
+    "suspicious": true,
+    "link_score": 20,
+    "timestamp": "2025-08-13T19:05:36.948369"
+  },
+  {
+    "link_text": "c/confirm?token=%32%33",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2025-08-13T19:05:50.547454"
+  },
+  {
+    "link_text": "https://paypal.com/%50%61%79%70%61%6c/confirm?token=%32%33",
+    "suspicious": true,
+    "link_score": 16,
+    "timestamp": "2025-08-13T19:05:58.825486"
+  },
+  {
+    "link_text": "https://paypal-security-update.com/login ",
+    "suspicious": true,
+    "link_score": 22,
+    "timestamp": "2025-08-13T19:06:15.273233"
+  },
+  {
+    "link_text": "https://www.youtube.com/watch?",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2025-08-14T23:41:24.448940"
+  },
+  {
+    "link_text": "https://paypal.com/%50%61%79%70%61%6c/confirm?token=%32%33",
+    "suspicious": true,
+    "link_score": 16,
+    "timestamp": "2025-08-14T23:41:30.636629"
+  }
+]

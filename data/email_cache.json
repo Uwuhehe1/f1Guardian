@@ -1,0 +1,821 @@
+{
+  "af75274b0dae64f72f1c4a2b424bddc295380a4fa97a966344a78db8ebf02a12": {
+    "result": "Low risk indicators detected — review carefully.",
+    "details": "<strong>Risk Score: 26</strong><br>ML Probability: 0.208 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Keywords (4 pts): won<br>• Suspicious links (22 pts): 1 found<br><br><strong>Suspicious Links:</strong><br>• https://paypal-security-check.com/verify (score: 22)<br><br><strong>Signals:</strong><br>• suspicious_tld=False, cred_path=True, max_link_score=22<br>• high_kw=False, medium_kw=False, malware_kw=False<br>",
+    "warning": false,
+    "risk": "yellow",
+    "detection_type": "Review",
+    "detection_reason": "Low risk indicators present",
+    "cache_version": "ml_gate_0.50_with_fn_and_linktp_v2"
+  },
+  "99c5499c8311ca5e9592d964728c1ea769b227efa0fdee306416af6f754841a8": {
+    "result": "Near miss: Strong phishing signals but ML below threshold.",
+    "details": "<strong>Risk Score: 15</strong><br>ML Probability: 0.014 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Suspicious links (15 pts): 1 found<br><br><strong>Suspicious Links:</strong><br>• campus-info.top (score: 15)<br><br><strong>Signals:</strong><br>• suspicious_tld=True, cred_path=False, max_link_score=15<br>• high_kw=False, medium_kw=False, malware_kw=False<br>",
+    "warning": false,
+    "risk": "orange",
+    "detection_type": "FN",
+    "detection_reason": "Signals: high_kw=False, susp_tld=True, malware_kw=False, max_link=15; ML 0.01 < 0.50",
+    "cache_version": "ml_gate_0.50_with_fn_and_linktp_v2"
+  },
+  "3bf46173a4378acd4a12b0f1523f56edc073f398cfe502399dc029a33c34828c": {
+    "result": "True Positive: Previously user-marked phishing.",
+    "details": "<strong>Risk Score: n/a (user feedback)</strong><br>ML Probability: n/a (user override)<br><br><strong>Reasons (feedback):</strong><br>• Previously marked as phishing (cached TP)",
+    "warning": true,
+    "risk": "red",
+    "detection_type": "TP",
+    "detection_reason": "Previously marked as phishing (cached TP)",
+    "cache_version": "ml_gate_0.50_with_fn_and_linktp_v2"
+  },
+  "49ac4b9d59f66f0c69c34ad6c8a5f86fe5abd5c2be07a9a17c4bbb6197f26f85": {
+    "result": "Near miss: Strong phishing signals but ML below threshold.",
+    "details": "<strong>Risk Score: 20</strong><br>ML Probability: 0.000 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Keywords (20 pts): unusual login<br><br><strong>Signals:</strong><br>• suspicious_tld=False, cred_path=False, max_link_score=0<br>",
+    "warning": false,
+    "risk": "orange",
+    "detection_type": "FN",
+    "detection_reason": "Signals: high_kw=True, susp_tld=False, malware_kw=False, max_link=0; ML 0.00 < 0.50",
+    "cache_version": "ml_gate_0.50_with_fn_and_linktp_v2"
+  },
+  "97fd6e5d6845ecd4c7b1bde69425b62b43b4740d581a8b50a60de8b28e5bf1a8": {
+    "result": "Suspicious: Risk indicators present (ML below threshold).",
+    "details": "<strong>Risk Score: 10</strong><br>ML Probability: 0.000 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Suspicious links (10 pts): 1 found<br><br><strong>Suspicious Links:</strong><br>• https://secure-payfriend-alert.com/verify/login (score: 10)<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [com] are not in high-risk list.</li>\n<li><code>cred_path=True</code>: credential-related word observed in a URL path/query.</li>\n<li><code>max_link_score=10</code>: strongest URL <code>https://secure-payfriend-alert.com/verify/login</code> — phishing keywords in path/query.</li>\n<li><code>punycode=False</code>: all domains are regular ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form (no hxxp / [.] etc.).</li>\n<li><code>high_kw=False</code>: no high-risk keywords (e.g., “verify account”, “reset password”).</li>\n<li><code>medium_kw=False</code>: no medium-risk marketing/urgency terms.</li>\n<li><code>malware_kw=False</code>: no malware extensions/terms detected.</li></ul>",
+    "warning": false,
+    "risk": "orange",
+    "detection_type": "Suspicious",
+    "detection_reason": "Floor rule: credential path",
+    "cache_version": "explain_signals_v1"
+  },
+  "9e563b9376f1a7fdf342d316a1f917723ebca33bcd8d7b5c5da4b9ed494ec2fe": {
+    "result": "Low risk indicators detected — review carefully.",
+    "details": "<strong>Risk Score: 22</strong><br>ML Probability: 0.000 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Suspicious links (22 pts): 1 found<br><br><strong>Suspicious Links:</strong><br>• http://secure-paypal-login.verify-user.com (score: 22)<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [com] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words (login, verify, reset, etc.) in URL paths.</li>\n<li><code>max_link_score=22</code>: strongest URL <code>http://secure-paypal-login.verify-user.com</code> — phishing keywords in path/query; brand/domain mismatch: paypal.</li>\n<li><code>punycode=False</code>: all domains are regular ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form (no hxxp / [.] etc.).</li>\n<li><code>high_kw=False</code>: no high-risk keywords (e.g., “verify account”, “reset password”).</li>\n<li><code>medium_kw=False</code>: no medium-risk marketing/urgency terms.</li>\n<li><code>malware_kw=False</code>: no malware extensions/terms detected.</li></ul>",
+    "warning": false,
+    "risk": "yellow",
+    "detection_type": "Review",
+    "detection_reason": "Low risk indicators present",
+    "cache_version": "explain_signals_v1"
+  },
+  "19d764caa259c2310b3f81ea6c276264929edc8e854532e7b2b6a73c60b28e09": {
+    "result": "Suspicious: Risk indicators present (ML below threshold).",
+    "details": "<strong>Risk Score: 22</strong><br>ML Probability: 0.000 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Suspicious links (22 pts): 1 found<br><br><strong>Suspicious Links:</strong><br>• http://microsoft-login-update.com/login (score: 22)<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [com] are not in high-risk list.</li>\n<li><code>cred_path=True</code>: credential-related word observed in a URL path/query.</li>\n<li><code>max_link_score=22</code>: strongest URL <code>http://microsoft-login-update.com/login</code> — phishing keywords in path/query; brand/domain mismatch: microsoft.</li>\n<li><code>punycode=False</code>: all domains are regular ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form (no hxxp / [.] etc.).</li>\n<li><code>high_kw=False</code>: no high-risk keywords (e.g., “verify account”, “reset password”).</li>\n<li><code>medium_kw=False</code>: no medium-risk marketing/urgency terms.</li>\n<li><code>malware_kw=False</code>: no malware extensions/terms detected.</li></ul>",
+    "warning": false,
+    "risk": "orange",
+    "detection_type": "Suspicious",
+    "detection_reason": "Floor rule: credential path",
+    "cache_version": "explain_signals_v1"
+  },
+  "182eb815c51a041804fff5d8c82b2a29a85480451c663a6302b0518ed5d8263b": {
+    "result": "Suspicious: Moderate risk indicators (ML below threshold).",
+    "details": "<strong>Risk Score: 36</strong><br>ML Probability: 0.000 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Keywords (24 pts): won, iphone, prize, winner, congratulations<br>• Suspicious links (12 pts): 1 found<br><br><strong>Suspicious Links:</strong><br>• http://apple-giveaway-prize.com (score: 12)<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [com] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words (login, verify, reset, etc.) in URL paths.</li>\n<li><code>max_link_score=12</code>: strongest URL <code>http://apple-giveaway-prize.com</code> — brand/domain mismatch: apple.</li>\n<li><code>punycode=False</code>: all domains are regular ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form (no hxxp / [.] etc.).</li>\n<li><code>high_kw=False</code>: no high-risk keywords (e.g., “verify account”, “reset password”).</li>\n<li><code>medium_kw=False</code>: no medium-risk marketing/urgency terms.</li>\n<li><code>malware_kw=False</code>: no malware extensions/terms detected.</li></ul>",
+    "warning": false,
+    "risk": "orange",
+    "detection_type": "Suspicious",
+    "detection_reason": "Moderate risk, but ML below threshold",
+    "cache_version": "explain_signals_v1"
+  },
+  "c4c15005ac688de571e07f7d17b407abf49da1defc492a6e107dbb3433a60c58": {
+    "result": "Low risk indicators detected — review carefully.",
+    "details": "<strong>Risk Score: 16</strong><br>ML Probability: 0.000 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Keywords (16 pts): won, lotto, congratulations, selected<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [com] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words (login, verify, reset, etc.) in URL paths.</li>\n<li><code>max_link_score=0</code>: no risky URL features detected.</li>\n<li><code>punycode=False</code>: all domains are regular ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form (no hxxp / [.] etc.).</li>\n<li><code>high_kw=False</code>: no high-risk keywords (e.g., “verify account”, “reset password”).</li>\n<li><code>medium_kw=False</code>: no medium-risk marketing/urgency terms.</li>\n<li><code>malware_kw=False</code>: no malware extensions/terms detected.</li></ul>",
+    "warning": false,
+    "risk": "yellow",
+    "detection_type": "Review",
+    "detection_reason": "Low risk indicators present",
+    "cache_version": "explain_signals_v1"
+  },
+  "e02073178a79e2828f7a631fb4b39729bbd734a5593069444ccbc6281c105839": {
+    "result": "True Positive: Phishing detected (Critical credential-harvest link).",
+    "details": "<strong>Risk Score: 92</strong><br>ML Probability: 0.000 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Suspicious links (92 pts): 3 found<br><br><strong>Suspicious Links:</strong><br>• Wedetectedunusualactivityinyouraccount.Toavoidpermanentsuspension (score: 10)<br>• ely.Clickthesecurelinkbelowtorestoreaccess (score: 10)<br>• http://secure-paypal-login.com/verifyFailuretoactwithin24hourswillresultinaccounttermin@ion.PayPalSecurityTeam (score: 72)<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [clickthesecurelinkbelowtorestoreaccess, com, toavoidpermanentsuspension] are not in high-risk list.</li>\n<li><code>cred_path=True</code>: credential-related word observed in a URL path/query.</li>\n<li><code>max_link_score=72</code>: strongest URL <code>http://secure-paypal-login.com/verifyFailuretoactwithin24hourswillresultinaccounttermin@ion.PayPalSecurityTeam</code> — domain matches suspicious list; '@' in URL (credential-hiding trick); unusually long URL.</li>\n<li><code>punycode=False</code>: all domains are regular ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form (no hxxp / [.] etc.).</li>\n<li><code>high_kw=False</code>: no high-risk keywords (e.g., “verify account”, “reset password”).</li>\n<li><code>medium_kw=False</code>: no medium-risk marketing/urgency terms.</li>\n<li><code>malware_kw=False</code>: no malware extensions/terms detected.</li></ul>",
+    "warning": true,
+    "risk": "red",
+    "detection_type": "TP",
+    "detection_reason": "Critical credential-harvest link",
+    "cache_version": "explain_signals_v1"
+  },
+  "2cee26cbf0075f2b2d85ec5dc54cbaf81eac06bc561dbf91173ec3669f0f8878": {
+    "result": "Near miss: Strong phishing signals but ML below threshold.",
+    "details": "<strong>Risk Score: 48</strong><br>ML Probability: 0.000 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Keywords (48 pts): lottery, jackpot, reward, winner<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [claimhere, inforegards,globallotteryteam] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words (login, verify, reset, etc.) in URL paths.</li>\n<li><code>max_link_score=0</code>: no risky URL features detected.</li>\n<li><code>punycode=False</code>: all domains are regular ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form (no hxxp / [.] etc.).</li>\n<li><code>high_kw=True</code>: high-risk keywords present — lottery, jackpot.</li>\n<li><code>medium_kw=False</code>: no medium-risk marketing/urgency terms.</li>\n<li><code>malware_kw=False</code>: no malware extensions/terms detected.</li></ul>",
+    "warning": false,
+    "risk": "orange",
+    "detection_type": "FN",
+    "detection_reason": "Signals: high_kw=True, susp_tld=False, malware_kw=False, max_link=0; ML 0.00 < 0.50",
+    "cache_version": "explain_signals_v1"
+  },
+  "ad5d64e73614f8735202f9a775ad2228a4358897ada9447b3cdb04ec168d21e1": {
+    "result": "True Positive: Phishing detected (Critical credential-harvest link).",
+    "details": "<strong>Risk Score: 48</strong><br>ML Probability: 0.000 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Keywords (8 pts): free, promo<br>• Suspicious links (40 pts): 2 found<br><br><strong>Suspicious Links:</strong><br>• vebeenchosenforanexclusivedeal.ConfirmyouremailnowandreceiveaFREE (score: 10)<br>• www.verify-now.coHurry–offerexpiresin12hours!MarketingPromotionsTeam (score: 30)<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [clickthelink, confirmyouremailnowandreceiveafree, xn--cohurryofferexpiresin12hours!marketingpromotionsteam-gz36a] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words (login, verify, reset, etc.) in URL paths.</li>\n<li><code>max_link_score=30</code>: strongest URL <code>www.verify-now.coHurry–offerexpiresin12hours!MarketingPromotionsTeam</code> — punycode in domain; phishing keywords in path/query.</li>\n<li><code>punycode=True</code>: at least one domain uses IDN/punycode (e.g. “xn--”).</li>\n<li><code>obfuscation=False</code>: links appear in plain form (no hxxp / [.] etc.).</li>\n<li><code>high_kw=False</code>: no high-risk keywords (e.g., “verify account”, “reset password”).</li>\n<li><code>medium_kw=False</code>: no medium-risk marketing/urgency terms.</li>\n<li><code>malware_kw=False</code>: no malware extensions/terms detected.</li></ul>",
+    "warning": true,
+    "risk": "orange",
+    "detection_type": "TP",
+    "detection_reason": "Critical credential-harvest link",
+    "cache_version": "explain_signals_v1"
+  },
+  "3e3bdba70ce18c08354dacf2fd6749bb54685d4c0c78d06ab11cddf0c67bfbdb": {
+    "result": "Suspicious: Risk indicators present (ML below threshold).",
+    "details": "<strong>Risk Score: 24</strong><br>ML Probability: 0.000 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Suspicious links (24 pts): 2 found<br><br><strong>Suspicious Links:</strong><br>• ed.Tocontinueusingyouraccount (score: 10)<br>• http://login.secure-account.support/reset?session=123Thisisyourfinalwarningbeforesuspension.ITHelpdesk (score: 14)<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [support, tocontinueusingyouraccount] are not in high-risk list.</li>\n<li><code>cred_path=True</code>: credential-related word observed in a URL path/query.</li>\n<li><code>max_link_score=14</code>: strongest URL <code>http://login.secure-account.support/reset?session=123Thisisyourfinalwarningbeforesuspension.ITHelpdesk</code> — unusually long URL; phishing keywords in path/query.</li>\n<li><code>punycode=False</code>: all domains are regular ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form (no hxxp / [.] etc.).</li>\n<li><code>high_kw=False</code>: no high-risk keywords (e.g., “verify account”, “reset password”).</li>\n<li><code>medium_kw=False</code>: no medium-risk marketing/urgency terms.</li>\n<li><code>malware_kw=False</code>: no malware extensions/terms detected.</li></ul>",
+    "warning": false,
+    "risk": "orange",
+    "detection_type": "Suspicious",
+    "detection_reason": "Floor rule: credential path",
+    "cache_version": "explain_signals_v1"
+  },
+  "d597793308e4d6a5980f5b2cef9b1910efbb0ed42352ff079f24d134ac035194": {
+    "result": "Suspicious: Moderate risk indicators (ML below threshold).",
+    "details": "<strong>Risk Score: 34</strong><br>ML Probability: 0.000 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Suspicious links (34 pts): 3 found<br><br><strong>Suspicious Links:</strong><br>• 250.00fromyouraccount.Tostopthistransaction (score: 10)<br>• ely.SecureLink (score: 10)<br>• http://chase-online-security.bankingIfyoufailtorespond,youraccountwillbepermanentlylocked.ChaseSecurityDepartment (score: 14)<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [chasesecuritydepartment, securelink, tostopthistransaction] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words (login, verify, reset, etc.) in URL paths.</li>\n<li><code>max_link_score=14</code>: strongest URL <code>http://chase-online-security.bankingIfyoufailtorespond,youraccountwillbepermanentlylocked.ChaseSecurityDepartment</code> — unusually long URL; phishing keywords in path/query.</li>\n<li><code>punycode=False</code>: all domains are regular ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form (no hxxp / [.] etc.).</li>\n<li><code>high_kw=False</code>: no high-risk keywords (e.g., “verify account”, “reset password”).</li>\n<li><code>medium_kw=False</code>: no medium-risk marketing/urgency terms.</li>\n<li><code>malware_kw=False</code>: no malware extensions/terms detected.</li></ul>",
+    "warning": false,
+    "risk": "orange",
+    "detection_type": "Suspicious",
+    "detection_reason": "Moderate risk, but ML below threshold",
+    "cache_version": "explain_signals_v1"
+  },
+  "844460ec9a2f43a67682717819457784c6365abfe78b4752d880cce4241291f3": {
+    "result": "Low risk indicators detected — review carefully.",
+    "details": "<strong>Risk Score: 12</strong><br>ML Probability: 0.000 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Suspicious links (12 pts): 1 found<br><br><strong>Suspicious Links:</strong><br>• ionstoreviewAlothashappenedonFacebooksinceyoulastloggedin.Herearesomenotific (score: 12)<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [herearesomenotific, ifyoudon, learnmore, metapl, notific] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words (login, verify, reset, etc.) in URL paths.</li>\n<li><code>max_link_score=12</code>: strongest URL <code>ionstoreviewAlothashappenedonFacebooksinceyoulastloggedin.Herearesomenotific</code> — brand/domain mismatch: facebook.</li>\n<li><code>punycode=False</code>: all domains are regular ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form (no hxxp / [.] etc.).</li>\n<li><code>high_kw=False</code>: no high-risk keywords (e.g., “verify account”, “reset password”).</li>\n<li><code>medium_kw=False</code>: no medium-risk marketing/urgency terms.</li>\n<li><code>malware_kw=False</code>: no malware extensions/terms detected.</li></ul>",
+    "warning": false,
+    "risk": "yellow",
+    "detection_type": "Review",
+    "detection_reason": "Low risk indicators present",
+    "cache_version": "explain_signals_v1"
+  },
+  "9f258e152b784b2b1b9e2519f5ede3d61068b462247d1652a7ae72e059bf8ea0": {
+    "result": "Suspicious: High risk indicators found (ML below threshold).",
+    "details": "<strong>Risk Score: 86</strong><br>ML Probability: 0.000 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Suspicious links (86 pts): 6 found<br><br><strong>Suspicious Links:</strong><br>• whichappliestooneormoreMicrosoftproductsorservicesyouuse.We (score: 12)<br>• ures.TheMicrosoftServicesAgreementisanagreementbetweenyouandMicrosoftoroneofitsaffili (score: 12)<br>• governsyouruseofMicrosoftconsumeronlineproductsandservices.YoucanreadtheentireMicrosoftServicesAgreementhere.Youcanalsolearnmoreabouttheseupd (score: 16)<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [ifyouareaparentorguardian, ifyoucontinuetouseourproductsandservicesonorafterseptember, ifyoudonotagree, microsoftservicesagreement, privacyst, themicrosoftservicesagreementisanagreementbetweenyouandmicrosoftoroneofitsaffili, theupd, we, youcanalsolearnmoreabouttheseupd] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words (login, verify, reset, etc.) in URL paths.</li>\n<li><code>max_link_score=22</code>: strongest URL <code>andcloseyourMicrosoftaccountbeforethesetermsbecomeeffective.Ifyouareaparentorguardian</code> — phishing keywords in path/query; brand/domain mismatch: microsoft.</li>\n<li><code>punycode=False</code>: all domains are regular ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form (no hxxp / [.] etc.).</li>\n<li><code>high_kw=False</code>: no high-risk keywords (e.g., “verify account”, “reset password”).</li>\n<li><code>medium_kw=False</code>: no medium-risk marketing/urgency terms.</li>\n<li><code>malware_kw=False</code>: no malware extensions/terms detected.</li></ul>",
+    "warning": false,
+    "risk": "red",
+    "detection_type": "Suspicious",
+    "detection_reason": "High risk, but ML below threshold",
+    "cache_version": "explain_signals_v1"
+  },
+  "0369d1ce4661adf0340401789642169aa1bd25aa3cfed4478541c3aefb6eec13": {
+    "result": "Near miss: Strong phishing signals but ML below threshold.",
+    "details": "<strong>Risk Score: 62</strong><br>ML Probability: 0.000 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Keywords (40 pts): unauthorized access, permanent suspension<br>• Suspicious links (22 pts): 1 found<br><br><strong>Suspicious Links:</strong><br>• http://secure-paypal-login.verify-user.com (score: 22)<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [com] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words (login, verify, reset, etc.) in URL paths.</li>\n<li><code>max_link_score=22</code>: strongest URL <code>http://secure-paypal-login.verify-user.com</code> — phishing keywords in path/query; brand/domain mismatch: paypal.</li>\n<li><code>punycode=False</code>: all domains are regular ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form (no hxxp / [.] etc.).</li>\n<li><code>high_kw=True</code>: high-risk keywords present — unauthorized access, permanent suspension.</li>\n<li><code>medium_kw=False</code>: no medium-risk marketing/urgency terms.</li>\n<li><code>malware_kw=False</code>: no malware extensions/terms detected.</li></ul>",
+    "warning": false,
+    "risk": "red",
+    "detection_type": "FN",
+    "detection_reason": "Signals: high_kw=True, susp_tld=False, malware_kw=False, max_link=22; ML 0.00 < 0.50",
+    "cache_version": "explain_signals_v1"
+  },
+  "163122aefdf1f38dc95189577d258aa640bf232f8c66f8c20595d2ecf1d062e1": {
+    "result": "True Positive: Phishing detected (Critical credential-harvest link).",
+    "details": "<strong>Risk Score: 65</strong><br>ML Probability: 0.000 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Keywords (38 pts): randomly selected, gift card, winner, congratulations<br>• Suspicious links (27 pts): 1 found<br><br><strong>Suspicious Links:</strong><br>• http://amazon-prize-claim.xyz (score: 27)<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=True</code>: found high-risk TLD(s) xyz.</li>\n<li><code>cred_path=False</code>: no credential-related words (login, verify, reset, etc.) in URL paths.</li>\n<li><code>max_link_score=27</code>: strongest URL <code>http://amazon-prize-claim.xyz</code> — suspicious TLD .xyz; brand/domain mismatch: amazon.</li>\n<li><code>punycode=False</code>: all domains are regular ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form (no hxxp / [.] etc.).</li>\n<li><code>high_kw=True</code>: high-risk keywords present — randomly selected.</li>\n<li><code>medium_kw=True</code>: medium-risk keywords present — gift card.</li>\n<li><code>malware_kw=False</code>: no malware extensions/terms detected.</li></ul>",
+    "warning": true,
+    "risk": "red",
+    "detection_type": "TP",
+    "detection_reason": "Critical credential-harvest link",
+    "cache_version": "explain_signals_v1"
+  },
+  "7d10ef5aa5eb95a5011a69ce5b888ff81a27d76375e0a491b5f536630175a1ac": {
+    "result": "Low risk indicators detected — review carefully.",
+    "details": "<strong>Risk Score: 18</strong><br>ML Probability: 0.000 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Keywords (18 pts): special promotion, promo, redeem<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [net] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words (login, verify, reset, etc.) in URL paths.</li>\n<li><code>max_link_score=0</code>: no risky URL features detected.</li>\n<li><code>punycode=False</code>: all domains are regular ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form (no hxxp / [.] etc.).</li>\n<li><code>high_kw=False</code>: no high-risk keywords (e.g., “verify account”, “reset password”).</li>\n<li><code>medium_kw=True</code>: medium-risk keywords present — special promotion.</li>\n<li><code>malware_kw=False</code>: no malware extensions/terms detected.</li></ul>",
+    "warning": false,
+    "risk": "yellow",
+    "detection_type": "Review",
+    "detection_reason": "Keyword/TLD floor to Review",
+    "cache_version": "explain_signals_v1"
+  },
+  "54d7d604330ba7f58f5195b66b4dfc721999d7cc0b78eadedd8a19a7e181ef1b": {
+    "result": "Low risk indicators detected — review carefully.",
+    "details": "<strong>Risk Score: 12</strong><br>ML Probability: 0.000 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Keywords (12 pts): bonus, reward, exclusive offer<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [com] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words (login, verify, reset, etc.) in URL paths.</li>\n<li><code>max_link_score=0</code>: no risky URL features detected.</li>\n<li><code>punycode=False</code>: all domains are regular ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form (no hxxp / [.] etc.).</li>\n<li><code>high_kw=False</code>: no high-risk keywords (e.g., “verify account”, “reset password”).</li>\n<li><code>medium_kw=False</code>: no medium-risk marketing/urgency terms.</li>\n<li><code>malware_kw=False</code>: no malware extensions/terms detected.</li></ul>",
+    "warning": false,
+    "risk": "yellow",
+    "detection_type": "Review",
+    "detection_reason": "Low risk indicators present",
+    "cache_version": "explain_signals_v1"
+  },
+  "ada750e3f8464e9e1fd6a882b1a3b46cad39a1876c3fb7b85abe47a887c977fb": {
+    "result": "No significant phishing indicators detected.",
+    "details": "<strong>Risk Score: 0</strong><br>ML Probability: 0.000 (threshold 0.50)<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [—] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words (login, verify, reset, etc.) in URL paths.</li>\n<li><code>max_link_score=0</code>: no risky URL features detected.</li>\n<li><code>punycode=False</code>: all domains are regular ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form (no hxxp / [.] etc.).</li>\n<li><code>high_kw=False</code>: no high-risk keywords (e.g., “verify account”, “reset password”).</li>\n<li><code>medium_kw=False</code>: no medium-risk marketing/urgency terms.</li>\n<li><code>malware_kw=False</code>: no malware extensions/terms detected.</li></ul>",
+    "warning": false,
+    "risk": "green",
+    "detection_type": "Safe",
+    "detection_reason": "No significant risk factors",
+    "cache_version": "explain_signals_v1"
+  },
+  "38e0019e690863c4fda08533a0d28d88d190db2b52894a2d28bb6751b6b57cb1": {
+    "result": "Low risk indicators detected — review carefully.",
+    "details": "<strong>Risk Score: 16</strong><br>ML Probability: 0.405 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• ML prediction (16 pts): 0.40 confidence<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [—] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words (login, verify, reset, etc.) in URL paths.</li>\n<li><code>max_link_score=0</code>: no risky URL features detected.</li>\n<li><code>punycode=False</code>: all domains are regular ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form (no hxxp / [.] etc.).</li>\n<li><code>high_kw=False</code>: no high-risk keywords (e.g., “verify account”, “reset password”).</li>\n<li><code>medium_kw=False</code>: no medium-risk marketing/urgency terms.</li>\n<li><code>malware_kw=False</code>: no malware extensions/terms detected.</li></ul>",
+    "warning": false,
+    "risk": "yellow",
+    "detection_type": "Review",
+    "detection_reason": "Low risk indicators present",
+    "cache_version": "explain_signals_v1"
+  },
+  "e7154e8323fc1fe2db6ff7f8b55636d7f0d16b4dbc71ea9c956168c09070c6f0": {
+    "result": "Low risk indicators detected — review carefully.",
+    "details": "<strong>Risk Score: 22</strong><br>ML Probability: 0.000 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Suspicious links (22 pts): 1 found<br><br><strong>Suspicious Links:</strong><br>• https://paypal-update-verification. (score: 22)<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [—] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words (login, verify, reset, etc.) in URL paths.</li>\n<li><code>max_link_score=22</code>: strongest URL <code>https://paypal-update-verification.</code> — phishing keywords in path/query; brand/domain mismatch: paypal.</li>\n<li><code>punycode=False</code>: all domains are regular ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form (no hxxp / [.] etc.).</li>\n<li><code>high_kw=False</code>: no high-risk keywords (e.g., “verify account”, “reset password”).</li>\n<li><code>medium_kw=False</code>: no medium-risk marketing/urgency terms.</li>\n<li><code>malware_kw=False</code>: no malware extensions/terms detected.</li></ul>",
+    "warning": false,
+    "risk": "yellow",
+    "detection_type": "Review",
+    "detection_reason": "Low risk indicators present",
+    "cache_version": "explain_signals_v1"
+  },
+  "c57719aa43314f36f3aa14f191ea559b67e12c58373017c61f39abee5060b0e7": {
+    "result": "No significant phishing indicators detected.",
+    "details": "<strong>Risk Score: 0</strong><br>ML Probability: 0.000 (threshold 0.50)<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [—] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words (login, verify, reset, etc.) in URL paths.</li>\n<li><code>max_link_score=0</code>: no risky URL features detected.</li>\n<li><code>punycode=False</code>: all domains are regular ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form (no hxxp / [.] etc.).</li>\n<li><code>high_kw=False</code>: no high-risk keywords (e.g., “verify account”, “reset password”).</li>\n<li><code>medium_kw=False</code>: no medium-risk marketing/urgency terms.</li>\n<li><code>malware_kw=False</code>: no malware extensions/terms detected.</li></ul>",
+    "warning": false,
+    "risk": "green",
+    "detection_type": "Safe",
+    "detection_reason": "No significant risk factors",
+    "cache_version": "explain_signals_v1"
+  },
+  "a5a7e319ad2ecb2291de6acf3efc0798d88139c2a5e5596dd0a09f0ba08dafb0": {
+    "result": "True Positive: Previously user-marked phishing.",
+    "details": "<strong>Risk Score: n/a (user feedback)</strong><br>ML Probability: n/a (user override)<br><br><strong>Reasons (feedback):</strong><br>• Previously marked as phishing (cached TP)",
+    "warning": true,
+    "risk": "red",
+    "detection_type": "TP",
+    "detection_reason": "Previously marked as phishing (cached TP)",
+    "cache_version": "explain_signals_v1"
+  },
+  "331a4e928cf03d7af2f2ee90b7d6f438c4c1dbb84ee088fc7a8c96eb937fceaa": {
+    "result": "True Positive: Phishing detected (ML threshold met).",
+    "details": "<strong>Risk Score: 59</strong><br>ML Probability: 0.939 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Suspicious links (22 pts): 1 found<br>• ML prediction (37 pts): 0.94 confidence<br><br><strong>Suspicious Links:</strong><br>• https://paypal-update-verification. (score: 22)<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [—] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words (login, verify, reset, etc.) in URL paths.</li>\n<li><code>max_link_score=22</code>: strongest URL <code>https://paypal-update-verification.</code> — phishing keywords in path/query; brand/domain mismatch: paypal.</li>\n<li><code>punycode=False</code>: all domains are regular ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form (no hxxp / [.] etc.).</li>\n<li><code>high_kw=False</code>: no high-risk keywords (e.g., “verify account”, “reset password”).</li>\n<li><code>medium_kw=False</code>: no medium-risk marketing/urgency terms.</li>\n<li><code>malware_kw=False</code>: no malware extensions/terms detected.</li></ul>",
+    "warning": true,
+    "risk": "orange",
+    "detection_type": "TP",
+    "detection_reason": "ML threshold met",
+    "cache_version": "explain_signals_v1"
+  },
+  "75773c5ea4e1bc6585bc62eb472335439b1b94558ac3d5144e831531d8478df6": {
+    "result": "Suspicious: Moderate risk indicators (ML below threshold).",
+    "details": "<strong>Risk Score: 35</strong><br>ML Probability: 0.432 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Keywords (18 pts): special promotion, promo, redeem<br>• ML prediction (17 pts): 0.43 confidence<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [—] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words (login, verify, reset, etc.) in URL paths.</li>\n<li><code>max_link_score=0</code>: no risky URL features detected.</li>\n<li><code>punycode=False</code>: all domains are regular ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form (no hxxp / [.] etc.).</li>\n<li><code>high_kw=False</code>: no high-risk keywords (e.g., “verify account”, “reset password”).</li>\n<li><code>medium_kw=True</code>: medium-risk keywords present — special promotion.</li>\n<li><code>malware_kw=False</code>: no malware extensions/terms detected.</li></ul>",
+    "warning": false,
+    "risk": "orange",
+    "detection_type": "Suspicious",
+    "detection_reason": "Moderate risk, but ML below threshold",
+    "cache_version": "explain_signals_v1"
+  },
+  "5e4f8e082d44337cbe4224d34e98a60a0526dabfde53dc22beaaf82ef6a9044c": {
+    "result": "Low risk indicators detected — review carefully.",
+    "details": "<strong>Risk Score: 19</strong><br>ML Probability: 0.482 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• ML prediction (19 pts): 0.48 confidence<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [—] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words (login, verify, reset, etc.) in URL paths.</li>\n<li><code>max_link_score=0</code>: no risky URL features detected.</li>\n<li><code>punycode=False</code>: all domains are regular ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form (no hxxp / [.] etc.).</li>\n<li><code>high_kw=False</code>: no high-risk keywords (e.g., “verify account”, “reset password”).</li>\n<li><code>medium_kw=False</code>: no medium-risk marketing/urgency terms.</li>\n<li><code>malware_kw=False</code>: no malware extensions/terms detected.</li></ul>",
+    "warning": false,
+    "risk": "yellow",
+    "detection_type": "Review",
+    "detection_reason": "Low risk indicators present",
+    "cache_version": "explain_signals_v1"
+  },
+  "4c09e187ee53259e32029f1035f3063cd919d5958cba75e899b9cf6a9e32a83a": {
+    "result": "True Positive: Previously user-marked phishing.",
+    "details": "<strong>Risk Score: n/a (user feedback)</strong><br>ML Probability: n/a (user override)<br><br><strong>Reasons (feedback):</strong><br>• Previously marked as phishing (cached TP)",
+    "warning": true,
+    "risk": "red",
+    "detection_type": "TP",
+    "detection_reason": "Previously marked as phishing (cached TP)",
+    "cache_version": "explain_signals_v1"
+  },
+  "bd976488628acc61041f45158ca50e5ed9553038cff595095f78656e830d986d": {
+    "result": "True Positive: Previously user-marked phishing.",
+    "details": "<strong>Risk Score: n/a (user feedback)</strong><br>ML Probability: n/a (user override)<br><br><strong>Reasons (feedback):</strong><br>• Previously marked as phishing (cached TP)",
+    "warning": true,
+    "risk": "red",
+    "detection_type": "TP",
+    "detection_reason": "Previously marked as phishing (cached TP)",
+    "cache_version": "explain_signals_v1"
+  },
+  "a5b358fea8f7e1571d51805746a1a5948df6ae37b20ef61e3a84f16dfa3558ac": {
+    "result": "True Positive: Previously user-marked phishing.",
+    "details": "<strong>Risk Score: n/a (user feedback)</strong><br>ML Probability: n/a (user override)<br><br><strong>Reasons (feedback):</strong><br>• Previously marked as phishing (cached TP)",
+    "warning": true,
+    "risk": "red",
+    "detection_type": "TP",
+    "detection_reason": "Previously marked as phishing (cached TP)",
+    "cache_version": "explain_signals_v1"
+  },
+  "230d93223bb02bd4fcc2b1e3e7a53c8883aea88b6022124337630fa98ee96f94": {
+    "result": "True Positive: Previously user-marked phishing.",
+    "details": "<strong>Risk Score: n/a (user feedback)</strong><br>ML Probability: n/a (user override)<br><br><strong>Reasons (feedback):</strong><br>• Previously marked as phishing (cached TP)",
+    "warning": true,
+    "risk": "red",
+    "detection_type": "TP",
+    "detection_reason": "Previously marked as phishing (cached TP)",
+    "cache_version": "explain_signals_v1"
+  },
+  "3c3b7fd7642c2dbafc90657b6ad7f4308df045293c1e692fca09648e2fc6839a": {
+    "result": "True Positive: Phishing detected (ML threshold met).",
+    "details": "<strong>Risk Score: 43</strong><br>ML Probability: 0.839 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Keywords (4 pts): free<br>• Suspicious links (6 pts): 1 found<br>• ML prediction (33 pts): 0.84 confidence<br><br><strong>Suspicious Links:</strong><br>• http://vaultkey.example/auth/continue?redirect=https%3A%2F%2Fhelp.vaultkey.example%2Ffreeze (score: 6)<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [example] are not in high-risk list.</li>\n<li><code>cred_path=True</code>: credential-related word observed in a URL path/query.</li>\n<li><code>max_link_score=6</code>: strongest URL <code>http://vaultkey.example/auth/continue?redirect=https%3A%2F%2Fhelp.vaultkey.example%2Ffreeze</code> — heavy percent-encoding.</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=False</code>: no high-risk keywords.</li>\n<li><code>medium_kw=False</code>: no medium-risk terms.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": true,
+    "risk": "orange",
+    "detection_type": "TP",
+    "detection_reason": "ML threshold met",
+    "cache_version": "explain_signals_v1"
+  },
+  "fe6b4a600789e9b7f3c3d8ff0d12268e085a676ae01a7adfe1466d4d706da9ec": {
+    "result": "True Positive: Phishing detected (Critical credential-harvest link).",
+    "details": "<strong>Risk Score: 135</strong><br>ML Probability: 0.803 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Suspicious links (103 pts): 3 found<br>• ML prediction (32 pts): 0.80 confidence<br><br><strong>Suspicious Links:</strong><br>• updates.parcelgo.example (score: 10)<br>• http://bit.ly/claim-parcel-918372 (score: 42)<br>• http://45.77.12.3:8080/parcel/verify/address?ref=PG-00918372 (score: 51)<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [3, example, ly] are not in high-risk list.</li>\n<li><code>cred_path=True</code>: credential-related word observed in a URL path/query.</li>\n<li><code>max_link_score=51</code>: strongest URL <code>http://45.77.12.3:8080/parcel/verify/address?ref=PG-00918372</code> — IP address in host; excessive subdomains; suspicious port :8080.</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=False</code>: no high-risk keywords.</li>\n<li><code>medium_kw=False</code>: no medium-risk terms.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": true,
+    "risk": "red",
+    "detection_type": "TP",
+    "detection_reason": "Critical credential-harvest link",
+    "cache_version": "explain_signals_v1"
+  },
+  "08377339078a7e928bf334381a92e3a64b25909c2ce437dff2b4c6e92136fc57": {
+    "result": "True Positive: Phishing detected (Critical credential-harvest link).",
+    "details": "<strong>Risk Score: 58</strong><br>ML Probability: 0.565 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Suspicious links (36 pts): 2 found<br>• ML prediction (22 pts): 0.56 confidence<br><br><strong>Suspicious Links:</strong><br>• http://xn--workspce-secure-1k4.example/oauth/consent?scope=mail.files.contacts&prompt=login (score: 30)<br>• http://workspace.example/sso/continue?redirect=https%3A%2F%2Fhelper.ai-apps.example%2Finstall (score: 6)<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [example] are not in high-risk list.</li>\n<li><code>cred_path=True</code>: credential-related word observed in a URL path/query.</li>\n<li><code>max_link_score=30</code>: strongest URL <code>http://xn--workspce-secure-1k4.example/oauth/consent?scope=mail.files.contacts&prompt=login</code> — punycode in domain; phishing keywords in path/query.</li>\n<li><code>punycode=True</code>: at least one domain uses IDN/punycode (e.g. “xn--”).</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=False</code>: no high-risk keywords.</li>\n<li><code>medium_kw=False</code>: no medium-risk terms.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": true,
+    "risk": "orange",
+    "detection_type": "TP",
+    "detection_reason": "Critical credential-harvest link",
+    "cache_version": "explain_signals_v1"
+  },
+  "5ed03338a0606184bb76f8f57d2bbce7587e5c17c1571e219d24c921517931df": {
+    "result": "True Positive: Phishing detected (Critical credential-harvest link).",
+    "details": "<strong>Risk Score: 118</strong><br>ML Probability: 0.856 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Suspicious links (84 pts): 2 found<br>• ML prediction (34 pts): 0.86 confidence<br><br><strong>Suspicious Links:</strong><br>• http://mfa-reset.security-center.zip:8443/setup/enroll?user=you@example.com (score: 43)<br>• http://198.51.100.7:8008/company/auth/recover (score: 41)<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=True</code>: found high-risk TLD(s) zip.</li>\n<li><code>cred_path=True</code>: credential-related word observed in a URL path/query.</li>\n<li><code>max_link_score=43</code>: strongest URL <code>http://mfa-reset.security-center.zip:8443/setup/enroll?user=you@example.com</code> — suspicious TLD .zip; suspicious port :8443; '@' in URL (credential-hiding trick).</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=False</code>: no high-risk keywords.</li>\n<li><code>medium_kw=False</code>: no medium-risk terms.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": true,
+    "risk": "red",
+    "detection_type": "TP",
+    "detection_reason": "Critical credential-harvest link",
+    "cache_version": "explain_signals_v1"
+  },
+  "6057c62fec8a8ca00384aed4adf32534a9b1abdf1882386e2cca6a71fd722c0e": {
+    "result": "No significant phishing indicators detected.",
+    "details": "<strong>Risk Score: 0</strong><br>ML Probability: 0.159 (threshold 0.50)<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [com, example] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words in URL paths.</li>\n<li><code>max_link_score=0</code>: no risky URL features detected.</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=False</code>: no high-risk keywords.</li>\n<li><code>medium_kw=False</code>: no medium-risk terms.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": false,
+    "risk": "green",
+    "detection_type": "Safe",
+    "detection_reason": "No significant risk factors",
+    "cache_version": "explain_signals_v1"
+  },
+  "d31bccd02b85596e82ce7ede8799b1896f86c714b5c9bb022b47436b154b73dc": {
+    "result": "True Positive: Phishing detected (Critical credential-harvest link).",
+    "details": "<strong>Risk Score: 53</strong><br>ML Probability: 0.541 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Suspicious links (32 pts): 2 found<br>• ML prediction (21 pts): 0.54 confidence<br><br><strong>Suspicious Links:</strong><br>• http://sharebox-cdn.example/download/login@secure.example/auth?file=Q3_Financials.xlsx (score: 26)<br>• http://sharebox.example/open?redirect=https%3A%2F%2Fviewer.sec-share.example%2Fdoc%2Fq3 (score: 6)<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [example] are not in high-risk list.</li>\n<li><code>cred_path=True</code>: credential-related word observed in a URL path/query.</li>\n<li><code>max_link_score=26</code>: strongest URL <code>http://sharebox-cdn.example/download/login@secure.example/auth?file=Q3_Financials.xlsx</code> — '@' in URL (credential-hiding trick); phishing keywords in path/query; high-entropy path.</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=False</code>: no high-risk keywords.</li>\n<li><code>medium_kw=False</code>: no medium-risk terms.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": true,
+    "risk": "orange",
+    "detection_type": "TP",
+    "detection_reason": "Critical credential-harvest link",
+    "cache_version": "explain_signals_v1"
+  },
+  "c5e0864f411ec1f9050e555688946bf733be4c69d7bb525e6f53f313046ff20a": {
+    "result": "True Positive: Phishing detected (ML threshold met).",
+    "details": "<strong>Risk Score: 21</strong><br>ML Probability: 0.529 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• ML prediction (21 pts): 0.53 confidence<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [—] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words in URL paths.</li>\n<li><code>max_link_score=0</code>: no risky URL features detected.</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=False</code>: no high-risk keywords.</li>\n<li><code>medium_kw=False</code>: no medium-risk terms.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": true,
+    "risk": "orange",
+    "detection_type": "TP",
+    "detection_reason": "ML threshold met",
+    "cache_version": "explain_signals_v1"
+  },
+  "fa0749636b34e7ddc8931ad750ca3269c78b16cde5aaf5b8ce78ffb6b766e68b": {
+    "result": "True Positive: Phishing detected (ML threshold met).",
+    "details": "<strong>Risk Score: 20</strong><br>ML Probability: 0.500 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• ML prediction (20 pts): 0.50 confidence<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [sbs] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words in URL paths.</li>\n<li><code>max_link_score=0</code>: no risky URL features detected.</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=False</code>: no high-risk keywords.</li>\n<li><code>medium_kw=False</code>: no medium-risk terms.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": true,
+    "risk": "orange",
+    "detection_type": "TP",
+    "detection_reason": "ML threshold met",
+    "cache_version": "explain_signals_v1"
+  },
+  "9284d06604d6e3827ade1c0942be66a2e45eb69d8702e376fcd59d72f2485336": {
+    "result": "True Positive: Phishing detected (ML threshold met).",
+    "details": "<strong>Risk Score: 20</strong><br>ML Probability: 0.521 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• ML prediction (20 pts): 0.52 confidence<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [cfd] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words in URL paths.</li>\n<li><code>max_link_score=0</code>: no risky URL features detected.</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=False</code>: no high-risk keywords.</li>\n<li><code>medium_kw=False</code>: no medium-risk terms.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": true,
+    "risk": "orange",
+    "detection_type": "TP",
+    "detection_reason": "ML threshold met",
+    "cache_version": "explain_signals_v1"
+  },
+  "7e59a756abc7c18498a2edab7b37166010984e7abcf7f1f7844177440d55d926": {
+    "result": "True Positive: Phishing detected (ML threshold met).",
+    "details": "<strong>Risk Score: 58</strong><br>ML Probability: 0.961 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Keywords (10 pts): urgent<br>• Suspicious links (10 pts): 1 found<br>• ML prediction (38 pts): 0.96 confidence<br><br><strong>Suspicious Links:</strong><br>• http://secure-bank-update.example.com/login (score: 10)<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [com] are not in high-risk list.</li>\n<li><code>cred_path=True</code>: credential-related word observed in a URL path/query.</li>\n<li><code>max_link_score=10</code>: strongest URL <code>http://secure-bank-update.example.com/login</code> — phishing keywords in path/query.</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=False</code>: no high-risk keywords.</li>\n<li><code>medium_kw=True</code>: medium-risk terms — urgent.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": true,
+    "risk": "orange",
+    "detection_type": "TP",
+    "detection_reason": "ML threshold met",
+    "cache_version": "explain_signals_v1"
+  },
+  "f6f09d4f26b2c4f7ff7b928be4a669c7ac4e6d7c01999c58a3efd0a3f5aa2b61": {
+    "result": "True Positive: Phishing detected (ML threshold met).",
+    "details": "<strong>Risk Score: 62</strong><br>ML Probability: 0.960 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Keywords (14 pts): urgent, won<br>• Suspicious links (10 pts): 1 found<br>• ML prediction (38 pts): 0.96 confidence<br><br><strong>Suspicious Links:</strong><br>• http://secure-bank-update. (score: 10)<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [—] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words in URL paths.</li>\n<li><code>max_link_score=10</code>: strongest URL <code>http://secure-bank-update.</code> — phishing keywords in path/query.</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=False</code>: no high-risk keywords.</li>\n<li><code>medium_kw=True</code>: medium-risk terms — urgent.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": true,
+    "risk": "red",
+    "detection_type": "TP",
+    "detection_reason": "ML threshold met",
+    "cache_version": "explain_signals_v1"
+  },
+  "2a0b67333285dcf4ce883ca70cff31d3357d77a0b48bdb1956bf7e5e0a01b64d": {
+    "result": "Low risk indicators detected — review carefully.",
+    "details": "<strong>Risk Score: 17</strong><br>ML Probability: 0.444 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• ML prediction (17 pts): 0.44 confidence<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [test] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words in URL paths.</li>\n<li><code>max_link_score=0</code>: no risky URL features detected.</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=False</code>: no high-risk keywords.</li>\n<li><code>medium_kw=False</code>: no medium-risk terms.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": false,
+    "risk": "yellow",
+    "detection_type": "Review",
+    "detection_reason": "Low risk indicators present",
+    "cache_version": "explain_signals_v1"
+  },
+  "b3fdd68cc948052770fd704409759c83d74aeb51c9ccec51df8347391397ff98": {
+    "result": "False negative: Phishing detected (Critical credential-harvest link).",
+    "details": "<strong>Risk Score: 51</strong><br>ML Probability: 0.545 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Suspicious links (30 pts): 1 found<br>• ML prediction (21 pts): 0.54 confidence<br><br><strong>Suspicious Links:</strong><br>• https://xn--80ak6aa92e.test/verify (score: 30)<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [test] are not in high-risk list.</li>\n<li><code>cred_path=True</code>: credential-related word observed in a URL path/query.</li>\n<li><code>max_link_score=30</code>: strongest URL <code>https://xn--80ak6aa92e.test/verify</code> — punycode in domain; phishing keywords in path/query.</li>\n<li><code>punycode=True</code>: at least one domain uses IDN/punycode (e.g. “xn--”).</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=False</code>: no high-risk keywords.</li>\n<li><code>medium_kw=False</code>: no medium-risk terms.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": true,
+    "risk": "orange",
+    "detection_type": "TP",
+    "detection_reason": "Critical credential-harvest link",
+    "cache_version": "explain_signals_v1"
+  },
+  "35508daed4d6f6fe23ffcb20bdfa789e7f07e19ed699b39b87c72508bada0e15": {
+    "result": "True Positive: Phishing detected (High-risk keywords + suspicious link cues).",
+    "details": "<strong>Risk Score: 87</strong><br>ML Probability: 0.936 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Keywords (40 pts): unauthorized access, urgent, immediate attention<br>• Suspicious links (10 pts): 1 found<br>• ML prediction (37 pts): 0.94 confidence<br><br><strong>Suspicious Links:</strong><br>• http://example-phish.com/login/verify (score: 10)<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [com] are not in high-risk list.</li>\n<li><code>cred_path=True</code>: credential-related word observed in a URL path/query.</li>\n<li><code>max_link_score=10</code>: strongest URL <code>http://example-phish.com/login/verify</code> — phishing keywords in path/query.</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=True</code>: high-risk keywords — unauthorized access.</li>\n<li><code>medium_kw=True</code>: medium-risk terms — urgent, immediate attention.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": true,
+    "risk": "red",
+    "detection_type": "TP",
+    "detection_reason": "High-risk keywords + suspicious link cues",
+    "cache_version": "explain_signals_v1"
+  },
+  "42b6ebedcdf78ddee2e6138144b904828e60e5a7d476de1ef7c837f2dd0cd036": {
+    "result": "True Positive: Phishing detected (ML threshold met).",
+    "details": "<strong>Risk Score: 36</strong><br>ML Probability: 0.500 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Suspicious links (16 pts): 1 found<br>• ML prediction (20 pts): 0.50 confidence<br><br><strong>Suspicious Links:</strong><br>• https://trackfieloutletfitness.site/web-pixels@2ddfe27cwacf934f7p7355b. (score: 16)<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [site] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words in URL paths.</li>\n<li><code>max_link_score=16</code>: strongest URL <code>https://trackfieloutletfitness.site/web-pixels@2ddfe27cwacf934f7p7355b.</code> — '@' in URL (credential-hiding trick); high-entropy path.</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=False</code>: no high-risk keywords.</li>\n<li><code>medium_kw=False</code>: no medium-risk terms.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": true,
+    "risk": "orange",
+    "detection_type": "TP",
+    "detection_reason": "ML threshold met",
+    "cache_version": "explain_signals_v1"
+  },
+  "cb3341a4a4c24e376a2cb86af190b3eea184fbc01a1ae87af0e9ca2534815393": {
+    "result": "No significant phishing indicators detected.",
+    "details": "<strong>Risk Score: 0</strong><br>ML Probability: 0.159 (threshold 0.50)<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [—] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words in URL paths.</li>\n<li><code>max_link_score=0</code>: no risky URL features detected.</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=False</code>: no high-risk keywords.</li>\n<li><code>medium_kw=False</code>: no medium-risk terms.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": false,
+    "risk": "green",
+    "detection_type": "Safe",
+    "detection_reason": "No significant risk factors",
+    "cache_version": "explain_signals_v1"
+  },
+  "ddebf5f80aaeda02991232b3510c3ad9b7c2042ea5d05eee049c87f46972059b": {
+    "result": "No significant phishing indicators detected.",
+    "details": "<strong>Risk Score: 0</strong><br>ML Probability: 0.159 (threshold 0.50)<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [—] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words in URL paths.</li>\n<li><code>max_link_score=0</code>: no risky URL features detected.</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=False</code>: no high-risk keywords.</li>\n<li><code>medium_kw=False</code>: no medium-risk terms.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": false,
+    "risk": "green",
+    "detection_type": "Safe",
+    "detection_reason": "No significant risk factors",
+    "cache_version": "explain_signals_v1"
+  },
+  "80712ad8c5f698e67d526baee5a8bb44977b568f4658be13e35c527469bb3df4": {
+    "result": "No significant phishing indicators detected.",
+    "details": "<strong>Risk Score: 0</strong><br>ML Probability: 0.279 (threshold 0.50)<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [—] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words in URL paths.</li>\n<li><code>max_link_score=0</code>: no risky URL features detected.</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=False</code>: no high-risk keywords.</li>\n<li><code>medium_kw=False</code>: no medium-risk terms.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": false,
+    "risk": "green",
+    "detection_type": "Safe",
+    "detection_reason": "No significant risk factors",
+    "cache_version": "explain_signals_v1"
+  },
+  "0e42e783e13e98ab93c5f0a94af2f09de347d7e88c44f4248fda7d8d8a6c7a9f": {
+    "result": "Low risk indicators detected — review carefully.",
+    "details": "<strong>Risk Score: 21</strong><br>ML Probability: 0.445 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Keywords (4 pts): congratulations<br>• ML prediction (17 pts): 0.45 confidence<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [com] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words in URL paths.</li>\n<li><code>max_link_score=0</code>: no risky URL features detected.</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=False</code>: no high-risk keywords.</li>\n<li><code>medium_kw=False</code>: no medium-risk terms.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": false,
+    "risk": "yellow",
+    "detection_type": "Review",
+    "detection_reason": "Low risk indicators present",
+    "cache_version": "explain_signals_v1"
+  },
+  "65e594aa7a99a580f7d349292df84905b5c76252fdec7846d90c884058297520": {
+    "result": "No significant phishing indicators detected.",
+    "details": "<strong>Risk Score: 0</strong><br>ML Probability: 0.342 (threshold 0.50)<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [—] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words in URL paths.</li>\n<li><code>max_link_score=0</code>: no risky URL features detected.</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=False</code>: no high-risk keywords.</li>\n<li><code>medium_kw=False</code>: no medium-risk terms.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": false,
+    "risk": "green",
+    "detection_type": "Safe",
+    "detection_reason": "No significant risk factors",
+    "cache_version": "explain_signals_v1"
+  },
+  "cbc25417b0d4ec87e911145533e35d0d401fd5e1f807b77345285c6adfc5a64c": {
+    "result": "Low risk indicators detected — review carefully.",
+    "details": "<strong>Risk Score: 21</strong><br>ML Probability: 0.445 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Keywords (4 pts): congratulations<br>• ML prediction (17 pts): 0.45 confidence<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [com] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words in URL paths.</li>\n<li><code>max_link_score=0</code>: no risky URL features detected.</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=False</code>: no high-risk keywords.</li>\n<li><code>medium_kw=False</code>: no medium-risk terms.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": false,
+    "risk": "yellow",
+    "detection_type": "Review",
+    "detection_reason": "Low risk indicators present",
+    "cache_version": "explain_signals_v1"
+  },
+  "2611eb063e7d2d81fa1a8ded771be51708c224bd95107178b2db59d6fafd1b7c": {
+    "result": "Low risk indicators detected — review carefully.",
+    "details": "<strong>Risk Score: 26</strong><br>ML Probability: 0.469 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Suspicious links (8 pts): 1 found<br>• ML prediction (18 pts): 0.47 confidence<br><br><strong>Suspicious Links:</strong><br>• portal.iloprints.example.com (score: 8)<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [com] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words in URL paths.</li>\n<li><code>max_link_score=8</code>: strongest URL <code>portal.iloprints.example.com</code> — excessive subdomains.</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=False</code>: no high-risk keywords.</li>\n<li><code>medium_kw=False</code>: no medium-risk terms.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": false,
+    "risk": "yellow",
+    "detection_type": "Review",
+    "detection_reason": "Low risk indicators present",
+    "cache_version": "explain_signals_v1"
+  },
+  "443d322b3183e4d227096932646cafb7d428d2f480e2f8721f7b877c6a6aa76a": {
+    "result": "True Positive: Phishing detected (ML threshold met + corroborating indicators).",
+    "details": "<strong>Risk Score: 40</strong><br>ML Probability: 0.560 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Suspicious links (18 pts): 2 found<br>• ML prediction (22 pts): 0.56 confidence<br><br><strong>Suspicious Links:</strong><br>• status.iloprints.example.com (score: 8)<br>• account.example.com/security (score: 10)<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [com] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words in URL paths.</li>\n<li><code>max_link_score=10</code>: strongest URL <code>account.example.com/security</code> — phishing keywords in path/query.</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=False</code>: no high-risk keywords.</li>\n<li><code>medium_kw=False</code>: no medium-risk terms.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": true,
+    "risk": "orange",
+    "detection_type": "TP",
+    "detection_reason": "ML threshold met + corroborating indicators",
+    "cache_version": "explain_signals_v1"
+  },
+  "2a7957901e3431d80a17a1bc9156404d9053427b2fd4d5363424e32e88eed80f": {
+    "result": "Low risk indicators detected — review carefully.",
+    "details": "<strong>Risk Score: 24</strong><br>ML Probability: 0.415 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Suspicious links (8 pts): 1 found<br>• ML prediction (16 pts): 0.41 confidence<br><br><strong>Suspicious Links:</strong><br>• status.iloprints.example.com (score: 8)<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [com] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words in URL paths.</li>\n<li><code>max_link_score=8</code>: strongest URL <code>status.iloprints.example.com</code> — excessive subdomains.</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=False</code>: no high-risk keywords.</li>\n<li><code>medium_kw=False</code>: no medium-risk terms.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": false,
+    "risk": "yellow",
+    "detection_type": "Review",
+    "detection_reason": "Low risk indicators present",
+    "cache_version": "explain_signals_v1"
+  },
+  "85acaa4341d48c2ee2e7d737420a06fccbc43dd63261b2db9ecdd8cdcac26dde": {
+    "result": "True Positive: Phishing detected (ML threshold met + corroborating indicators).",
+    "details": "<strong>Risk Score: 35</strong><br>ML Probability: 0.634 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Suspicious links (10 pts): 1 found<br>• ML prediction (25 pts): 0.63 confidence<br><br><strong>Suspicious Links:</strong><br>• account.example.com/security (score: 10)<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [com] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words in URL paths.</li>\n<li><code>max_link_score=10</code>: strongest URL <code>account.example.com/security</code> — phishing keywords in path/query.</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=False</code>: no high-risk keywords.</li>\n<li><code>medium_kw=False</code>: no medium-risk terms.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": true,
+    "risk": "orange",
+    "detection_type": "TP",
+    "detection_reason": "ML threshold met + corroborating indicators",
+    "cache_version": "explain_signals_v1"
+  },
+  "38b30f8be386013b0ff73f4d8822514875de0e62e18da550eb5bbb24bc5491c8": {
+    "result": "Low risk indicators detected — review carefully.",
+    "details": "<strong>Risk Score: 15</strong><br>ML Probability: 0.378 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• ML prediction (15 pts): 0.38 confidence<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [com] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words in URL paths.</li>\n<li><code>max_link_score=0</code>: no risky URL features detected.</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=False</code>: no high-risk keywords.</li>\n<li><code>medium_kw=False</code>: no medium-risk terms.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": false,
+    "risk": "yellow",
+    "detection_type": "Review",
+    "detection_reason": "Low risk indicators present",
+    "cache_version": "explain_signals_v1"
+  },
+  "bce50a087c1d87922b49ee4330f79d37f743bdacb78a30fdc56320f897cf0691": {
+    "result": "True Positive: Phishing detected (ML threshold met + corroborating indicators).",
+    "details": "<strong>Risk Score: 31</strong><br>ML Probability: 0.577 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Suspicious links (8 pts): 1 found<br>• ML prediction (23 pts): 0.58 confidence<br><br><strong>Suspicious Links:</strong><br>• portal.support.example.com (score: 8)<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [com] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words in URL paths.</li>\n<li><code>max_link_score=8</code>: strongest URL <code>portal.support.example.com</code> — excessive subdomains.</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=False</code>: no high-risk keywords.</li>\n<li><code>medium_kw=False</code>: no medium-risk terms.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": true,
+    "risk": "orange",
+    "detection_type": "TP",
+    "detection_reason": "ML threshold met + corroborating indicators",
+    "cache_version": "explain_signals_v1"
+  },
+  "e3009983d29d0769d7b280041a52ec5401f50f6077bae12befa64effa80849ce": {
+    "result": "Review: ML flagged but no corroborating risk signals.",
+    "details": "<strong>Risk Score: 23</strong><br>ML Probability: 0.591 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• ML prediction (23 pts): 0.59 confidence<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [—] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words in URL paths.</li>\n<li><code>max_link_score=0</code>: no risky URL features detected.</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=False</code>: no high-risk keywords.</li>\n<li><code>medium_kw=False</code>: no medium-risk terms.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": false,
+    "risk": "yellow",
+    "detection_type": "Review",
+    "detection_reason": "ML 0.59 ≥ 0.50 without heuristic corroboration",
+    "cache_version": "explain_signals_v1"
+  },
+  "a6c270b25274dcd3086540dc1509d69d8537e1474f6b62cd224e7ad3f505de2d": {
+    "result": "True Positive: Phishing detected (High-risk keywords + suspicious link cues).",
+    "details": "<strong>Risk Score: 77</strong><br>ML Probability: 0.696 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Keywords (40 pts): payment declined, update billing<br>• Suspicious links (10 pts): 1 found<br>• ML prediction (27 pts): 0.70 confidence<br><br><strong>Suspicious Links:</strong><br>• http://billing-secure.pay-ment-center.example/update?session=ALERT123 (score: 10)<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [example] are not in high-risk list.</li>\n<li><code>cred_path=True</code>: credential-related word observed in a URL path/query.</li>\n<li><code>max_link_score=10</code>: strongest URL <code>http://billing-secure.pay-ment-center.example/update?session=ALERT123</code> — phishing keywords in path/query.</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=True</code>: high-risk keywords — payment declined, update billing.</li>\n<li><code>medium_kw=False</code>: no medium-risk terms.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": true,
+    "risk": "red",
+    "detection_type": "TP",
+    "detection_reason": "High-risk keywords + suspicious link cues",
+    "cache_version": "explain_signals_v1"
+  },
+  "4182066499abb11798cb65911843fa36f3e1b9dcc3d17ed1988eac5692912e98": {
+    "result": "False Negative: Malware indicator detected.",
+    "details": "<strong>Risk Score: 18</strong><br>ML Probability: 0.465 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• ML prediction (18 pts): 0.46 confidence<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [bat] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words in URL paths.</li>\n<li><code>max_link_score=0</code>: no risky URL features detected.</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=False</code>: no high-risk keywords.</li>\n<li><code>medium_kw=False</code>: no medium-risk terms.</li>\n<li><code>malware_kw=True</code>: malware indicators — .bat.</li></ul>",
+    "warning": false,
+    "risk": "red",
+    "detection_type": "FN",
+    "detection_reason": "Malware keywords/extension in email",
+    "cache_version": "explain_signals_v1"
+  },
+  "ac10b3ef928ff9ee454379837738b2c347f32931b6285021e9138968ecbf52ca": {
+    "result": "False Negative: Malware indicator detected.",
+    "details": "<strong>Risk Score: 19</strong><br>ML Probability: 0.476 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• ML prediction (19 pts): 0.48 confidence<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [dll] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words in URL paths.</li>\n<li><code>max_link_score=0</code>: no risky URL features detected.</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=False</code>: no high-risk keywords.</li>\n<li><code>medium_kw=False</code>: no medium-risk terms.</li>\n<li><code>malware_kw=True</code>: malware indicators — .dll.</li></ul>",
+    "warning": false,
+    "risk": "blue",
+    "detection_type": "FN",
+    "detection_reason": "Malware keywords/extension in email",
+    "cache_version": "explain_signals_v1"
+  },
+  "f279b6d4e7ff11684d99e60de4cb170e1de47ddf431f424aa6f897e2fd464342": {
+    "result": "False negative: Phishing detected (ML threshold met + corroborating indicators).",
+    "details": "<strong>Risk Score: 77</strong><br>ML Probability: 0.696 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Keywords (40 pts): payment declined, update billing<br>• Suspicious links (10 pts): 1 found<br>• ML prediction (27 pts): 0.70 confidence<br><br><strong>Suspicious Links:</strong><br>• http://billing-secure. (score: 10)<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [—] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words in URL paths.</li>\n<li><code>max_link_score=10</code>: strongest URL <code>http://billing-secure.</code> — phishing keywords in path/query.</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=True</code>: high-risk keywords — payment declined, update billing.</li>\n<li><code>medium_kw=False</code>: no medium-risk terms.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": true,
+    "risk": "red",
+    "detection_type": "TP",
+    "detection_reason": "ML threshold met + corroborating indicators",
+    "cache_version": "explain_signals_v1"
+  },
+  "8823466b9dddbaf6139d398de6c887abe31b878f5a94339f74f57a8e7da72706": {
+    "result": "Low risk indicators detected — review carefully.",
+    "details": "<strong>Risk Score: 17</strong><br>ML Probability: 0.440 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• ML prediction (17 pts): 0.44 confidence<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [com] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words in URL paths.</li>\n<li><code>max_link_score=0</code>: no risky URL features detected.</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=False</code>: no high-risk keywords.</li>\n<li><code>medium_kw=False</code>: no medium-risk terms.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": false,
+    "risk": "yellow",
+    "detection_type": "Review",
+    "detection_reason": "Low risk indicators present",
+    "cache_version": "explain_signals_v1"
+  },
+  "3dbf32381f41b1a0ff9e85bfa0acbabb3169bc1e0093a16463075a1ba13f38aa": {
+    "result": "Low risk indicators detected — review carefully.",
+    "details": "<strong>Risk Score: 18</strong><br>ML Probability: 0.465 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• ML prediction (18 pts): 0.46 confidence<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [lat] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words in URL paths.</li>\n<li><code>max_link_score=0</code>: no risky URL features detected.</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=False</code>: no high-risk keywords.</li>\n<li><code>medium_kw=False</code>: no medium-risk terms.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": false,
+    "risk": "yellow",
+    "detection_type": "Review",
+    "detection_reason": "Low risk indicators present",
+    "cache_version": "explain_signals_v1"
+  },
+  "7774601b5ea83ff64e692f2de59f0f23212481533cc1dda5a6ddf8e7350c2fe9": {
+    "result": "Low risk indicators detected — review carefully.",
+    "details": "<strong>Risk Score: 18</strong><br>ML Probability: 0.465 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• ML prediction (18 pts): 0.46 confidence<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [lat] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words in URL paths.</li>\n<li><code>max_link_score=0</code>: no risky URL features detected.</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=False</code>: no high-risk keywords.</li>\n<li><code>medium_kw=False</code>: no medium-risk terms.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": false,
+    "risk": "yellow",
+    "detection_type": "Review",
+    "detection_reason": "Low risk indicators present",
+    "cache_version": "explain_signals_v1"
+  },
+  "2e3f43ebf3fdc3ca79c24600b050ed4b08db20eae342539e98c0a7d34aba0c77": {
+    "result": "Low risk indicators detected — review carefully.",
+    "details": "<strong>Risk Score: 17</strong><br>ML Probability: 0.440 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• ML prediction (17 pts): 0.44 confidence<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [com] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words in URL paths.</li>\n<li><code>max_link_score=0</code>: no risky URL features detected.</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=False</code>: no high-risk keywords.</li>\n<li><code>medium_kw=False</code>: no medium-risk terms.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": false,
+    "risk": "yellow",
+    "detection_type": "Review",
+    "detection_reason": "Low risk indicators present",
+    "cache_version": "explain_signals_v1"
+  },
+  "80aa837b08e17cbcf45c12aff65e8913422f4a143ed84c76bc71e5957c593c49": {
+    "result": "Suspicious: Moderate risk indicators (ML below threshold).",
+    "details": "<strong>Risk Score: 19</strong><br>ML Probability: 0.393 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Keywords (4 pts): free<br>• ML prediction (15 pts): 0.39 confidence<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [com] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words in URL paths.</li>\n<li><code>max_link_score=0</code>: no risky URL features detected.</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=False</code>: no high-risk keywords.</li>\n<li><code>medium_kw=False</code>: no medium-risk terms.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": false,
+    "risk": "orange",
+    "detection_type": "Suspicious",
+    "detection_reason": "Moderate risk, but ML below threshold",
+    "cache_version": "explain_signals_v1"
+  },
+  "c189f63074811374b68260983287d1822aa7850d7d7a4b35de9822221418d4d1": {
+    "result": "Review: ML flagged but no corroborating risk signals.",
+    "details": "<strong>Risk Score: 20</strong><br>ML Probability: 0.524 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• ML prediction (20 pts): 0.52 confidence<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [—] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words in URL paths.</li>\n<li><code>max_link_score=0</code>: no risky URL features detected.</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=False</code>: no high-risk keywords.</li>\n<li><code>medium_kw=False</code>: no medium-risk terms.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": false,
+    "risk": "yellow",
+    "detection_type": "Review",
+    "detection_reason": "ML 0.52 ≥ 0.50 without heuristic corroboration",
+    "cache_version": "explain_signals_v1"
+  },
+  "12062edd290d970e2073dcb4abbec984bc5702cc69fc7bd23dd5233117f5b949": {
+    "result": "Low risk indicators detected — review carefully.",
+    "details": "<strong>Risk Score: 20</strong><br>ML Probability: 0.403 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Keywords (4 pts): free<br>• ML prediction (16 pts): 0.40 confidence<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [—] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words in URL paths.</li>\n<li><code>max_link_score=0</code>: no risky URL features detected.</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=False</code>: no high-risk keywords.</li>\n<li><code>medium_kw=False</code>: no medium-risk terms.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": false,
+    "risk": "yellow",
+    "detection_type": "Review",
+    "detection_reason": "Low risk indicators present",
+    "cache_version": "explain_signals_v1"
+  },
+  "1c8b720ef9825925038b2a7558f47c72c12ca7aeb2b80b1a286a2c221071537b": {
+    "result": "Low risk indicators detected — review carefully.",
+    "details": "<strong>Risk Score: 19</strong><br>ML Probability: 0.399 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Keywords (4 pts): promo<br>• ML prediction (15 pts): 0.40 confidence<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [com] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words in URL paths.</li>\n<li><code>max_link_score=0</code>: no risky URL features detected.</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=False</code>: no high-risk keywords.</li>\n<li><code>medium_kw=False</code>: no medium-risk terms.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": false,
+    "risk": "yellow",
+    "detection_type": "Review",
+    "detection_reason": "Low risk indicators present",
+    "cache_version": "explain_signals_v1"
+  },
+  "d7798d7247719a179b6ea0470c6e1c2c15a60a1473db66b535ef2219aadb9454": {
+    "result": "Low risk indicators detected — review carefully.",
+    "details": "<strong>Risk Score: 18</strong><br>ML Probability: 0.465 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• ML prediction (18 pts): 0.46 confidence<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [uk] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words in URL paths.</li>\n<li><code>max_link_score=0</code>: no risky URL features detected.</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=False</code>: no high-risk keywords.</li>\n<li><code>medium_kw=False</code>: no medium-risk terms.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": false,
+    "risk": "yellow",
+    "detection_type": "Review",
+    "detection_reason": "Low risk indicators present",
+    "cache_version": "explain_signals_v1"
+  },
+  "b32f221a120d2dc7ecd223d24e260fe667fa007b0f6766daef552604cd7e9f90": {
+    "result": "True Positive: Previously user-marked phishing.",
+    "details": "<strong>Risk Score: n/a (user feedback)</strong><br>ML Probability: n/a (user override)<br><br><strong>Reasons (feedback):</strong><br>• Previously marked as phishing (manual)",
+    "warning": true,
+    "risk": "red",
+    "detection_type": "TP",
+    "detection_reason": "Previously marked as phishing (manual)",
+    "cache_version": "explain_signals_v1"
+  },
+  "f61d978e98787c3c51d71b87c7c2a7399b563d3099d1a903956f3937d80f61b7": {
+    "result": "Low risk indicators detected — review carefully.",
+    "details": "<strong>Risk Score: 18</strong><br>ML Probability: 0.465 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• ML prediction (18 pts): 0.46 confidence<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [uk] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words in URL paths.</li>\n<li><code>max_link_score=0</code>: no risky URL features detected.</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=False</code>: no high-risk keywords.</li>\n<li><code>medium_kw=False</code>: no medium-risk terms.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": false,
+    "risk": "yellow",
+    "detection_type": "Review",
+    "detection_reason": "Low risk indicators present",
+    "cache_version": "explain_signals_v1"
+  },
+  "77bdb2262d4019994bfe29e1d58ea8ff0b83c4dae0466c226b41732e92beb96c": {
+    "result": "Review: ML flagged but no corroborating risk signals.",
+    "details": "<strong>Risk Score: 25</strong><br>ML Probability: 0.530 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Keywords (4 pts): won<br>• ML prediction (21 pts): 0.53 confidence<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [com] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words in URL paths.</li>\n<li><code>max_link_score=0</code>: no risky URL features detected.</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=False</code>: no high-risk keywords.</li>\n<li><code>medium_kw=False</code>: no medium-risk terms.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": false,
+    "risk": "yellow",
+    "detection_type": "Review",
+    "detection_reason": "ML 0.53 ≥ 0.50 without heuristic corroboration",
+    "cache_version": "explain_signals_v1"
+  },
+  "37210bb5780fca0c195eb4759d6016854170316f5fd6a8f0a4200378f4ed5b01": {
+    "result": "Low risk indicators detected — review carefully.",
+    "details": "<strong>Risk Score: 15</strong><br>ML Probability: 0.381 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• ML prediction (15 pts): 0.38 confidence<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [—] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words in URL paths.</li>\n<li><code>max_link_score=0</code>: no risky URL features detected.</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=False</code>: no high-risk keywords.</li>\n<li><code>medium_kw=False</code>: no medium-risk terms.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": false,
+    "risk": "yellow",
+    "detection_type": "Review",
+    "detection_reason": "Low risk indicators present",
+    "cache_version": "explain_signals_v1"
+  },
+  "f37b13c7e3de7e40ec37ce9b75f1f23711364ff0fd4af1a5521ba18678bcf80f": {
+    "result": "Review: ML flagged but no corroborating risk signals.",
+    "details": "<strong>Risk Score: 21</strong><br>ML Probability: 0.532 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• ML prediction (21 pts): 0.53 confidence<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [com, ui] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words in URL paths.</li>\n<li><code>max_link_score=0</code>: no risky URL features detected.</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=False</code>: no high-risk keywords.</li>\n<li><code>medium_kw=False</code>: no medium-risk terms.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": false,
+    "risk": "yellow",
+    "detection_type": "Review",
+    "detection_reason": "ML 0.53 ≥ 0.50 without heuristic corroboration",
+    "cache_version": "explain_signals_v1"
+  },
+  "0793d6446e7ba52f784dcbaaea68c39e1ad4d5d20d12e173ca0f8674875d9c0f": {
+    "result": "Low risk indicators detected — review carefully.",
+    "details": "<strong>Risk Score: 18</strong><br>ML Probability: 0.465 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• ML prediction (18 pts): 0.46 confidence<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [bond] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words in URL paths.</li>\n<li><code>max_link_score=0</code>: no risky URL features detected.</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=False</code>: no high-risk keywords.</li>\n<li><code>medium_kw=False</code>: no medium-risk terms.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": false,
+    "risk": "yellow",
+    "detection_type": "Review",
+    "detection_reason": "Low risk indicators present",
+    "cache_version": "explain_signals_v1"
+  },
+  "7e6fcaf6ebbfee1df2bb6f65c975e89cea6be1460eb63ab4d94bde5db6961348": {
+    "result": "Low risk indicators detected — review carefully.",
+    "details": "<strong>Risk Score: 14</strong><br>ML Probability: 0.359 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Keywords (14 pts): limited time, reward<br><br><strong>Signals (why each is True/False):</strong><ul><li><code>suspicious_tld=False</code>: TLDs seen [—] are not in high-risk list.</li>\n<li><code>cred_path=False</code>: no credential-related words in URL paths.</li>\n<li><code>max_link_score=0</code>: no risky URL features detected.</li>\n<li><code>punycode=False</code>: all domains are ASCII; no punycode labels detected.</li>\n<li><code>obfuscation=False</code>: links appear in plain form.</li>\n<li><code>high_kw=False</code>: no high-risk keywords.</li>\n<li><code>medium_kw=True</code>: medium-risk terms — limited time.</li>\n<li><code>malware_kw=False</code>: no malware indicators detected.</li></ul>",
+    "warning": false,
+    "risk": "yellow",
+    "detection_type": "Review",
+    "detection_reason": "Keyword/TLD floor to Review",
+    "cache_version": "explain_signals_v1"
+  },
+  "f40f34d38703dea4438a1d067c625beaab1f30534f64cffecff85ed083a175ea": {
+    "result": "True Positive: Phishing detected.",
+    "details": "<strong>Risk Score: 59</strong><br>ML Probability: 0.791<br>",
+    "warning": true,
+    "risk": "red",
+    "detection_type": "TP",
+    "detection_reason": "Hard rule triggered",
+    "cache_version": "explain_signals_v1"
+  },
+  "af2b51e88088c5df25e8db109b400d097de55c038c8118ba18aa0bc1fcdf9811": {
+    "result": "Suspicious indicators found.",
+    "details": "<strong>Risk Score: 20</strong><br>ML Probability: 0.520<br>",
+    "warning": false,
+    "risk": "orange",
+    "detection_type": "Suspicious",
+    "detection_reason": "credential path, suspicious TLD",
+    "cache_version": "explain_signals_v1"
+  },
+  "a93c5e6ff7bc3dd042acf5083b2a3f2dd8feea70812b9562750322826db35bd0": {
+    "result": "Suspicious indicators found.",
+    "details": "<strong>Risk Score: 24</strong><br>ML Probability: 0.480<br>",
+    "warning": false,
+    "risk": "orange",
+    "detection_type": "Suspicious",
+    "detection_reason": "credential path, suspicious TLD",
+    "cache_version": "explain_signals_v1"
+  },
+  "cd9367bab027e021d062caf389048ae9520d910daac1ea7fad7f5501dc6a9b17": {
+    "result": "Suspicious indicators found.",
+    "details": "<strong>Risk Score: 0</strong><br>ML Probability: 0.461<br>",
+    "warning": false,
+    "risk": "orange",
+    "detection_type": "Suspicious",
+    "detection_reason": "suspicious TLD",
+    "cache_version": "explain_signals_v1"
+  },
+  "b80fe16f33806d0825dbdb8e4aaf35088d4a69af4f2c7cfdff45c8092b8da1df": {
+    "result": "Safe email.",
+    "details": "<strong>Risk Score: 0</strong><br>ML Probability: 0.374<br>",
+    "warning": false,
+    "risk": "green",
+    "detection_type": "Safe",
+    "detection_reason": "No threats detected",
+    "cache_version": "explain_signals_v1"
+  },
+  "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb": {
+    "result": "Safe email.",
+    "details": "<strong>Risk Score: 0</strong><br>ML Probability: 0.465<br>",
+    "warning": false,
+    "risk": "green",
+    "detection_type": "Safe",
+    "detection_reason": "No threats detected",
+    "cache_version": "explain_signals_v1"
+  },
+  "2afd1bdcbd05fe2596551a57c308e324adb03579635350f0ab3d7c917020714f": {
+    "result": "Safe email.",
+    "details": "<strong>Risk Score: 0</strong><br>ML Probability: 0.454<br>",
+    "warning": false,
+    "risk": "green",
+    "detection_type": "Safe",
+    "detection_reason": "No threats detected",
+    "cache_version": "explain_signals_v1"
+  },
+  "c30144448012c534cd92165a17b8b5e25903d4b549fac03228496c266722ba15": {
+    "result": "True Positive: Phishing detected.",
+    "details": "<strong>Risk Score: 79</strong><br>ML Probability: 0.794<br>",
+    "warning": true,
+    "risk": "red",
+    "detection_type": "TP",
+    "detection_reason": "Hard rule triggered",
+    "cache_version": "explain_signals_v1"
+  },
+  "c4ea2ede01fa58662978a26c558ea0e01ad8b974594949a311e9fa81433c224f": {
+    "result": "True Positive: Phishing detected.",
+    "details": "<strong>Risk Score: 30</strong><br>ML Probability: 0.441<br>",
+    "warning": true,
+    "risk": "red",
+    "detection_type": "TP",
+    "detection_reason": "Hard rule triggered",
+    "cache_version": "explain_signals_v1"
+  },
+  "9b4109cd85acd0f053e555f45606033c916e8f0d523f03cbf32742d8346a355d": {
+    "result": "Suspicious indicators found.",
+    "details": "<strong>Risk Score: 18</strong><br>ML Probability: 0.512<br>",
+    "warning": false,
+    "risk": "orange",
+    "detection_type": "Suspicious",
+    "detection_reason": "credential path, suspicious TLD",
+    "cache_version": "explain_signals_v1"
+  },
+  "b8aecfba49aeeadc4977a6e8f537660fdd38945bfc5547202d4ef653fcc9bf48": {
+    "result": "Safe email.",
+    "details": "<strong>Risk Score: 0</strong><br>ML Probability: 0.292<br>",
+    "warning": false,
+    "risk": "green",
+    "detection_type": "Safe",
+    "detection_reason": "No threats detected",
+    "cache_version": "explain_signals_v1"
+  }
+}

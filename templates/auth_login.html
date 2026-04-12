@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SmartSpace Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        min-height: 100vh;
+        background: #020817;
+        color: #e6fef5;
+        font-family: Consolas, "Courier New", monospace;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background:
+            radial-gradient(circle at left center, rgba(0,255,159,0.08), transparent 28%),
+            radial-gradient(circle at right center, rgba(0,191,255,0.08), transparent 28%);
+        pointer-events: none;
+        z-index: 0;
+    }
+
+    .login-box {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        max-width: 420px;
+        padding: 30px;
+        background: rgba(4, 12, 24, 0.96);
+        border: 1px solid rgba(0, 255, 159, 0.3);
+        border-radius: 16px;
+        box-shadow: 0 0 25px rgba(0, 255, 159, 0.1);
+    }
+
+    h1 {
+        text-align: center;
+        color: #00ff9f;
+        margin-bottom: 5px;
+    }
+
+    .subtitle {
+        text-align: center;
+        color: #b3c7d1;
+        margin-bottom: 25px;
+        font-size: 14px;
+    }
+
+    .alert-danger {
+        background: rgba(255, 107, 125, 0.10);
+        border: 1px solid rgba(255, 107, 125, 0.35);
+        color: #ff6b7d;
+        padding: 10px;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: #00ff9f;
+        font-size: 13px;
+    }
+
+    input {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        border: 1px solid #1a2a3d;
+        background: #07111f;
+        color: white;
+    }
+
+    input:focus {
+        border-color: #00ff9f;
+        outline: none;
+    }
+
+    .btn-login {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #00ff9f;
+        background: transparent;
+        color: #00ff9f;
+        border-radius: 8px;
+        font-weight: bold;
+        cursor: pointer;
+        font-family: Consolas, "Courier New", monospace;
+        font-size: 16px;
+        transition: 0.2s ease;
+    }
+
+    .btn-login:hover {
+        background: #00ff9f;
+        color: black;
+    }
+
+    .btn-register {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #00bfff;
+        background: transparent;
+        color: #00bfff;
+        border-radius: 8px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 12px;
+        font-family: Consolas, "Courier New", monospace;
+        font-size: 16px;
+        transition: 0.2s ease;
+    }
+
+    .btn-register:hover {
+        background: #00bfff;
+        color: black;
+    }
+
+    .btn-admin {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ff3b3b;
+        background: transparent;
+        color: #ff3b3b;
+        border-radius: 8px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 12px;
+        font-family: Consolas, "Courier New", monospace;
+        font-size: 16px;
+        transition: 0.2s ease;
+    }
+
+    .btn-admin:hover {
+        background: #ff3b3b;
+        color: black;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="login-box">
+
+    <h1>SmartSpace</h1>
+    <div class="subtitle">Phishing Detection System</div>
+
+    {% if error %}
+        <div class="alert-danger">{{ error }}</div>
+    {% endif %}
+
+    <form method="POST" action="{{ url_for('auth_login') }}">
+        <label>USERNAME / EMAIL</label>
+        <input type="text" name="login" required>
+
+        <label>PASSWORD</label>
+        <input type="password" name="password" required>
+
+        <button type="submit" class="btn-login">ACCESS SYSTEM</button>
+    </form>
+
+    <button onclick="window.location.href='{{ url_for('auth_signup') }}'" class="btn-register">
+        CREATE ACCOUNT
+    </button>
+
+    <button onclick="window.location.href='{{ url_for('admin_login') }}'" class="btn-admin">
+        ADMIN LOG IN
+    </button>
+
+</div>
+
+</body>
+</html>

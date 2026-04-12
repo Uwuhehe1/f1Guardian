@@ -1,0 +1,5 @@
+web
+
+cd "C:\Users\Jullius\OneDrive\Desktop\web_app"
+venv\Scripts\activate
+python app.py

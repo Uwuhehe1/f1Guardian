@@ -1,0 +1,355 @@
+{
+  "54a2e1aeb5555de8eea78faf67ed12eca01bcb03f43251fe8441ffa642321b24": {
+    "result": "⚠️ Warning: Phishing Email Detected!",
+    "details": "Triggered Keywords: won<br>",
+    "warning": true
+  },
+  "f955196b2e2f50869fe6035d70bd5da0d1f2bfdb0f211122d64f3200539e5a44": {
+    "result": "⚠️ Warning: Phishing Email Detected!",
+    "details": "Triggered Keywords: won, urgent, lotto, otp, gcash, confirm, cash<br>",
+    "warning": true
+  },
+  "c897ab68b64a7b83b5bd5a78d6e9dcfd17d91f6fb8658efb1d3f357d475e4703": {
+    "result": "✅ This email appears safe.",
+    "details": "",
+    "warning": false
+  },
+  "a828c998bba3a3e40e3b7cdb5ccd546733fedd0a1c13f4f7dbaeb71641232cff": {
+    "result": "✅ This email appears safe.",
+    "details": "",
+    "warning": false
+  },
+  "312db5dc4fa5e15166e019f442c5216babcb706bf5e5e2daaead5c5e929f6fa8": {
+    "result": "⚠️ Warning: Phishing Email Detected!",
+    "details": "Triggered Keywords: verify<br>",
+    "warning": true
+  },
+  "1cd674b21ffca69e6be51fb5cde52f55183978de46125bd207b74dc424d242e9": {
+    "result": "⚠️ Warning: Phishing Email Detected!",
+    "details": "Triggered Keywords: verify, confirm<br>",
+    "warning": true
+  },
+  "e317e43c4475e0ad903eaf82a86ef71842b94b344fd3c438dccfb02f92b0ff96": {
+    "result": " This email appears safe.",
+    "details": "",
+    "warning": false
+  },
+  "af75274b0dae64f72f1c4a2b424bddc295380a4fa97a966344a78db8ebf02a12": {
+    "result": "Low risk indicators detected — review carefully.",
+    "details": "<strong>Risk Score: 26</strong><br>ML Probability: 0.208 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Keywords (4 pts): won<br>• Suspicious links (22 pts): 1 found<br><br><strong>Suspicious Links:</strong><br>• https://paypal-security-check.com/verify (score: 22)<br>",
+    "warning": false,
+    "risk": "yellow",
+    "detection_type": "Suspicious",
+    "detection_reason": "Low risk heuristics",
+    "cache_version": "ml_gate_0.50"
+  },
+  "138fa5b11108e77345b57516e966cf16e2d8803ceb08889d65d1970cb542acce": {
+    "result": "⚠️ One phishing indicator found!",
+    "details": " Triggered Keywords: won<br>",
+    "warning": true,
+    "risk": "yellow"
+  },
+  "188b1dad2eac4aa548b34f8e171af97b8ff288607f9cc094f299bb677a415863": {
+    "result": "⚠️ Multiple phishing indicators found!",
+    "details": " Triggered Keywords: won, lotto<br>",
+    "warning": true,
+    "risk": "red"
+  },
+  "d71d157b2f8fec77f9b5c9714161005759bccdfe07ba87058b307aa474fc8974": {
+    "result": "Multiple phishing indicators found!",
+    "details": "Triggered Keywords: won, lotto<br>",
+    "warning": true,
+    "risk": "red"
+  },
+  "3be92b77e2e41505ae575d82f86a1674dd047ba32e13cbef51a2c983f441faad": {
+    "result": "Multiple phishing indicators found!",
+    "details": "Triggered Keywords: won, lotto<br>",
+    "warning": true,
+    "risk": "red"
+  },
+  "9330d0adaa891f9cb38f3692eef9a190c1b0ebe4f45f877b68366c808356bd9c": {
+    "result": "No phishing content found.",
+    "details": "",
+    "warning": false,
+    "risk": "green"
+  },
+  "5094654aee9fc108df46be0449592b8dc53c128040e8a68d2790d322ce90d797": {
+    "result": "⚠️ Multiple phishing indicators found!",
+    "details": "Triggered Keywords: verify, confirm<br>Suspicious Links:<br>www.facebo0k.com",
+    "warning": true,
+    "risk": "red"
+  },
+  "fb8ac726355d2c9a6f83224e6732bf67072b74edf3c46fb6066a76058aca9eb4": {
+    "result": "One phishing indicator found!",
+    "details": "Triggered Keywords: verify<br>",
+    "warning": true,
+    "risk": "yellow"
+  },
+  "d619a9fa47b9fb362fd4fde41fa00902fc1353189fe6c2a97b1521014fe58ee3": {
+    "result": "No phishing content found.",
+    "details": "",
+    "warning": false,
+    "risk": "green"
+  },
+  "e59bbea6227c578f97fc467bc62dc3407d4885693d74e6e970f6cab44158fef4": {
+    "result": "⚠️ Multiple phishing indicators found!",
+    "details": "Manually marked by user.",
+    "warning": true,
+    "risk": "red"
+  },
+  "3bb78535cc9555ff19fe3556aaa41c78a0a45c64d49ba2bc564507648a8e77a1": {
+    "result": "No phishing content found.",
+    "details": "",
+    "warning": false,
+    "risk": "green"
+  },
+  "6cce36d9f8a9e151b100234af75cca89d55bcb94c153f51847debdf1f39cae45": {
+    "result": "⚠️ Multiple phishing indicators found!",
+    "details": "Manually marked by user.",
+    "warning": true,
+    "risk": "red"
+  },
+  "40510175845988f13f6162ed8526f0b09f73384467fa855e1e79b44a56562a58": {
+    "result": "⚠️ Multiple phishing indicators found!",
+    "details": "Manually marked by user.",
+    "warning": true,
+    "risk": "red"
+  },
+  "b60a33a54a4d291cbe95315f8029c7a4bc7e3d8901f6db3d0639ceba4674c2b5": {
+    "result": "✅ True Positive: Phishing email detected.",
+    "details": "Triggered Keywords: urgent, verify, click here<br>Suspicious Links:<br>http://tinyurl.com/verify-paypal",
+    "warning": true,
+    "risk": "red",
+    "detection_type": "TP"
+  },
+  "b3ec66e621339ab79952ef42259c05000503a394a94f0978393a848e4b731ee0": {
+    "result": "No phishing content found.",
+    "details": "",
+    "warning": false,
+    "risk": "green",
+    "detection_type": "Safe"
+  },
+  "dc7ba4a79b0d6a0ce48f53b1e85489d83338c678984d483745cb6347040c9f19": {
+    "result": "No phishing content found.",
+    "details": "",
+    "warning": false,
+    "risk": "green",
+    "detection_type": "Safe"
+  },
+  "a9991be9233b5acd057bbf542918b5025c166acfdfc5f4b909296c0a2304d5dd": {
+    "result": "⚠️ False Negative: Email contains malware indicators!",
+    "details": "Triggered Keywords: won<br>",
+    "warning": true,
+    "risk": "yellow",
+    "detection_type": "FN"
+  },
+  "5665092fd7f1737c99704db0dcfc30d5815f28f497ad130544790fee5692f44d": {
+    "result": "⚠️ False Negative: Email contains malware indicators!",
+    "details": "",
+    "warning": true,
+    "risk": "yellow",
+    "detection_type": "FN"
+  },
+  "a1904c5c1a918a7b8468979fe5a554f69915620698884dd86a9577fd1d5c4d6f": {
+    "result": "⚠️ False Negative: Email contains malware indicators!",
+    "details": "",
+    "warning": true,
+    "risk": "yellow",
+    "detection_type": "FN"
+  },
+  "9818b721c570217616b22f3f512737319524bb0a92a59c3e3a2afc7e0f86dc40": {
+    "result": "⚠️ False Negative: Email contains malware indicators!",
+    "details": "",
+    "warning": true,
+    "risk": "yellow",
+    "detection_type": "FN"
+  },
+  "e9f4f782bf51d7097bc084b3d4d2b19a516943f39f56332ef4fbd6117dd71973": {
+    "result": "✅ True Positive: Phishing email detected.",
+    "details": "Triggered Keywords: verify<br>",
+    "warning": true,
+    "risk": "yellow",
+    "detection_type": "TP"
+  },
+  "d9d6f556569d0624b77c76ca861a3336a948fe0de7b7817dc44aac6375e5dc8e": {
+    "result": "Low risk indicators detected — review carefully.",
+    "details": "<strong>Risk Score: 20</strong><br>ML Probability: 0.038 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Suspicious links (20 pts): 1 found<br><br><strong>Suspicious Links:</strong><br>• http://secure-bank-login.xyz/verify (score: 20)<br>",
+    "warning": false,
+    "risk": "yellow",
+    "detection_type": "Suspicious",
+    "detection_reason": "Low risk heuristics",
+    "cache_version": "ml_gate_0.50"
+  },
+  "3a76d646b1370b2a515d30817f4b6844af5aab5a60d43c3a9f54154ac3429776": {
+    "result": "⚠️ False Negative: Malware indicators detected!",
+    "details": "ML Probability: 0.04<br>",
+    "warning": true,
+    "risk": "yellow",
+    "detection_type": "FN"
+  },
+  "43367240206e25a69c00f8ab421268b0d6a9c04f12d48a37489d6d853de4c703": {
+    "result": "False Negative: High-risk indicators found but ML below threshold.",
+    "details": "<strong>Risk Score: 4</strong><br>ML Probability: 0.101 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Keywords (4 pts): congratulations<br>",
+    "warning": false,
+    "risk": "red",
+    "detection_type": "FN",
+    "detection_reason": "Heuristic high risk; ML below threshold",
+    "cache_version": "ml_gate_0.50"
+  },
+  "bedb0f1f0d149cb77473007026737164c4e52750143808bae5115e83be0d6b9d": {
+    "result": "⚠️ False Negative: Malware indicators detected!",
+    "details": "ML Probability: 0.50<br>Keywords: won<br>",
+    "warning": true,
+    "risk": "yellow",
+    "detection_type": "FN"
+  },
+  "9a10ed5fbae88150cd707cbe2c62e5410821aef31e8c80f08db5db8494eff047": {
+    "result": "⚠️ False Negative: Malware indicators detected!",
+    "details": "ML Probability: 0.50<br>Keywords: won, lotto<br>",
+    "warning": true,
+    "risk": "yellow",
+    "detection_type": "FN"
+  },
+  "1420b77a22346a14a942b64883741e16fe92c436b3f87c55d07d347156997709": {
+    "result": "⚠️ False Negative: Malware indicators detected!",
+    "details": "ML Probability: 0.50<br>Keywords: won, money, lotto<br>",
+    "warning": true,
+    "risk": "yellow",
+    "detection_type": "FN"
+  },
+  "f323e54f4386dcc655bc34c093e785e9f7c83b0d12c0868cd8996eace112eed2": {
+    "result": "⚠️ False Negative: Malware indicators detected!",
+    "details": "ML Probability: 0.29<br>Keywords: won, money, lotto, verify<br>",
+    "warning": true,
+    "risk": "yellow",
+    "detection_type": "FN"
+  },
+  "1a547ec8b0958d47f726d7336b33c7f0423ae78e474cd9301dc59e10ec85d5c7": {
+    "result": "✅ True Positive: Phishing detected (Rule Match)",
+    "details": "ML Probability: 0.05<br>Keywords: verify<br>",
+    "warning": true,
+    "risk": "red",
+    "detection_type": "TP",
+    "detection_reason": "Detected by phishing keyword/URL rules"
+  },
+  "dc20fdc227c7372fd4fa274f13c9f8fa9fe4ac9fec24661f35b7632cce761979": {
+    "result": "✅ True Positive: Phishing detected (Rule Match)",
+    "details": "ML Probability: 0.05<br>Keywords: verify<br>",
+    "warning": true,
+    "risk": "red",
+    "detection_type": "TP",
+    "detection_reason": "Detected by phishing keyword/URL rules"
+  },
+  "72ac68ec9bcdf7a8a156d119c4b7e4109e4b3e4dd4f697dce866f692e3aca1b1": {
+    "result": " True Positive: Phishing detected (Rule Match)",
+    "details": "ML Probability: 0.94<br>Keywords: won<br>",
+    "warning": true,
+    "risk": "red",
+    "detection_type": "TP",
+    "detection_reason": "Detected by phishing keyword/URL rules"
+  },
+  "8da1124281a2eb2464bae5ec77e50f910ba2d4db143c1ac5522dc7cc5659623a": {
+    "result": " True Positive: Phishing detected (Rule Match)",
+    "details": "ML Probability: 0.58<br>Keywords: won, verify<br>",
+    "warning": true,
+    "risk": "red",
+    "detection_type": "TP",
+    "detection_reason": "Detected by phishing keyword/URL rules"
+  },
+  "f12a9e7b216d69bf262d2ae2b9c452283d2d04498dfecc0009fe9ddeb37aa9d0": {
+    "result": "True Positive: Phishing detected (Rule Match)",
+    "details": "ML Probability: 0.18<br>Keywords: click here<br>",
+    "warning": true,
+    "risk": "red",
+    "detection_type": "TP",
+    "detection_reason": "Detected by phishing keyword/URL rules"
+  },
+  "e37c74772810ae94201be7e95324c6ee3a66a9efada83c16b6d7ee99ef1c8d6e": {
+    "result": "True Positive: Phishing detected (Rule Match)",
+    "details": "ML Probability: 0.37<br>Keywords: security alert<br>",
+    "warning": true,
+    "risk": "red",
+    "detection_type": "TP",
+    "detection_reason": "Detected by phishing keyword/URL rules"
+  },
+  "6b34e511d45c05d1d1e0463e82f16ac2d259535fc83f20832dee788938a75310": {
+    "result": "True Positive: Phishing detected (Rule Match)",
+    "details": "ML Probability: 0.05<br>Keywords: verify<br>",
+    "warning": true,
+    "risk": "red",
+    "detection_type": "TP",
+    "detection_reason": "Detected by phishing keyword/URL rules"
+  },
+  "0ffe7005b2c37c4eadf56de333ac8bcb0d98c316e758844a9fae05e0c92280d9": {
+    "result": "No significant phishing indicators detected.",
+    "details": "<strong>Risk Score: 10</strong><br>ML Probability: 0.054 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Keywords (10 pts): verify email<br>",
+    "warning": false,
+    "risk": "green",
+    "detection_type": "Safe",
+    "detection_reason": "No significant risk factors",
+    "cache_version": "ml_gate_0.50"
+  },
+  "a12dd3a7fd3203a452eb34d91a9be20569d5e337a3384347068895c07f3e0c5a": {
+    "result": "No significant phishing indicators detected.",
+    "details": "<strong>Risk Score: 0</strong><br>ML Probability: 0.029 (threshold 0.50)<br>",
+    "warning": false,
+    "risk": "green",
+    "detection_type": "Safe",
+    "detection_reason": "No significant risk factors",
+    "cache_version": "ml_gate_0.50"
+  },
+  "0bc7d8d579a7d630936ea758cc6b7d1bb08db87f976c634f14bb84aa51c115f7": {
+    "result": "Low risk indicators detected — review carefully.",
+    "details": "<strong>Risk Score: 24</strong><br>ML Probability: 0.340 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Keywords (4 pts): won<br>• Suspicious links (20 pts): 1 found<br><br><strong>Suspicious Links:</strong><br>• https://www.pythonanywhere.com/registration/confirm_email/4354562f726bf6ecbf896db0268c6a87a8d7d018be88b9a546e81223/ (score: 20)<br>",
+    "warning": false,
+    "risk": "yellow",
+    "detection_type": "Suspicious",
+    "detection_reason": "Low risk indicators present",
+    "cache_version": "ml_gate_0.50"
+  },
+  "3b4afaa21abe7c388d017d8a4677a23e2b1850ff2b7d075cc9c82b941927281b": {
+    "result": "False Negative: High-risk indicators found but ML below threshold.",
+    "details": "<strong>Risk Score: 62</strong><br>ML Probability: 0.032 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Keywords (10 pts): urgent<br>• Suspicious links (52 pts): 1 found<br><br><strong>Suspicious Links:</strong><br>• http://paypal-login.com/secure (score: 52)<br>",
+    "warning": false,
+    "risk": "orange",
+    "detection_type": "FN",
+    "detection_reason": "Heuristic high risk; ML below threshold",
+    "cache_version": "ml_gate_0.50"
+  },
+  "d08dbe6cc49b766328d527a5419595f94ac76ad1cce26183861f0bca922ba450": {
+    "result": "No significant phishing indicators detected.",
+    "details": "<strong>Risk Score: 4</strong><br>ML Probability: 0.087 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Keywords (4 pts): gcash<br>",
+    "warning": false,
+    "risk": "green",
+    "detection_type": "Safe",
+    "detection_reason": "No significant risk factors",
+    "cache_version": "ml_gate_0.50"
+  },
+  "beccdf0458129877376e3956aa22d6a2b1b040962c4bc8cc43341480482da691": {
+    "result": "Low risk indicators detected — review carefully.",
+    "details": "<strong>Risk Score: 20</strong><br>ML Probability: 0.405 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Keywords (4 pts): free<br>• ML prediction (16 pts): 0.40 confidence<br>",
+    "warning": false,
+    "risk": "yellow",
+    "detection_type": "Suspicious",
+    "detection_reason": "Low risk indicators present",
+    "cache_version": "ml_gate_0.50"
+  },
+  "12dea13d6e4b2eaed44146775dd699e1607b00297786646edc3d0d71eb1aaa03": {
+    "result": "No significant phishing indicators detected.",
+    "details": "<strong>Risk Score: 0</strong><br>ML Probability: 0.208 (threshold 0.50)<br>",
+    "warning": false,
+    "risk": "green",
+    "detection_type": "Safe",
+    "detection_reason": "No significant risk factors",
+    "cache_version": "ml_gate_0.50"
+  },
+  "d6c2bf9f74b7dcf7a4a9bb31805a28bf394d3da9128e2f48fcd755a7a5fd3804": {
+    "result": "Low risk indicators detected — review carefully.",
+    "details": "<strong>Risk Score: 17</strong><br>ML Probability: 0.427 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• ML prediction (17 pts): 0.43 confidence<br>",
+    "warning": false,
+    "risk": "yellow",
+    "detection_type": "Suspicious",
+    "detection_reason": "Low risk indicators present",
+    "cache_version": "ml_gate_0.50"
+  }
+}

@@ -1,0 +1,9 @@
+node_modules/
+phish-client/node_modules/
+venv/
+venv310/
+.venv/
+__pycache__/
+*.pyc
+.env
+data/*.csv

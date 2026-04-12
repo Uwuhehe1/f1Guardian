@@ -1,0 +1,2 @@
+{"email": "dear mr.x you won 1,000.000 pesos  in lotto \r\nif you want to claim this prize \r\nsubmit your information link below \r\nhttps//www.example.com", "ml_score": 0.8526854462929009, "predicted": "phishing", "actual": null, "timestamp": "2025-07-04T23:43:03.726876"}
+{"email": "dear mr.x you won 1,000.000 pesos in lotto if you want to claim this prize submit your information link below https//www.example.com", "ml_score": 0.8526854462929009, "predicted": "phishing", "actual": null, "timestamp": "2025-07-04T23:43:16.790821"}

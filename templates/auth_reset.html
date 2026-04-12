@@ -1,0 +1,136 @@
+{% extends "base.html" %}
+
+{% block title %}Reset Password{% endblock %}
+
+{% block content %}
+<div class="dashboard-card auth-card">
+    <div class="dashboard-header">
+        <h4>Reset Password</h4>
+        <small>Secure account recovery and credential update</small>
+    </div>
+
+    <div class="card-body-custom">
+        {% if error %}
+            <div class="alert-cyber-danger mb-3">{{ error }}</div>
+        {% endif %}
+
+        {% if success %}
+            <div class="alert-cyber-success mb-3">{{ success }}</div>
+        {% endif %}
+
+        <form method="post" action="{{ url_for('auth_reset') }}">
+            <input type="hidden" name="email" value="{{ email or request.args.get('email','') }}">
+
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input
+                    class="form-control"
+                    type="email"
+                    value="{{ email or request.args.get('email','') }}"
+                    disabled>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">OTP Code</label>
+                <input
+                    class="form-control"
+                    type="text"
+                    name="code"
+                    maxlength="6"
+                    placeholder="Enter 6-digit code"
+                    required>
+                <small class="text-muted-cyber">
+                    Check your inbox for the 6-digit code. It expires in 10 minutes.
+                </small>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">New Password</label>
+                <input
+                    class="form-control"
+                    type="password"
+                    name="new_password"
+                    minlength="8"
+                    placeholder="Enter new password"
+                    required>
+            </div>
+
+            <div class="mb-4">
+                <label class="form-label">Confirm New Password</label>
+                <input
+                    class="form-control"
+                    type="password"
+                    name="confirm_password"
+                    minlength="8"
+                    placeholder="Confirm new password"
+                    required>
+            </div>
+
+            <div class="d-grid">
+                <button class="btn-cyber" type="submit">🔐 UPDATE PASSWORD</button>
+            </div>
+        </form>
+
+        <div class="auth-footer">
+            <a href="{{ url_for('auth_forgot', email=email or request.args.get('email','')) }}">Resend code</a>
+            <span class="footer-separator">•</span>
+            <a href="{{ url_for('auth_login') }}">Back to login</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+    .auth-card {
+        max-width: 520px;
+    }
+
+    .alert-cyber-danger {
+        background: rgba(255, 107, 125, 0.12);
+        border: 1px solid rgba(255, 107, 125, 0.35);
+        color: #ff6b7d;
+        padding: 12px;
+        border-radius: 8px;
+        font-size: 14px;
+    }
+
+    .alert-cyber-success {
+        background: rgba(87, 255, 177, 0.12);
+        border: 1px solid rgba(87, 255, 177, 0.35);
+        color: #57ffb1;
+        padding: 12px;
+        border-radius: 8px;
+        font-size: 14px;
+    }
+
+    .text-muted-cyber {
+        color: #7f95a3;
+        font-size: 12px;
+        display: block;
+        margin-top: 6px;
+    }
+
+    .auth-footer {
+        margin-top: 18px;
+        text-align: center;
+        color: #9db0bd;
+        font-size: 14px;
+    }
+
+    .auth-footer a {
+        color: #00ff9f;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .auth-footer a:hover {
+        text-decoration: underline;
+    }
+
+    .footer-separator {
+        color: #7f95a3;
+        margin: 0 8px;
+    }
+</style>
+{% endblock %}

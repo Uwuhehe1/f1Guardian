@@ -1,0 +1,34 @@
+{
+  "texts": {
+    "27aba2a5f8b99e12f9a58c2c2a48506491456313cd98970d73ab071f8e061545": {
+      "text": "pogo",
+      "timestamp": "2025-08-25T18:47:28.199088"
+    },
+    "b32f221a120d2dc7ecd223d24e260fe667fa007b0f6766daef552604cd7e9f90": {
+      "text": "http://amongola. uk/v XTE. AAbs? od=1syl68b74b06de7b6t...",
+      "timestamp": "2025-09-11T00:22:20.189528"
+    }
+  },
+  "urls": {
+    "http://amongola.": "2025-09-11T00:22:20.189528"
+  },
+  "domains": {
+    "amongola": "2025-09-11T00:22:20.189528"
+  },
+  "events": [
+    {
+      "timestamp": "2025-08-25T18:47:28.199067",
+      "user": "ezrealvaldevieso@gmail.com",
+      "hash": "27aba2a5f8b99e12f9a58c2c2a48506491456313cd98970d73ab071f8e061545",
+      "note": "Manual True Positive",
+      "email": "pogo"
+    },
+    {
+      "timestamp": "2025-09-11T00:22:20.189503",
+      "user": "ezrealvaldevieso@gmail.com",
+      "hash": "b32f221a120d2dc7ecd223d24e260fe667fa007b0f6766daef552604cd7e9f90",
+      "note": "Manual True Positive",
+      "email": "http://amongola. uk/v XTE. AAbs? od=1syl68b74b06de7b6t..."
+    }
+  ]
+}

@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin • Users</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #05070d;
+      color: #e6fef5;
+      font-family: Consolas, monospace;
+      min-height: 100vh;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(circle at top left, rgba(0,255,159,0.08), transparent 30%),
+        radial-gradient(circle at bottom right, rgba(0,191,255,0.06), transparent 30%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .page {
+      position: relative;
+      z-index: 1;
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px 30px;
+    }
+
+    .topbar {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 11px 16px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: .25s ease;
+      border: 1px solid transparent;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 14px;
+      background: transparent;
+    }
+
+    .btn-primary {
+      color: #00ff9f;
+      border-color: #00ff9f;
+    }
+
+    .btn-primary:hover {
+      background: #00ff9f;
+      color: #000;
+      box-shadow: 0 0 12px rgba(0,255,159,0.25);
+    }
+
+    .btn-secondary {
+      color: #59d0ff;
+      border-color: #59d0ff;
+    }
+
+    .btn-secondary:hover {
+      background: #59d0ff;
+      color: #000;
+    }
+
+    .btn-danger {
+      color: #ff6b7d;
+      border-color: #ff6b7d;
+    }
+
+    .btn-danger:hover {
+      background: #ff6b7d;
+      color: #000;
+    }
+
+    .btn-success {
+      color: #00ff9f;
+      border-color: #00ff9f;
+    }
+
+    .btn-success:hover {
+      background: #00ff9f;
+      color: #000;
+    }
+
+    .btn-warning {
+      color: #ffd95a;
+      border-color: #ffd95a;
+    }
+
+    .btn-warning:hover {
+      background: #ffd95a;
+      color: #000;
+    }
+
+    .card {
+      background: #0a0f18;
+      border: 1px solid rgba(0,255,159,0.15);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 0 24px rgba(0,255,159,0.08);
+    }
+
+    .card-header {
+      background: linear-gradient(90deg, rgba(0,255,159,0.16), rgba(0,191,255,0.10));
+      padding: 24px 20px 18px;
+      border-bottom: 1px solid rgba(0,255,159,0.15);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .card-header h1 {
+      margin: 0;
+      font-size: 30px;
+      color: #ffffff;
+    }
+
+    .card-header p {
+      margin: 6px 0 0;
+      color: #00ff9f;
+      font-size: 14px;
+    }
+
+    .card-body {
+      padding: 24px;
+    }
+
+    .flash {
+      padding: 12px 14px;
+      border-radius: 10px;
+      margin-bottom: 14px;
+      font-size: 14px;
+    }
+
+    .flash-success {
+      background: rgba(87, 255, 177, 0.10);
+      color: #57ffb1;
+      border: 1px solid rgba(87, 255, 177, 0.28);
+    }
+
+    .flash-danger {
+      background: rgba(255, 107, 125, 0.10);
+      color: #ff6b7d;
+      border: 1px solid rgba(255, 107, 125, 0.28);
+    }
+
+    .flash-warning {
+      background: rgba(255, 217, 90, 0.10);
+      color: #ffd95a;
+      border: 1px solid rgba(255, 217, 90, 0.28);
+    }
+
+    .flash-info {
+      background: rgba(89, 208, 255, 0.10);
+      color: #59d0ff;
+      border: 1px solid rgba(89, 208, 255, 0.28);
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 14px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 980px;
+      background: rgba(255,255,255,0.02);
+    }
+
+    thead {
+      background: rgba(0,255,159,0.08);
+    }
+
+    th, td {
+      padding: 14px 12px;
+      text-align: left;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      vertical-align: middle;
+    }
+
+    th {
+      color: #00ff9f;
+      font-size: 14px;
+      letter-spacing: .4px;
+    }
+
+    td {
+      color: #d9e7ed;
+      font-size: 14px;
+    }
+
+    .role-badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .role-user {
+      background: rgba(89, 208, 255, 0.12);
+      color: #59d0ff;
+      border: 1px solid rgba(89, 208, 255, 0.25);
+    }
+
+    .role-admin {
+      background: rgba(255, 217, 90, 0.12);
+      color: #ffd95a;
+      border: 1px solid rgba(255, 217, 90, 0.25);
+    }
+
+    .protected {
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      background: rgba(150, 150, 150, 0.15);
+      color: #d0d7de;
+      border: 1px solid rgba(255,255,255,0.18);
+    }
+
+    .action-group {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .pw-input {
+      width: 180px;
+      background: #07111f;
+      border: 1px solid #1a2a3d;
+      color: #e6fef5;
+      padding: 10px 12px;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 13px;
+      outline: none;
+    }
+
+    .pw-input:focus {
+      border-color: #00ff9f;
+      box-shadow: 0 0 10px rgba(0,255,159,0.18);
+    }
+
+    form.inline {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    @media (max-width: 768px) {
+      .card-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .topbar .btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="page">
+
+  <div class="topbar">
+    <a class="btn btn-secondary" href="{{ url_for('admin_home') }}">← Dashboard</a>
+    <a class="btn btn-primary" href="{{ url_for('admin_users') }}">👥 Users</a>
+    <a class="btn btn-success" href="{{ url_for('admin_users_create') }}">Add User</a>
+    <a class="btn btn-danger" href="{{ url_for('admin_logout') }}">Admin Logout</a>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <h1>Users</h1>
+        <p>Manage user accounts, reset passwords, and remove access</p>
+      </div>
+      <a class="btn btn-success" href="{{ url_for('admin_users_create') }}">Add User</a>
+    </div>
+
+    <div class="card-body">
+
+      {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+          {% for category, message in messages %}
+            <div class="flash flash-{{ category if category in ['success','danger','warning','info'] else 'info' }}">
+              {{ message }}
+            </div>
+          {% endfor %}
+        {% endif %}
+      {% endwith %}
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Username</th>
+              <th>Email</th>
+              <th>Role</th>
+              <th>Last Login</th>
+              <th style="min-width: 320px;">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for u in users %}
+            <tr>
+              <td>{{ u.name }}</td>
+              <td>{{ u.username }}</td>
+              <td>{{ u.email }}</td>
+              <td>
+                <span class="role-badge {{ 'role-admin' if u.role == 'admin' else 'role-user' }}">
+                  {{ u.role }}
+                </span>
+              </td>
+              <td>{{ u.last_login or "—" }}</td>
+              <td>
+                {% if _is_protected_admin and _is_protected_admin(u) %}
+                  <span class="protected">protected</span>
+                {% else %}
+                  <div class="action-group">
+                    <form method="POST" action="{{ url_for('admin_users_reset_password', uid=u.id) }}" class="inline">
+                      <input
+                        class="pw-input"
+                        name="new_password"
+                        placeholder="New password"
+                        minlength="8"
+                        required>
+                      <button class="btn btn-warning" type="submit">Reset PW</button>
+                    </form>
+
+                    <form method="POST"
+                          action="{{ url_for('admin_users_delete', uid=u.id) }}"
+                          class="inline"
+                          onsubmit="return confirm('Delete user {{ u.username or 'user' }}? This cannot be undone.');">
+                      <button class="btn btn-danger" type="submit">Delete</button>
+                    </form>
+                  </div>
+                {% endif %}
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

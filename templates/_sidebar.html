@@ -1,0 +1,15 @@
+<nav class="sidebar">
+    <div class="sidebar-brand">SmartSpace</div>
+    <div class="sidebar-panel">[ CYBERSECURITY PANEL ]</div>
+
+    <a href="{{ url_for('index') }}" class="{% if request.endpoint == 'index' %}active{% endif %}">Home</a>
+    <a href="{{ url_for('history') }}" class="{% if request.endpoint == 'history' %}active{% endif %}">Detection History</a>
+    <a href="{{ url_for('statistics') }}" class="{% if request.endpoint == 'statistics' %}active{% endif %}">Statistics</a>
+    <a href="{{ url_for('export_page') }}" class="{% if request.endpoint == 'export_page' %}active{% endif %}">Export Data</a>
+    <a href="{{ url_for('link_checker') }}" class="{% if request.endpoint == 'link_checker' %}active{% endif %}">Phishing Link Checker</a>
+    <a href="{{ url_for('link_history') }}" class="{% if request.endpoint == 'link_history' %}active{% endif %}">Link History</a>
+
+    <hr class="sidebar-divider">
+
+    {% include "_auth_links.html" %}
+</nav>

@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin • SmartSpace</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    :root{
+      --card-radius: 1.15rem;
+      --soft-border: rgba(255,255,255,.08);
+      --panel-bg: rgba(255,255,255,.03);
+      --panel-bg-2: rgba(255,255,255,.04);
+      --glow-green: rgba(0,255,159,.18);
+      --glow-blue: rgba(13,202,240,.14);
+    }
+
+    body {
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at top left, rgba(0,255,159,.08), transparent 24%),
+        radial-gradient(circle at bottom right, rgba(13,202,240,.08), transparent 24%),
+        linear-gradient(180deg, #07111f 0%, #030712 100%);
+      background-attachment: fixed;
+    }
+
+    .navbar {
+      backdrop-filter: blur(8px);
+      background: rgba(10,15,25,.82) !important;
+      border-bottom: 1px solid var(--soft-border);
+    }
+
+    .navbar-brand span {
+      letter-spacing: .4px;
+    }
+
+    .section-title {
+      font-weight: 700;
+      letter-spacing: .2px;
+    }
+
+    .kpi-card {
+      border: 1px solid var(--soft-border);
+      border-radius: var(--card-radius);
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.025));
+      box-shadow: 0 10px 30px rgba(0,0,0,.22);
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+
+    .kpi-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 34px rgba(0,0,0,.28);
+    }
+
+    .kpi-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      font-size: 1.1rem;
+    }
+
+    .kpi-value {
+      font-size: clamp(1.35rem, 2.2vw, 2rem);
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .card {
+      border-radius: var(--card-radius);
+      border: 1px solid var(--soft-border);
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.025));
+      box-shadow: 0 10px 28px rgba(0,0,0,.22);
+    }
+
+    .card-title {
+      font-weight: 700;
+    }
+
+    .shadow-soft {
+      box-shadow: 0 10px 30px rgba(0,0,0,.18);
+    }
+
+    .sticky-sub {
+      position: sticky;
+      top: 0;
+      z-index: 1010;
+      backdrop-filter: saturate(180%) blur(10px);
+      background: rgba(10,15,25,.72) !important;
+      border-bottom: 1px solid var(--soft-border) !important;
+    }
+
+    .list-group-item {
+      background: transparent !important;
+      border-color: var(--soft-border) !important;
+    }
+
+    .list-group-item-action:hover {
+      background: rgba(255,255,255,.04) !important;
+    }
+
+    .status-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .badge-soft {
+      background-color: rgba(13,110,253,.18);
+      color: #8fc4ff;
+      border: 1px solid rgba(13,110,253,.22);
+    }
+
+    .table-responsive {
+      border-radius: 1rem;
+      overflow: hidden;
+    }
+
+    .table {
+      --bs-table-bg: transparent;
+      --bs-table-striped-bg: rgba(255,255,255,.025);
+      --bs-table-hover-bg: rgba(255,255,255,.04);
+      margin-bottom: 0;
+    }
+
+    .table > :not(caption) > * > * {
+      vertical-align: middle;
+      border-bottom-color: var(--soft-border);
+    }
+
+    .table thead th {
+      font-size: .9rem;
+      font-weight: 700;
+      color: var(--bs-secondary-color);
+      background: rgba(255,255,255,.03);
+      white-space: nowrap;
+    }
+
+    .preview-cell {
+      max-width: 340px;
+    }
+
+    .text-truncate-2 {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      line-height: 1.35;
+      max-height: 2.7em;
+    }
+
+    .quick-btn {
+      border-radius: .9rem;
+      padding: .85rem 1rem;
+      font-weight: 600;
+    }
+
+    .quick-btn i {
+      opacity: .9;
+    }
+
+    .alert-success {
+      border: 1px solid rgba(25,135,84,.35);
+      background: rgba(25,135,84,.12);
+    }
+
+    .progress {
+      height: 7px;
+      background-color: rgba(255,255,255,.08);
+      border-radius: 999px;
+    }
+
+    .progress-bar {
+      border-radius: 999px;
+    }
+
+    .footer-note {
+      opacity: .78;
+    }
+
+    .btn-outline-primary,
+    .btn-outline-secondary,
+    .btn-outline-danger {
+      border-width: 1px;
+    }
+
+    .btn-danger {
+      box-shadow: 0 8px 20px rgba(220,53,69,.18);
+    }
+
+    .system-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      padding: .45rem .75rem;
+      border: 1px solid var(--soft-border);
+      border-radius: 999px;
+      background: rgba(255,255,255,.03);
+      font-size: .86rem;
+    }
+
+    .subtle {
+      color: var(--bs-secondary-color);
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top shadow-soft">
+    <div class="container-fluid px-3 px-lg-4">
+      <a class="navbar-brand fw-semibold" href="{{ url_for('admin_home') }}">
+        <i class="bi bi-shield-lock me-1 text-info"></i>
+        <span>SmartSpace Admin</span>
+      </a>
+
+      <div class="d-flex align-items-center gap-2">
+        <button id="themeToggle" class="btn btn-outline-secondary btn-sm" type="button" title="Toggle theme">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <a class="btn btn-danger btn-sm" href="{{ url_for('admin_logout') }}">
+          <i class="bi bi-box-arrow-right me-1"></i> Logout
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="sticky-sub py-2">
+    <div class="container">
+      {% if admin_banner|default(None) %}
+      <div class="alert alert-success py-2 mb-0 d-flex align-items-center gap-2">
+        <i class="bi bi-patch-check-fill"></i>
+        <div>{{ admin_banner }}</div>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+
+  <main class="container my-4 my-lg-5">
+    <div class="d-flex flex-column flex-lg-row justify-content-between align-items-start align-items-lg-center gap-3 mb-4">
+      <div>
+        <h2 class="section-title mb-1">Security Control Center</h2>
+        <div class="subtle">Overview of detections, users, and system maintenance tools.</div>
+      </div>
+      <div class="d-flex flex-wrap gap-2">
+        <span class="system-chip"><i class="bi bi-clock-history"></i> Uptime: {{ system.uptime|default('—') }}</span>
+        <span class="system-chip"><i class="bi bi-hdd-network"></i> {{ system.hostname|default('localhost') }}</span>
+        <span class="system-chip"><i class="bi bi-box"></i> {{ system.build|default('—') }}</span>
+      </div>
+    </div>
+
+    <!-- KPIs -->
+    <div class="row g-3">
+      <div class="col-12 col-md-6 col-xl-3">
+        <div class="card kpi-card p-3 h-100">
+          <div class="d-flex justify-content-between align-items-start">
+            <div>
+              <div class="text-secondary small">Total Scans</div>
+              <div class="kpi-value">{{ kpis.total_scans|default(0) }}</div>
+            </div>
+            <div class="kpi-icon text-primary" style="background: rgba(13,110,253,.12);">
+              <i class="bi bi-activity"></i>
+            </div>
+          </div>
+          <div class="small text-secondary mt-3">Today: <strong>{{ kpis.today_scans|default(0) }}</strong></div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-xl-3">
+        <div class="card kpi-card p-3 h-100">
+          <div class="d-flex justify-content-between align-items-start">
+            <div>
+              <div class="text-secondary small">Phishing Detected</div>
+              <div class="kpi-value text-danger">{{ kpis.phish_count|default(0) }}</div>
+            </div>
+            <div class="kpi-icon" style="background: rgba(220,53,69,.12); color:#dc3545;">
+              <i class="bi bi-bug-fill"></i>
+            </div>
+          </div>
+          <div class="small text-secondary mt-3">Rate: <strong>{{ kpis.phish_rate|default(0) }}%</strong></div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-xl-3">
+        <div class="card kpi-card p-3 h-100">
+          <div class="d-flex justify-content-between align-items-start">
+            <div>
+              <div class="text-secondary small">Accuracy</div>
+              <div class="kpi-value text-success">{{ kpis.accuracy|default(0) }}%</div>
+            </div>
+            <div class="kpi-icon" style="background: rgba(25,135,84,.12); color:#198754;">
+              <i class="bi bi-graph-up-arrow"></i>
+            </div>
+          </div>
+          <div class="progress mt-3" role="progressbar" aria-label="Accuracy">
+            <div class="progress-bar bg-success" style="width: {{ kpis.accuracy|default(0) }}%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-xl-3">
+        <div class="card kpi-card p-3 h-100">
+          <div class="d-flex justify-content-between align-items-start">
+            <div>
+              <div class="text-secondary small">Model Version</div>
+              <div class="kpi-value" style="font-size: 1.25rem;">{{ kpis.model_version|default('—') }}</div>
+            </div>
+            <div class="kpi-icon" style="background: rgba(111,66,193,.12); color:#a98cf5;">
+              <i class="bi bi-cpu"></i>
+            </div>
+          </div>
+          <div class="small text-secondary mt-3">Last trained: <strong>{{ kpis.last_trained|default('—') }}</strong></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-3 mt-1">
+      <!-- Quick Actions -->
+      <div class="col-12 col-lg-4">
+        <div class="card shadow-soft h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h5 class="card-title mb-0"><i class="bi bi-lightning-charge me-2"></i>Quick Actions</h5>
+              <span class="badge rounded-pill text-bg-primary">Admin</span>
+            </div>
+
+            <div class="d-grid gap-2 quick-link">
+              <a class="btn btn-outline-primary quick-btn text-start" href="{{ url_for('admin_stats') }}">
+                <i class="bi bi-bar-chart me-2"></i> Statistics
+              </a>
+              <a class="btn btn-outline-primary quick-btn text-start" href="{{ url_for('admin_history') }}">
+                <i class="bi bi-clock-history me-2"></i> Detection History
+              </a>
+              <a class="btn btn-outline-primary quick-btn text-start" href="{{ url_for('export_data') }}">
+                <i class="bi bi-download me-2"></i> Export Data
+              </a>
+              <a class="btn btn-outline-primary quick-btn text-start" href="{{ url_for('admin_users') }}">
+                <i class="bi bi-people me-2"></i> Manage Users
+              </a>
+              <a class="btn btn-outline-primary quick-btn text-start" href="{{ url_for('admin_link_history') }}">
+                <i class="bi bi-link-45deg me-2"></i> Link History
+              </a>
+            </div>
+
+            <div class="mt-3 small subtle">
+              <span class="status-dot bg-success me-1"></span> System operational
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recent Detections -->
+      <div class="col-12 col-lg-8">
+        <div class="card shadow-soft h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h5 class="card-title mb-0"><i class="bi bi-inbox-search me-2"></i>Recent Detections</h5>
+              <a href="{{ url_for('admin_history') }}" class="btn btn-sm btn-outline-primary">View all</a>
+            </div>
+
+            <div class="table-responsive">
+              <table class="table align-middle mb-0">
+                <thead>
+                  <tr>
+                    <th>Time</th>
+                    <th>Type</th>
+                    <th>Score</th>
+                    <th>Preview</th>
+                    <th class="text-end">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for row in recent_detections|default([]) %}
+                  <tr>
+                    <td class="text-nowrap">{{ row.time|default('—') }}</td>
+                    <td>
+                      {% set lbl = row.label|default('safe') %}
+                      {% if lbl == 'phishing' %}
+                        <span class="badge text-bg-danger">Phishing</span>
+                      {% elif lbl == 'suspicious' %}
+                        <span class="badge text-bg-warning">Suspicious</span>
+                      {% elif lbl == 'review' %}
+                        <span class="badge text-bg-info">Review</span>
+                      {% else %}
+                        <span class="badge text-bg-success">Safe</span>
+                      {% endif %}
+                    </td>
+                    <td>
+                      {% set pct = ((row.score|default(0)) * 100) %}
+                      <div class="d-flex align-items-center gap-2" style="min-width: 120px;">
+                        <div class="progress flex-grow-1">
+                          <div class="progress-bar {{ 'bg-danger' if lbl=='phishing' else 'bg-warning' if lbl=='suspicious' else 'bg-info' if lbl=='review' else 'bg-success' }}"
+                               style="width: {{ pct|round(0) }}%"></div>
+                        </div>
+                        <span class="small fw-semibold">{{ pct|round(0) }}%</span>
+                      </div>
+                    </td>
+                    <td class="preview-cell">
+                      <div class="small text-truncate-2" title="{{ row.preview|default('') }}">
+                        {{ row.preview|default('') }}
+                      </div>
+                    </td>
+                    <td class="text-end">
+                      <a class="btn btn-sm btn-outline-secondary" href="{{ url_for('admin_view_detection', id=row.id|default('0')) }}">
+                        <i class="bi bi-eye"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  {% else %}
+                  <tr>
+                    <td colspan="5" class="text-center text-secondary py-4">No detections yet.</td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Users & Roles -->
+      <div class="col-12 col-xl-6">
+        <div class="card shadow-soft h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h5 class="card-title mb-0"><i class="bi bi-people me-2"></i>Users & Roles</h5>
+              <a href="{{ url_for('admin_users') }}" class="btn btn-sm btn-outline-primary">Manage</a>
+            </div>
+
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item d-flex justify-content-between">
+                <span>Total users</span>
+                <span class="fw-semibold">{{ users.count|default(0) }}</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <span>Active today</span>
+                <span class="fw-semibold">{{ users.active_today|default(0) }}</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <span>Admins</span>
+                <span class="fw-semibold">{{ users.admins|default(0) }}</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Maintenance -->
+      <div class="col-12 col-xl-6">
+        <div class="card shadow-soft h-100">
+          <div class="card-body">
+            <h5 class="card-title mb-3"><i class="bi bi-gear me-2"></i>Exports & Maintenance</h5>
+            <div class="row g-2">
+              <div class="col-12 col-sm-6">
+                <a class="btn w-100 btn-outline-secondary quick-btn" href="{{ url_for('export_data') }}">
+                  <i class="bi bi-filetype-csv me-2"></i>Export CSV
+                </a>
+              </div>
+              <div class="col-12 col-sm-6">
+                <a class="btn w-100 btn-outline-secondary quick-btn" href="{{ url_for('download_logs') }}">
+                  <i class="bi bi-journal-text me-2"></i>Download Logs
+                </a>
+              </div>
+              <div class="col-12 col-sm-6">
+                <a class="btn w-100 btn-outline-secondary quick-btn" href="{{ url_for('trigger_model_retrain') }}">
+                  <i class="bi bi-robot me-2"></i>Retrain Model
+                </a>
+              </div>
+              <div class="col-12 col-sm-6">
+                <a class="btn w-100 btn-outline-danger quick-btn" href="{{ url_for('clear_cache') }}">
+                  <i class="bi bi-broom me-2"></i>Clear Cache
+                </a>
+              </div>
+            </div>
+
+            <div class="mt-3 small">
+              <span class="badge rounded-pill badge-soft">Build {{ system.build|default('—') }}</span>
+              <span class="ms-2 subtle">Server: <strong>{{ system.hostname|default('localhost') }}</strong></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="container text-center small my-4 footer-note">
+    © <span id="year"></span> SmartSpace • Security Console
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const root = document.documentElement;
+    const btn = document.getElementById('themeToggle');
+    const saved = localStorage.getItem('admin-theme');
+    if (saved) root.setAttribute('data-bs-theme', saved);
+
+    btn?.addEventListener('click', () => {
+      const current = root.getAttribute('data-bs-theme') || 'dark';
+      const next = current === 'light' ? 'dark' : 'light';
+      root.setAttribute('data-bs-theme', next);
+      localStorage.setItem('admin-theme', next);
+      btn.innerHTML = next === 'dark'
+        ? '<i class="bi bi-moon-stars"></i>'
+        : '<i class="bi bi-brightness-high"></i>';
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

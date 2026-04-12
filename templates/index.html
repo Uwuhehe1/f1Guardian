@@ -1,0 +1,180 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+
+<div class="dashboard-card">
+
+    <!-- HEADER -->
+    <div class="dashboard-header">
+        <h4>SmartSpace Phishing Email Detection</h4>
+        <small>Advanced Risk Scoring System</small>
+    </div>
+
+    <!-- BODY -->
+    <div class="card-body-custom">
+
+        <!-- FORM -->
+        <form method="POST">
+            <div class="mb-3">
+                <label for="email_text" class="form-label">Paste Email Content</label>
+                <textarea
+                    class="form-control"
+                    id="email_text"
+                    name="email_text"
+                    rows="7"
+                    placeholder="Paste suspicious email content here..."
+                    required>{{ email_text }}</textarea>
+            </div>
+
+            <div class="d-grid">
+                <button type="submit" class="btn-cyber">🔍 ANALYZE EMAIL</button>
+            </div>
+        </form>
+
+        <!-- RESULT BADGE -->
+        {% if result %}
+        <div class="text-center mt-4">
+            <div class="risk-badge
+                {% if risk=='green' %}risk-green
+                {% elif risk=='yellow' %}risk-yellow
+                {% elif risk=='orange' %}risk-orange
+                {% else %}risk-red{% endif %}">
+                
+                {% if risk=='green' %}✅ {{ result }}
+                {% elif risk=='yellow' %}⚠️ {{ result }}
+                {% elif risk=='orange' %}🚨 {{ result }}
+                {% else %}❌ {{ result }}{% endif %}
+            </div>
+        </div>
+        {% endif %}
+
+        <!-- FEEDBACK BUTTON -->
+        {% if result and risk!='red' %}
+        <form method="POST" action="{{ url_for('feedback') }}" class="mt-3 text-center">
+            <input type="hidden" name="email_text" value="{{ email_text }}">
+            <button class="btn btn-outline-danger">⚠️ Mark as Phishing</button>
+        </form>
+        {% endif %}
+
+        <!-- DETAILS -->
+        {% if details %}
+        <div class="details-box mt-4">
+            <h6><strong>📊 Detection Analysis</strong></h6>
+            <div>{{ details|safe }}</div>
+
+            {% if detection_reason %}
+            <hr>
+            <small><strong>Detection Method:</strong> {{ detection_reason }}</small>
+            {% endif %}
+        </div>
+        {% endif %}
+
+        <!-- STATS -->
+        <div class="mt-5">
+            <h5 class="stats-title">📈 Detection Statistics</h5>
+
+            <div class="row g-3 text-center">
+
+                <div class="col-md-4">
+                    <div class="stat-card red">
+                        <div class="stat-number red">{{ stats.daily }}</div>
+                        <p class="stat-label">Today</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="stat-card yellow">
+                        <div class="stat-number yellow">{{ stats.weekly }}</div>
+                        <p class="stat-label">This Week</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="stat-card blue">
+                        <div class="stat-number blue">{{ stats.yearly }}</div>
+                        <p class="stat-label">This Year</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
+
+{% block extra_css %}
+<style>
+/* RESULT BADGE */
+.risk-badge {
+    display: inline-block;
+    padding: 14px 22px;
+    border-radius: 12px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.risk-green {
+    color: #57ffb1;
+    background: rgba(0,255,159,0.12);
+}
+
+.risk-yellow {
+    color: #ffd95a;
+    background: rgba(255,193,7,0.12);
+}
+
+.risk-orange {
+    color: #ffab66;
+    background: rgba(253,126,20,0.12);
+}
+
+.risk-red {
+    color: #ff6b7d;
+    background: rgba(220,53,69,0.12);
+}
+
+/* DETAILS */
+.details-box {
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(0,191,255,0.2);
+    border-left: 4px solid #00bfff;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+/* STATS */
+.stats-title {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.stat-card {
+    background: rgba(255,255,255,0.02);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.stat-card.red { border: 1px solid rgba(255,107,125,0.4); }
+.stat-card.yellow { border: 1px solid rgba(255,217,90,0.4); }
+.stat-card.blue { border: 1px solid rgba(0,191,255,0.4); }
+
+.stat-number {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.stat-number.red { color: #ff6b7d; }
+.stat-number.yellow { color: #ffd95a; }
+.stat-number.blue { color: #59d0ff; }
+
+.stat-label {
+    color: #9db0bd;
+    margin-top: 5px;
+}
+</style>
+{% endblock %}

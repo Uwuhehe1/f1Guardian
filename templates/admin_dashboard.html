@@ -1,0 +1,294 @@
+@app.route("/admin/users", methods=["GET"], endpoint="admin_users")
+@admin_required
+def admin_users_list():
+    db = _load_users()
+    users = list(db.get("by_id", {}).values())
+    try:
+        return render_template("admin_users.html", users=users)
+    except Exception:
+        rows = []
+        for u in users:
+            if _is_protected_admin(u):
+                actions_html = "<span class='badge bg-secondary'>protected</span>"
+            else:
+                actions_html = (
+                    f"<form method='POST' action='/admin/users/{u['id']}/reset-password' class='d-inline'>"
+                    f"<input class='form-control form-control-sm d-inline-block' style='width:180px' "
+                    f"name='new_password' placeholder='New password' minlength='8' required>"
+                    f"<button class='btn btn-sm btn-warning ms-2'>Reset PW</button></form>"
+                    f"<form method='POST' action='/admin/users/{u['id']}/delete' class='d-inline ms-2' "
+                    f"onsubmit=\"return confirm('Delete user {u.get('username','user')}? This cannot be undone.');\">"
+                    f"<button class='btn btn-sm btn-danger'>Delete</button></form>"
+                )
+            rows.append(
+                f"<tr>"
+                f"<td>{u.get('name','')}</td>"
+                f"<td>{u.get('username','')}</td>"
+                f"<td>{u.get('email','')}</td>"
+                f"<td>{u.get('role','')}</td>"
+                f"<td>{u.get('last_login','—')}</td>"
+                f"<td>{actions_html}</td>"
+                f"</tr>"
+            )
+        html = (
+            "<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css' rel='stylesheet'>"
+            "<div class='container p-3'><h3>Users</h3>"
+            "<a class='btn btn-success mb-3' href='/admin/users/create'>Add User</a>"
+            "<table class='table table-striped'><thead><tr>"
+            "<th>Name</th><th>Username</th><th>Email</th><th>Role</th><th>Last login</th><th>Actions</th>"
+            "</tr></thead><tbody>" + "".join(rows) + "</tbody></table></div>"
+        )
+        return app.response_class(html, mimetype="text/html")
+
+
+@app.route("/admin/users/create", methods=["GET", "POST"], endpoint="admin_users_create")
+@admin_required
+def admin_users_create():
+    if request.method == "POST":
+        name = (request.form.get("name") or "").strip()
+        username = (request.form.get("username") or "").strip().lower()
+        email = (request.form.get("email") or "").strip().lower()
+        password = request.form.get("password") or ""
+        role = (request.form.get("role") or "user").strip().lower()
+
+        if role not in ("user", "admin"):
+            role = "user"
+
+        ok, res = _create_user(name, email, password, role=role, username=username)
+        if ok:
+            return redirect(url_for("admin_users"))
+
+        msg = (
+            "Email already exists." if res.get("error") == "email_exists"
+            else "Username already exists." if res.get("error") == "username_exists"
+            else "Username must be 3–24 chars: a–z, 0–9, underscore." if res.get("error") == "bad_username"
+            else "Please fill out all fields."
+        )
+        try:
+            return render_template(
+                "admin_user_new.html",
+                error=msg,
+                name=name,
+                username=username,
+                email=email,
+                role=role
+            )
+        except Exception:
+            return app.response_class(f"<p style='color:red'>{msg}</p>", mimetype="text/html")
+
+    try:
+        return render_template("admin_user_new.html")
+    except Exception:
+        html = (
+            "<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css' rel='stylesheet'>"
+            "<div class='container p-3'><h3>Add User</h3>"
+            "<form method='POST' class='row g-3'>"
+            "<div class='col-md-6'><label class='form-label'>Full Name</label><input class='form-control' name='name' required></div>"
+            "<div class='col-md-6'><label class='form-label'>Username</label><input class='form-control' name='username' required minlength='3' maxlength='24'></div>"
+            "<div class='col-md-6'><label class='form-label'>Email</label><input class='form-control' type='email' name='email' required></div>"
+            "<div class='col-md-6'><label class='form-label'>Password</label><input class='form-control' type='password' name='password' required minlength='8'></div>"
+            "<div class='col-md-4'><label class='form-label'>Role</label>"
+            "<select class='form-select' name='role'><option value='user'>user</option><option value='admin'>admin</option></select></div>"
+            "<div class='col-12'><button class='btn btn-success'>Create</button> "
+            "<a class='btn btn-outline-secondary' href='/admin/users'>Cancel</a></div></form></div>"
+        )
+        return app.response_class(html, mimetype="text/html")
+
+
+@app.route("/admin/users/<uid>/reset-password", methods=["POST"])
+@admin_required
+def admin_users_reset_password(uid):
+    db = _load_users()
+    target = db.get("by_id", {}).get(uid)
+    if not target:
+        return jsonify({"ok": False, "error": "User not found."}), 404
+
+    if _is_protected_admin(target):
+        flash("Protected admin accounts cannot be reset here.", "danger")
+        return redirect(url_for("admin_users"))
+
+    new_pw = request.form.get("new_password", "")
+    if len(new_pw) < 8:
+        flash("Password must be at least 8 characters.", "danger")
+        return redirect(url_for("admin_users"))
+
+    _update_user_password_by_id(uid, new_pw)
+    flash(f"Password for {target.get('username', 'user')} updated.", "success")
+    return redirect(url_for("admin_users"))
+
+
+@app.route("/admin/users/<uid>/delete", methods=["POST"])
+@admin_required
+def admin_users_delete(uid):
+    db = _load_users()
+    user = db.get("by_id", {}).get(uid)
+    if not user:
+        return jsonify({"ok": False, "error": "User not found."}), 404
+
+    if _is_protected_admin(user):
+        flash("Protected admin accounts cannot be deleted.", "danger")
+        return redirect(url_for("admin_users"))
+
+    db["by_id"].pop(uid, None)
+    db["by_email"].pop((user.get("email") or "").lower(), None)
+    db["by_username"].pop((user.get("username") or "").lower(), None)
+    _save_users(db)
+
+    flash(f"User {user.get('username', uid)} deleted successfully.", "success")
+    return redirect(url_for("admin_users"))
+
+
+@app.route("/admin/stats", endpoint="admin_stats")
+@admin_required
+def admin_stats():
+    try:
+        with open(LOG_FILE, "r", encoding="utf-8") as f:
+            raw = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError, UnicodeDecodeError):
+        raw = []
+
+    daily = {
+        "TP": defaultdict(int),
+        "FN": defaultdict(int),
+        "Safe": defaultdict(int)
+    }
+    daily_phish = defaultdict(int)
+
+    tp_total = fn_total = safe_total = 0
+    phish_total = 0
+    first_d = last_d = None
+
+    for e in raw:
+        if e.get("phishing") is True:
+            phish_total += 1
+
+        ts = _safe_parse_ts(e.get("timestamp", ""))
+        if not ts:
+            continue
+
+        d = ts.date()
+        first_d = d if first_d is None or d < first_d else first_d
+        last_d = d if last_d is None or d > last_d else last_d
+
+        if e.get("phishing") is True:
+            daily_phish[d] += 1
+
+        dtype = e.get("detection_type", "Safe")
+        if dtype == "TP":
+            daily["TP"][d] += 1
+            tp_total += 1
+        elif dtype == "FN":
+            daily["FN"][d] += 1
+            fn_total += 1
+        else:
+            daily["Safe"][d] += 1
+            safe_total += 1
+
+    if first_d is None:
+        first_d = last_d = date.today()
+
+    ninety_days_ago = date.today() - timedelta(days=89)
+    if first_d < ninety_days_ago:
+        first_d = ninety_days_ago
+
+    labels, tp_counts, fn_counts, safe_counts, phish_counts = [], [], [], [], []
+    cur = first_d
+    while cur <= last_d:
+        labels.append(cur.isoformat())
+        tp_counts.append(daily["TP"].get(cur, 0))
+        fn_counts.append(daily["FN"].get(cur, 0))
+        safe_counts.append(daily["Safe"].get(cur, 0))
+        phish_counts.append(daily_phish.get(cur, 0))
+        cur += timedelta(days=1)
+
+    return render_template(
+        "statistics.html",
+        dates=labels,
+        tp_counts=tp_counts,
+        fn_counts=fn_counts,
+        safe_counts=safe_counts,
+        phish_counts=phish_counts,
+        tp_total=tp_total,
+        fn_total=fn_total,
+        safe_total=safe_total,
+        phish_total=phish_total
+    )
+
+
+@app.route("/admin/history", endpoint="admin_history")
+@admin_required
+def admin_history():
+    detections = _read_json_list(LOG_FILE)
+    detections.reverse()
+    for e in detections:
+        e["email"] = make_readable_email(e.get("email", ""))
+    return render_template("detection_history.html", detections=detections)
+
+
+@app.route("/admin/link-history", endpoint="admin_link_history")
+@admin_required
+def admin_link_history():
+    detections = _read_json_list(LINK_LOG_FILE)
+    detections.reverse()
+    return render_template("link_history.html", link_detections=detections)
+
+
+@app.route("/admin/detection/<int:id>", endpoint="admin_view_detection")
+@admin_required
+def admin_view_detection(id: int):
+    items = _recent_items(10)  # MUST match the list size on admin_home
+    if 0 <= id < len(items):
+        e = items[id]
+    else:
+        return app.response_class("<p>Detection not found.</p>", mimetype="text/html"), 404
+
+    html = [
+        "<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css' rel='stylesheet'>",
+        "<div class='container py-3'>",
+        "<a class='btn btn-secondary btn-sm mb-3' href='/admin'>Back</a>",
+        "<div class='card shadow-sm'><div class='card-body'>",
+        f"<h5 class='card-title'>Detection Detail</h5>",
+        f"<div><strong>Timestamp:</strong> {e.get('timestamp', '-')}</div>",
+        f"<div><strong>Type:</strong> {e.get('detection_type', '-')}</div>",
+        f"<div><strong>Reason:</strong> {e.get('detection_reason', '-')}</div>",
+        "<hr>",
+        "<h6>Email (rendered):</h6>",
+        f"<pre class='p-2 bg-light border rounded' style='white-space:pre-wrap'>{(e.get('email', '') or '')}</pre>",
+        "<hr>",
+        "<h6>Details:</h6>",
+        f"<div>{e.get('details', '').replace('<br>', '<br/>')}</div>",
+        "</div></div></div>"
+    ]
+    return app.response_class("".join(html), mimetype="text/html")
+
+
+@app.route("/admin/logs/download", endpoint="download_logs")
+@admin_required
+def download_logs():
+    if not os.path.exists(LOG_FILE):
+        with open(LOG_FILE, "w", encoding="utf-8") as f:
+            json.dump([], f)
+    return send_file(LOG_FILE, as_attachment=True, download_name="phishing_log.json")
+
+
+@app.route("/admin/model/retrain", endpoint="trigger_model_retrain")
+@admin_required
+def trigger_model_retrain():
+    train_csv = os.getenv("TRAIN_CSV", p("data", "training.csv"))
+    try:
+        train_and_save(train_csv, MODEL_PATH, threshold=ML_THRESHOLD)
+        global model
+        model = joblib.load(MODEL_PATH)
+        msg = f"Model retrained from {os.path.basename(train_csv)}."
+    except Exception as e:
+        msg = f"Retrain failed: {e}"
+    return redirect(url_for("admin_home", msg=msg))
+
+
+@app.route("/admin/cache/clear", endpoint="clear_cache")
+@admin_required
+def clear_cache():
+    cache_db.clear()
+    save_cache()
+    msg = "Cache cleared."
+    return redirect(url_for("admin_home", msg=msg))

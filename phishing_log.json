@@ -1,0 +1,1652 @@
+[
+    {
+        "email": "code fifts",
+        "phishing": false,
+        "timestamp": "2025-05-14T09:49:28.704942"
+    },
+    {
+        "email": "code fifts",
+        "phishing": false,
+        "timestamp": "2025-05-14T09:49:31.092467"
+    },
+    {
+        "email": "Looks like you forgot something!\r\nWe noticed that you forgot something. Don't worry. We have saved your items in your cart. Snag them at 20% off today!\r\nResume my order with 20% OFF\r\nShould you experience any problems with your payment, feel free to contact our Support Center or email us at officesupport@wps.com, we will get back to you as fast as possible.",
+        "phishing": true,
+        "timestamp": "2025-05-14T09:50:02.835316"
+    },
+    {
+        "email": "Looks like you forgot something!\r\nWe noticed that you forgot something. Don't worry. We have saved your items in your cart. Snag them at 20% off today!\r\nResume my order with 20% OFF\r\nShould you experience any problems with your payment, feel free to contact our Support Center or email us at officesupport@wps.com, we will get back to you as fast as possible.",
+        "phishing": true,
+        "timestamp": "2025-05-14T09:50:07.079253"
+    },
+    {
+        "email": "Looks like you forgot something!\r\nWe noticed that you forgot something. Don't worry. We have saved your items in your cart. Snag them at 20% off today!\r\nResume my order with 20% OFF\r\nShould you experience any problems with your payment, feel free to contact our Support Center or email us at officesupport@wps.com, we will get back to you as fast as possible.",
+        "phishing": true,
+        "timestamp": "2025-05-14T09:50:07.815318"
+    },
+    {
+        "email": "Your account has been compromised! Click here to reset your password immediately!\r\n",
+        "phishing": true,
+        "timestamp": "2025-05-14T10:00:00.302657"
+    },
+    {
+        "email": "Looks like you forgot something!\r\nWe noticed that you forgot something. Don't worry. We have saved your items in your cart. Snag them at 20% off today!\r\nResume my order with 20% OFF\r\nShould you experience any problems with your payment, feel free to contact our Support Center or email us at officesupport@wps.com, we will get back to you as fast as possible.\r\nWhy WPS Office?\r\nWPS Office is an all-in-one lightweight office suite that has around 500,000,000 users spread over 200 countries and regions.",
+        "phishing": true,
+        "timestamp": "2025-05-14T10:08:31.548297"
+    },
+    {
+        "email": "   \r\n \r\nHi Jullius,\r\nMangyaring kumpirmahin ang iyong email para sa iyong bagong Meta account sa pamamagitan ng pagpasok sa sumusunod na confirmation code.\r\nConfirmation code\r\n068376\r\nKung hindi ka nag-request ng confirmation code,, maaari mong balewalain ang message na ito.\r\n ",
+        "phishing": true,
+        "timestamp": "2025-05-14T10:10:19.727472"
+    },
+    {
+        "email": "   \r\n \r\nHi Jullius,\r\nMangyaring kumpirmahin ang iyong email para sa iyong bagong Meta account sa pamamagitan ng pagpasok sa sumusunod na confirmation code.\r\nConfirmation code\r\n068376\r\nKung hindi ka nag-request ng confirmation code,, maaari mong balewalain ang message na ito.\r\n ",
+        "phishing": true,
+        "timestamp": "2025-05-14T10:13:56.122753"
+    },
+    {
+        "email": "“Yes, please give me the defense explanation for this false positive.”\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+        "phishing": false,
+        "timestamp": "2025-05-14T10:16:33.528345"
+    },
+    {
+        "email": "\"Hi Jullius,\r\nMangyaring kumpirmahin ang iyong email para sa iyong bagong Meta account sa pamamagitan ng pagpasok sa sumusunod na confirmation code.\r\nConfirmation code\r\n068376\r\nKung hindi ka nag-request ng confirmation code,, maaari mong balewalain ang message na ito.\"\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+        "phishing": true,
+        "timestamp": "2025-05-14T10:17:01.101080"
+    },
+    {
+        "email": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Phishing Detection Dashboard</title>\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\" rel=\"stylesheet\">\r\n    <style>\r\n        body {\r\n            background-color: #f8f9fa;\r\n        }\r\n        .sidebar {\r\n            height: 100vh;\r\n            background-color: #198754;\r\n            color: white;\r\n            padding-top: 20px;\r\n        }\r\n        .sidebar a {\r\n            color: white;\r\n            text-decoration: none;\r\n            display: block;\r\n            padding: 10px 20px;\r\n            font-size: 16px;\r\n        }\r\n        .sidebar a:hover {\r\n            background-color: #157347;\r\n        }\r\n        .card-custom {\r\n            margin-top: 50px;\r\n        }\r\n    </style>\r\n</head>\r\n<body>\r\n    <div class=\"container-fluid\">\r\n        <div class=\"row\">\r\n            <!-- Sidebar -->\r\n            <nav class=\"col-md-2 d-none d-md-block sidebar\">\r\n                <h5 class=\"text-center\">Menu</h5>\r\n                <a href=\"#\">Home</a>\r\n                <a href=\"#\">Detection History</a>\r\n                <a href=\"#\">Statistics</a>\r\n                <a href=\"#\">Export Data</a>\r\n                <a href=\"#\">Settings</a>\r\n                <a href=\"#\">Help</a>\r\n            </nav>\r\n\r\n            <!-- Main Content -->\r\n            <main class=\"col-md-10 ms-sm-auto col-lg-10 px-md-4\">\r\n                <div class=\"d-flex justify-content-center\">\r\n                    <div class=\"card card-custom shadow-lg\" style=\"width: 100%; max-width: 600px;\">\r\n                        <div class=\"card-header bg-success text-white text-center\">\r\n                            <h4>Phishing Email Detection</h4>\r\n                        </div>\r\n                        <div class=\"card-body\">\r\n                            <form method=\"POST\">\r\n                                <div class=\"mb-3\">\r\n                                    <label for=\"email_text\" class=\"form-label\">Paste Email Content</label>\r\n                                    <textarea class=\"form-control\" id=\"email_text\" name=\"email_text\" rows=\"6\" required>{{ email_text }}</textarea>\r\n                                </div>\r\n                                <div class=\"d-grid\">\r\n                                    <button type=\"submit\" class=\"btn btn-success\">Check Email</button>\r\n                                </div>\r\n                            </form>\r\n\r\n                            {% if result %}\r\n                            <div class=\"alert alert-info mt-3 text-center fw-bold\">{{ result }}</div>\r\n                            {% endif %}\r\n\r\n                            <h5 class=\"mt-4 text-center\">📊 Detection Stats</h5>\r\n                            <ul class=\"list-group list-group-flush\">\r\n                                <li class=\"list-group-item\">Daily Phishing Detected: <strong>{{ stats.daily }}</strong></li>\r\n                                <li class=\"list-group-item\">Weekly Phishing Detected: <strong>{{ stats.weekly }}</strong></li>\r\n                                <li class=\"list-group-item\">Yearly Phishing Detected: <strong>{{ stats.yearly }}</strong></li>\r\n                            </ul>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </main>\r\n        </div>\r\n    </div>\r\n\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js\"></script>\r\n</body>\r\n</html>\r\n",
+        "phishing": true,
+        "timestamp": "2025-05-14T10:23:56.809474"
+    },
+    {
+        "email": "code",
+        "phishing": false,
+        "timestamp": "2025-05-14T10:27:44.098908"
+    },
+    {
+        "email": "ca",
+        "phishing": false,
+        "timestamp": "2025-05-14T10:28:17.513307"
+    },
+    {
+        "email": "dada",
+        "phishing": false,
+        "timestamp": "2025-05-14T10:29:33.464484"
+    },
+    {
+        "email": "dada",
+        "phishing": false,
+        "timestamp": "2025-05-14T10:30:47.623221"
+    },
+    {
+        "email": "dada",
+        "phishing": false,
+        "timestamp": "2025-05-14T10:31:04.107655"
+    },
+    {
+        "email": "caca",
+        "phishing": false,
+        "timestamp": "2025-05-14T10:35:09.268330"
+    },
+    {
+        "email": "code.a",
+        "phishing": false,
+        "timestamp": "2025-05-14T10:38:17.320152"
+    },
+    {
+        "email": " \r\n   \r\nPakikumpirma ang iyong email address.\r\n   \r\n   \r\n\r\n \r\n   \r\n   \r\n \r\nHi Jullius,\r\nMangyaring kumpirmahin ang iyong email para sa iyong bagong Meta account sa pamamagitan ng pagpasok sa sumusunod na confirmation code.\r\nConfirmation code\r\n068376\r\nKung hindi ka nag-request ng confirmation code,, maaari mong balewalain ang message na ito.",
+        "phishing": true,
+        "timestamp": "2025-05-14T10:53:05.849489"
+    },
+    {
+        "email": "cada",
+        "phishing": false,
+        "timestamp": "2025-05-14T10:56:22.518482"
+    },
+    {
+        "email": "Hi Candidate, \r\n\r\n \r\n\r\nDo you have a minute? We need you to update your location. This will help us ensure that interested employers have all the information about you that they need.",
+        "phishing": true,
+        "timestamp": "2025-05-14T18:21:41.327109"
+    },
+    {
+        "email": " detect me",
+        "phishing": false,
+        "timestamp": "2025-05-14T18:24:10.946883"
+    },
+    {
+        "email": " detect meaa",
+        "phishing": false,
+        "timestamp": "2025-05-14T18:24:13.313823"
+    },
+    {
+        "email": " detect meaaaaa",
+        "phishing": false,
+        "timestamp": "2025-05-14T18:24:15.381170"
+    },
+    {
+        "email": " detect meaaaaaafa",
+        "phishing": false,
+        "timestamp": "2025-05-14T18:24:17.097243"
+    },
+    {
+        "email": "urgent",
+        "phishing": true,
+        "timestamp": "2025-05-14T18:24:21.172385"
+    },
+    {
+        "email": "Our current prototype uses a simple text-based machine learning model.\r\nIt works well for short phishing-style messages, but when long emails include multiple \"trigger words\" (like verify, update, click), the model tends to classify them as phishing.\r\nThis is a known limitation of small dataset systems.\r\nIn future work, we plan to add domain-based checks, link analysis, and deep learning methods to reduce these false positives.",
+        "phishing": true,
+        "timestamp": "2025-05-14T18:25:59.828121"
+    },
+    {
+        "email": "Dear user,\r\n\r\nWe noticed unusual login activity. Please click here: http://bit.ly/security-check\r\n\r\nThank you,\r\nThe Security Team\r\n",
+        "phishing": true,
+        "timestamp": "2025-05-14T18:43:14.846050"
+    },
+    {
+        "email": "fa",
+        "phishing": false,
+        "timestamp": "2025-05-14T18:47:56.805353"
+    },
+    {
+        "email": "Do you have a minute? We need you to update your location. This will help us ensure that interested employers have all the information about you that they need.\r\n\r\n",
+        "phishing": true,
+        "timestamp": "2025-05-14T18:48:07.128572"
+    },
+    {
+        "email": "Do you have a minute\r\n",
+        "phishing": true,
+        "timestamp": "2025-05-14T19:04:42.224019"
+    },
+    {
+        "email": "You have 22 unread notifications to review\r\n \r\nA lot has happened on Facebook since you last logged in. Here are some notifications you've missed from your friends.\r\n ",
+        "phishing": true,
+        "timestamp": "2025-05-14T19:09:59.293316"
+    },
+    {
+        "email": "Hello Jullius, \r\n\r\nThank you for your recent order from Amazon. Your package has shipped and is expected to arrive by Friday. You can track your order in your account.\r\n\r\nBest regards,\r\nAmazon Team",
+        "phishing": false,
+        "timestamp": "2025-05-14T19:18:01.443597"
+    },
+    {
+        "email": "You have 22 unread notifications to review\r\n \r\nA lot has happened on Facebook since you last logged in. Here are some notifications you've missed from your friends.\r\n\r\nBest regards,\r\nAmazon Team",
+        "phishing": false,
+        "timestamp": "2025-05-14T19:18:17.333722"
+    },
+    {
+        "email": "You have 22 unread notifications to review\r\n \r\nA lot has happened on Facebook since you last logged in. Here are some notifications you've missed from your friends.",
+        "phishing": false,
+        "timestamp": "2025-05-14T19:18:21.037657"
+    },
+    {
+        "email": "Mother’s Day\r\nNow’s the time\r\nto pamper Mom.",
+        "phishing": false,
+        "timestamp": "2025-05-14T19:18:35.366060"
+    },
+    {
+        "email": "Mother’s Day\r\nNow’s the time\r\nto pamper Mom.",
+        "phishing": false,
+        "timestamp": "2025-05-14T19:18:36.337739"
+    },
+    {
+        "email": "Sign-in attempt was blocked\r\n\tezrealvaldevieso@gmail.com\r\nSomeone just used your password to try to sign in to your account. Google blocked them, but you should check what happened.\r\nCheck activity\r\nYou can also see security activity at",
+        "phishing": false,
+        "timestamp": "2025-05-14T19:18:54.141088"
+    },
+    {
+        "email": "Sign-in attempt was blocked\r\n\tezrealvaldevieso@gmail.com\r\nSomeone just used your password to try to sign in to your account. Google blocked them, but you should check what happened.\r\nCheck activity\r\nYou can also see security activity at",
+        "phishing": false,
+        "timestamp": "2025-05-14T19:18:55.476710"
+    },
+    {
+        "email": "Time is running out!\r\nStart your cloud journey today\r\n \r\nDatabases, storage, compute, security, innovations, and more—learn it all in just 5 modules at AWSome Day Online Conference on 10 April, 2025. Don’t miss out!\r\n \r\nSecure my spot now\r\n \r\nHere's why you should join us:\r\n \r\n1\r\n \t\r\nDatabases, storage, compute, security, innovations, and more—learn it all in just 5 modules!\r\n \r\nLearn core AWS concepts, use cases, and how to get started on AWS.\r\n \r\n2\r\n \t\r\nLive Q&A with AWS experts\r\n \r\nGet your cloud questions answered, 1 on 1 by our AWS technical experts.\r\n \r\n3\r\n \t\r\nReceive a certificate of attendance\r\n \r\nComplete watching all 5 modules to earn your certificate of attendance by 30 April, 2025.\r\n \r\nLearn more and register now\r\n \r\nSee you on 10 April, 2025!\r\n\r\nBest regards,\r\nAmazon Web Services\r\n \r\nAWSome Day Online Conference\r\n \r\n \r\nStart Building on AWS Today\r\nAWS on X | AWS on Facebook | AWS on Twitch | AWS Blog | AWS TechChat\r\n \r\nMy Account | Getting Started | Products | Solutions | Pricing | Partners | Documentation | Training | Events & Webinars | AWS Activate | Marketplace | What's New | Blog | Analyst Reports\r\n\r\nView Online\r\n \r\nIf you'd rather not receive future emails from Amazon Web Services, unsubscribe here.\r\nAmazon Web Services, Inc. is a subsidiary of Amazon.com, Inc. Amazon.com is a registered trademark of Amazon.com.\r\nThis message produced and distributed by Amazon Web Services Philippines Inc. or its affiliates.\r\n© 2025, Amazon Web Services, Inc. or its affiliates. All rights reserved. Read our Privacy Notic",
+        "phishing": false,
+        "timestamp": "2025-05-14T19:19:11.070199"
+    },
+    {
+        "email": "Time is running out!\r\nStart your cloud journey today\r\n \r\nDatabases, storage, compute, security, innovations, and more—learn it all in just 5 modules at AWSome Day Online Conference on 10 April, 2025. Don’t miss out!\r\n \r\nSecure my spot now\r\n \r\nHere's why you should join us:\r\n \r\n1\r\n \t\r\nDatabases, storage, compute, security, innovations, and more—learn it all in just 5 modules!\r\n \r\nLearn core AWS concepts, use cases, and how to get started on AWS.\r\n \r\n2\r\n \t\r\nLive Q&A with AWS experts\r\n \r\nGet your cloud questions answered, 1 on 1 by our AWS technical experts.\r\n \r\n3\r\n \t\r\nReceive a certificate of attendance\r\n \r\nComplete watching all 5 modules to earn your certificate of attendance by 30 April, 2025.\r\n \r\nLearn more and register now\r\n \r\nSee you on 10 April, 2025!\r\n\r\nBest regards,\r\nAmazon Web Services\r\n \r\nAWSome Day Online Conference\r\n \r\n \r\nStart Building on AWS Today\r\nAWS on X | AWS on Facebook | AWS on Twitch | AWS Blog | AWS TechChat\r\n \r\nMy Account | Getting Started | Products | Solutions | Pricing | Partners | Documentation | Training | Events & Webinars | AWS Activate | Marketplace | What's New | Blog | Analyst Reports\r\n\r\nView Online\r\n \r\nIf you'd rather not receive future emails from Amazon Web Services, unsubscribe here.\r\nAmazon Web Services, Inc. is a subsidiary of Amazon.com, Inc. Amazon.com is a registered trademark of Amazon.com.\r\nThis message produced and distributed by Amazon Web Services Philippines Inc. or its affiliates.\r\n© 2025, Amazon Web Services, Inc. or its affiliates. All rights reserved. Read our Privacy Notic",
+        "phishing": false,
+        "timestamp": "2025-05-14T19:19:12.431046"
+    },
+    {
+        "email": "Dear User,\r\n\r\nYour account has been locked due to suspicious activity.  \r\nPlease click https://tinyurl.com/account-verify to unlock it immediately.  \r\nFailure to do so will result in permanent suspension.\r\n\r\nThank you,  \r\nThe Security Team\r\n\r\nLearn core AWS concepts, use cases, and how to get started on AWS.\r\n \r\n2\r\n \t\r\nLive Q&A with AWS experts\r\n \r\nGet your cloud questions answered, 1 on 1 by our AWS technical experts.\r\n \r\n3\r\n \t\r\nReceive a certificate of attendance\r\n \r\nComplete watching all 5 modules to earn your certificate of attendance by 30 April, 2025.\r\n \r\nLearn more and register now\r\n \r\nSee you on 10 April, 2025!\r\n\r\nBest regards,\r\nAmazon Web Services\r\n \r\nAWSome Day Online Conference\r\n \r\n \r\nStart Building on AWS Today\r\nAWS on X | AWS on Facebook | AWS on Twitch | AWS Blog | AWS TechChat\r\n \r\nMy Account | Getting Started | Products | Solutions | Pricing | Partners | Documentation | Training | Events & Webinars | AWS Activate | Marketplace | What's New | Blog | Analyst Reports\r\n\r\nView Online\r\n \r\nIf you'd rather not receive future emails from Amazon Web Services, unsubscribe here.\r\nAmazon Web Services, Inc. is a subsidiary of Amazon.com, Inc. Amazon.com is a registered trademark of Amazon.com.\r\nThis message produced and distributed by Amazon Web Services Philippines Inc. or its affiliates.\r\n© 2025, Amazon Web Services, Inc. or its affiliates. All rights reserved. Read our Privacy Notic",
+        "phishing": true,
+        "timestamp": "2025-05-14T19:19:39.840959"
+    },
+    {
+        "email": "https://paypa1.com/login",
+        "phishing": true,
+        "link_score": 1,
+        "timestamp": "2025-05-14T19:32:20.455416"
+    },
+    {
+        "email": "https://goog1e.com",
+        "phishing": true,
+        "link_score": 1,
+        "timestamp": "2025-05-14T19:32:27.589921"
+    },
+    {
+        "email": "https://www.google.com",
+        "phishing": false,
+        "link_score": 0,
+        "timestamp": "2025-05-14T19:32:34.005561"
+    },
+    {
+        "email": "https://secure-facebook.com",
+        "phishing": true,
+        "link_score": 1,
+        "timestamp": "2025-05-14T19:32:41.823634"
+    },
+    {
+        "email": "https://paypa1.com/login",
+        "phishing": false,
+        "timestamp": "2025-05-14T19:34:20.591160"
+    },
+    {
+        "email": "\r\nWELCOME TO LEVEL INFINITE PASS!\r\n\r\nDear player,\r\nWelcome to LEVEL INFINITE PASS!\r\nLEVEL INFINITE PASS is a global account system that gives gamers safe access to their Level lnfinite game accounts through a single integrated account.\r\nWe offer a rich set of account services, including:\r\n▪ One login for all games >> see[game list]\r\n▪ Additional security\r\n▪ Efficient and personalized service support\r\n▪ Unlock exclusive in-game rewards\r\nTo manage your account, click [here].\r\nHope you enjoy your time here!\r\nThank you for your support for LEVEL INFINITE PASS.\r\nThis is an automated message. Please do not reply to this email.\r\n For game-related issues, please contact the game's customer service team for better support.\r\n For issues regarding your LEVEL INFINITE PASS, reach out to our account support team at pass.levelinfinite.com/support\r\nIf you want to learn more about LEVEL INFINITE PASS or manage your account, you can go to: pass.levelinfinite.com",
+        "phishing": false,
+        "timestamp": "2025-05-14T19:35:08.701597"
+    },
+    {
+        "email": "We detected unusual activity on your PayPal account. For your protection, we have temporarily limited your account.\r\n\r\nTo restore full access, please verify your identity by clicking the link below:\r\n\r\n👉 Verify My Account\r\n\r\nFailure to verify within 24 hours will result in permanent suspension of your account.\r\n\r\nThank you for choosing PayPal.\r\n\r\nSincerely,\r\nPayPal Security Team",
+        "phishing": true,
+        "timestamp": "2025-05-15T08:29:22.967973"
+    },
+    {
+        "email": "\t\r\n \r\nYou have 22 unread notifications to review\r\n \r\nA lot has happened on Facebook since you last logged in. Here are some notifications you've missed from your friends.\r\n \r\nNotifications\r\n\r\n   \r\n7 friend requests\r\n \r\n\r\n   \r\n15 other new notifications\r\n \r\n \r\n   \r\n   \r\n \r\nView your notifications\r\n \r\nGo to Facebook\r\n \r\n \r\n   \r\n   \r\nWas this email:Useful | Not Useful\r\n \r\n   \r\n   \r\n \r\nThis message was sent to ezrealvaldevieso@gmail.com. If you don't want to receive these emails from Meta in the future, please unsubscribe.\r\nMeta Platforms, Inc., Attention: Community Support, 1 Meta Way, Menlo Park, CA 94025\r\n   \r\n   \r\nTo help keep your account secure, please don't forward this email. Learn more\r\n   \r\n \r\n\r\n",
+        "phishing": false,
+        "timestamp": "2025-05-15T08:29:47.052855"
+    },
+    {
+        "email": "\t\r\n \r\nYou have 22 unread notifications to review\r\n \r\nA lot has happened on Facebook since you last logged in. Here are some notifications you've missed from your friends.\r\n \r\nNotifications\r\n\r\n   \r\n7 friend requests\r\n \r\n\r\n   \r\n15 other new notifications\r\n \r\n \r\n   \r\n   \r\n \r\nView your notifications\r\n \r\nGo to Facebook\r\n \r\n \r\n   \r\n   \r\nWas this email:Useful | Not Useful\r\n \r\n   \r\n   \r\n \r\nThis message was sent to ezrealvaldevieso@gmail.com. If you don't want to receive these emails from Meta in the future, please unsubscribe.\r\nMeta Platforms, Inc., Attention: Community Support, 1 Meta Way, Menlo Park, CA 94025\r\n   \r\n   \r\nTo help keep your account secure, please don't forward this email. Learn more\r\n   \r\n \r\n\r\n",
+        "phishing": false,
+        "timestamp": "2025-05-15T08:29:48.239077"
+    },
+    {
+        "email": "asdada",
+        "phishing": false,
+        "timestamp": "2025-05-15T08:35:18.648709"
+    },
+    {
+        "email": "===================================\r\nPhishing Email Sample #1: PayPal Scam\r\n===================================\r\n\r\nSubject: 🔒 Urgent: Verify Your Account Now to Avoid Suspension\r\nFrom: PayPal Security Team <support@paypal-security.com>\r\n\r\nDear Customer,\r\n\r\nWe detected unusual activity on your PayPal account. For your protection, we have temporarily limited your account.  \r\n\r\nTo restore full access, please verify your identity by clicking the link below:\r\n\r\n👉 Verify My Account: https://paypal.com.secure-login-verification.com\r\n\r\nFailure to verify within 24 hours will result in permanent suspension of your account.\r\n\r\nThank you for choosing PayPal.\r\n\r\nSincerely,  \r\nPayPal Security Team\r\n\r\n===================================\r\n(End of Sample)\r\n===================================\r\n",
+        "phishing": true,
+        "timestamp": "2025-05-15T19:03:13.427141"
+    },
+    {
+        "email": "Hi Candidate, \r\n\r\n \r\n\r\nDo you have a minute? We need you to update your location. This will help us ensure that interested employers have all the information about you that they need.\r\n\r\nCurrent Location*\r\n\r\nMetro Manila / NCR\r\nCentral Luzon\r\nCentral Visayas\r\nSouthern Tagalog\r\nCebu City\r\nWestern Visayas\r\nQuezon City\r\nOthers\r\n\r\nSubmit\r\n\r\n",
+        "phishing": false,
+        "timestamp": "2025-05-15T19:03:44.326477"
+    },
+    {
+        "email": "https://www.linkedin.com/help/linkedin/answer/a1339266/phishing-emails?lang=en",
+        "phishing": false,
+        "timestamp": "2025-06-02T20:16:13.386748"
+    },
+    {
+        "email": "Dear Customer,\r\n\r\nWe’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons.\r\n\r\nTo restore full access, please verify your account information.\r\n\r\nClick the link below to confirm your details:\r\nhttps://paypal-security-check.com/verify\r\n\r\nIf you don’t verify within 24 hours, your account may be permanently restricted.\r\n\r\nThank you for choosing PayPal.\r\nSecurity Team, PayPal",
+        "phishing": true,
+        "timestamp": "2025-06-12T21:39:35.772211"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: http://127.0.0.1:5001/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": true,
+        "timestamp": "2025-06-13T08:59:13.409949"
+    },
+    {
+        "email": "\tDear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: https://paypal-security-check.com/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": true,
+        "timestamp": "2025-06-13T11:48:10.798674"
+    },
+    {
+        "email": "\r\n\r\nYou have 1 new message\r\n\r\n\r\n \r\n📢﹒announcement\r\n \r\nView messages\r\n\r\nNeed help? Contact our support team or hit us up on X @discord.\r\nWant to give us feedback? Let us know what you think on our feedback site.\r\n\r\n \r\nDiscord Logo\r\n \r\nEnable notifications\r\nDownload Discord on your phone and receive push notifications for Discord activities like messages, mentions, friend requests, and events.\r\n\r\nGet the App\r\n \r\nSent by Discord • Check Our Blog • @discord\r\n444 De Haro Street, Suite 200, San Francisco, CA 94107\r\nUnsubscribe\r\n\r\n",
+        "phishing": false,
+        "timestamp": "2025-06-13T13:50:28.550256"
+    },
+    {
+        "email": "\r\n\r\nYou have 1 new message\r\n\r\n\r\n \r\n📢﹒announcement\r\n \r\nView messages\r\n\r\nNeed help? Contact our support team or hit us up on X @discord.\r\nWant to give us feedback? Let us know what you think on our feedback site.\r\n\r\n \r\nDiscord Logo\r\n \r\nEnable notifications\r\nDownload Discord on your phone and receive push notifications for Discord activities like messages, mentions, friend requests, and events.\r\n\r\nGet the App\r\n",
+        "phishing": false,
+        "timestamp": "2025-06-13T13:52:00.483654"
+    },
+    {
+        "email": "Hi ${First Name},\r\n\r\n \r\n\r\nMany jobs are location-specific — knowing where you are helps us match you faster with nearby opportunities. It also improves your visibility to recruiters hiring in your area.\r\n\r\n \r\n\r\nTake a moment to update your current location.\r\n\r\n \r\n\r\nCurrent Location*\r\n\r\nMetro Manila / NCR\r\nCentral Luzon\r\nCentral Visayas\r\nSouthern Tagalog\r\nCebu City\r\nWestern Visayas\r\nQuezon City\r\nOthers\r\n\r\nSubmit",
+        "phishing": false,
+        "timestamp": "2025-06-13T14:00:23.909016"
+    },
+    {
+        "email": "buy take one ",
+        "phishing": false,
+        "timestamp": "2025-06-13T14:03:14.734979"
+    },
+    {
+        "email": "buy one take one and avail 100% discount\r\n",
+        "phishing": false,
+        "timestamp": "2025-06-13T14:03:36.657683"
+    },
+    {
+        "email": "buy one take one and avail 100% discount\r\n",
+        "phishing": false,
+        "timestamp": "2025-06-13T14:03:37.825561"
+    },
+    {
+        "email": "buy one take one and avail 100% discount\r\n",
+        "phishing": false,
+        "timestamp": "2025-06-13T14:03:38.242161"
+    },
+    {
+        "email": "buy one take one and avail 100% discount\r\n",
+        "phishing": false,
+        "timestamp": "2025-06-13T14:03:38.749952"
+    },
+    {
+        "email": "buy one take one and avail 100% discount\r\n\r\n\r\ndo you want to become millionaire ?",
+        "phishing": false,
+        "timestamp": "2025-06-13T14:03:56.895876"
+    },
+    {
+        "email": "buy one take one and avail 100% discount\r\n\r\n\r\ndo you want to become millionaire ?",
+        "phishing": false,
+        "timestamp": "2025-06-13T14:03:58.059756"
+    },
+    {
+        "email": "buy one take one and avail 100% discount\r\n\r\n\r\ndo you want to become millionaire ? \r\nit so easy \r\nstep 1 .kill a cat and submit the picture in this URL ",
+        "phishing": false,
+        "timestamp": "2025-06-13T14:04:27.696643"
+    },
+    {
+        "email": "buy one take one and avail 100% discount\r\n\r\n\r\ndo you want to become millionaire ? \r\nit so easy \r\nstep 1 .kill a cat and submit the picture in this URL ",
+        "phishing": false,
+        "timestamp": "2025-06-13T14:04:31.771798"
+    },
+    {
+        "email": "Dear Customer,\r\n\r\nWe’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons.\r\n\r\nTo restore full access, please verify your account information.\r\n\r\nClick the link below to confirm your details:\r\nhttps://paypal-security-check.com/verify\r\n\r\nIf you don’t verify within 24 hours, your account may be permanently restricted.\r\n\r\nThank you for choosing PayPal.\r\nSecurity Team, PayPal\r\n",
+        "phishing": true,
+        "timestamp": "2025-06-13T14:05:38.799520"
+    },
+    {
+        "email": "dear customer, \r\n\r\nyou won a lotto of 1,000,000.00 . \r\nplease provide me your Gcash with OTP ASAP!",
+        "phishing": false,
+        "timestamp": "2025-06-13T14:07:19.546300"
+    },
+    {
+        "email": "dear customer, \r\n\r\nyou won a lotto of 1,000,000.00 . \r\nplease provide me your Gcash with OTP URGENT!",
+        "phishing": false,
+        "timestamp": "2025-06-13T14:08:10.033643"
+    },
+    {
+        "email": "dear customer, \r\n\r\nyou won a lotto of 1,000,000.00 . \r\nplease provide me your Gcash with OTP URGENT!",
+        "phishing": false,
+        "timestamp": "2025-06-13T14:08:11.350417"
+    },
+    {
+        "email": "dear customer, \r\n\r\nyou won a lotto of 1,000,000.00 . \r\nplease provide me your Gcash with OTP Urgent: Confirm your bank details immediately!",
+        "phishing": false,
+        "timestamp": "2025-06-13T14:08:36.584728"
+    },
+    {
+        "email": "dear customer, \r\n\r\nyou won a lotto of 1,000,000.00 . \r\nplease provide me your Gcash with OTP Urgent: Confirm your bank details immediately!",
+        "phishing": false,
+        "timestamp": "2025-06-13T14:08:37.881580"
+    },
+    {
+        "email": "urgent",
+        "phishing": false,
+        "timestamp": "2025-06-13T15:24:51.430783"
+    },
+    {
+        "email": "urgent",
+        "phishing": false,
+        "timestamp": "2025-06-13T15:26:00.096107"
+    },
+    {
+        "email": "urgent",
+        "phishing": false,
+        "timestamp": "2025-06-13T15:30:00.359211"
+    },
+    {
+        "email": "urgent!",
+        "phishing": false,
+        "timestamp": "2025-06-13T15:30:07.808686"
+    },
+    {
+        "email": "won",
+        "phishing": false,
+        "timestamp": "2025-06-13T15:30:29.886884"
+    },
+    {
+        "email": "won",
+        "phishing": false,
+        "timestamp": "2025-06-13T15:30:31.351034"
+    },
+    {
+        "email": "\tdear customer, you won a lotto of 1,000,000.00 . please provide me your Gcash with OTP Urgent: Confirm your bank details immediately!",
+        "phishing": false,
+        "timestamp": "2025-06-13T15:30:48.315792"
+    },
+    {
+        "email": "dear customer, you won a lotto of 1,000,000.00 . please provide me your Gcash with OTP Urgent: Confirm your bank details immediately!",
+        "phishing": false,
+        "timestamp": "2025-06-13T15:33:05.598603"
+    },
+    {
+        "email": "dear customer, you won a lotto of 1,000,000.00 . please provide me your Gcash with OTP ASAP!",
+        "phishing": false,
+        "timestamp": "2025-06-13T15:34:01.111109"
+    },
+    {
+        "email": "dear customer, you won a lotto of 1,000,000.00 . please provide me your Gcash with OTP ASAP!",
+        "phishing": false,
+        "timestamp": "2025-06-13T15:37:36.252388"
+    },
+    {
+        "email": "dear customer, you won a lotto of 1,000,000.00 . please provide me your Gcash with OTP ASAP!",
+        "phishing": false,
+        "timestamp": "2025-06-13T15:41:53.739773"
+    },
+    {
+        "email": "dear customer, you won a lotto of 1,000,000.00 . please provide me your Gcash with OTP ASAP!",
+        "phishing": false,
+        "timestamp": "2025-06-13T15:43:16.710698"
+    },
+    {
+        "email": "dear customer, you won a lotto of 1,000,000.00 . please provide me your Gcash with OTP ASAP!",
+        "phishing": false,
+        "timestamp": "2025-06-13T15:49:47.160433"
+    },
+    {
+        "email": "\tdear customer, you won a lotto of 1,000,000.00 . please provide me your Gcash with OTP ASAP!",
+        "phishing": false,
+        "timestamp": "2025-06-13T15:53:14.605962"
+    },
+    {
+        "email": "\tdear customer, you won a lotto of 1,000,000.00 . please provide me your Gcash with OTP ASAP!",
+        "phishing": false,
+        "timestamp": "2025-06-13T15:57:12.000498"
+    },
+    {
+        "email": "\tdear customer, you won a lotto",
+        "phishing": false,
+        "timestamp": "2025-06-13T16:06:50.791201"
+    },
+    {
+        "email": "dear customer, you won a lotto",
+        "phishing": false,
+        "timestamp": "2025-06-13T16:15:29.871303"
+    },
+    {
+        "email": "dear customer, you won a lotto of 1,000,000.00 . please provide me your Gcash with OTP ASAP!",
+        "phishing": false,
+        "timestamp": "2025-06-13T16:16:11.886198"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: https://paypal-security-check.com/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": false,
+        "timestamp": "2025-06-13T16:34:22.752085"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: https://paypal-security-check.com/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": false,
+        "timestamp": "2025-06-13T16:34:26.317802"
+    },
+    {
+        "email": "\tDear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: https://paypal-security-check.com/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": false,
+        "timestamp": "2025-06-13T16:35:06.927597"
+    },
+    {
+        "email": "\tDear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: https://paypal-security-check.com/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": false,
+        "timestamp": "2025-06-13T16:35:59.048390"
+    },
+    {
+        "email": "\tDear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: https://paypal-security-check.com/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": true,
+        "timestamp": "2025-06-13T16:43:03.030163"
+    },
+    {
+        "email": "dear customer, you won a lotto of 1,000,000.00 . please provide me your Gcash with OTP ASAP!",
+        "phishing": true,
+        "timestamp": "2025-06-13T16:43:16.767185"
+    },
+    {
+        "email": "urgent",
+        "phishing": true,
+        "timestamp": "2025-06-13T16:43:44.293207"
+    },
+    {
+        "email": "money",
+        "phishing": true,
+        "timestamp": "2025-06-13T16:43:52.447462"
+    },
+    {
+        "email": "\"Dear user, you won a lotto. Please verify your gcash with OTP urgently!\"\r\n",
+        "phishing": true,
+        "timestamp": "2025-06-13T16:44:35.885626"
+    },
+    {
+        "email": "\tmoney",
+        "phishing": true,
+        "timestamp": "2025-06-13T16:46:30.205665"
+    },
+    {
+        "email": "\tmoney",
+        "phishing": true,
+        "timestamp": "2025-06-13T16:46:38.341549"
+    },
+    {
+        "email": "\tmoney",
+        "phishing": true,
+        "timestamp": "2025-06-13T16:46:49.581095"
+    },
+    {
+        "email": "money\r\n",
+        "phishing": true,
+        "timestamp": "2025-06-13T16:48:25.008284"
+    },
+    {
+        "email": "\tDear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: https://paypal-security-check.com/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": true,
+        "timestamp": "2025-06-13T16:48:33.354793"
+    },
+    {
+        "email": "money\r\n",
+        "phishing": true,
+        "timestamp": "2025-06-13T16:53:09.280574"
+    },
+    {
+        "email": "money",
+        "phishing": false,
+        "timestamp": "2025-06-13T16:53:32.605431"
+    },
+    {
+        "email": "money",
+        "phishing": true,
+        "timestamp": "2025-06-13T16:54:25.622779"
+    },
+    {
+        "email": "money\r\n",
+        "phishing": true,
+        "timestamp": "2025-06-13T16:56:37.550531"
+    },
+    {
+        "email": "money",
+        "phishing": true,
+        "timestamp": "2025-06-13T17:12:30.266338"
+    },
+    {
+        "email": "money",
+        "phishing": true,
+        "timestamp": "2025-06-13T17:30:09.725912"
+    },
+    {
+        "email": "urgent",
+        "phishing": true,
+        "timestamp": "2025-06-13T18:23:48.779290"
+    },
+    {
+        "email": "money",
+        "phishing": true,
+        "timestamp": "2025-06-13T18:30:37.767037"
+    },
+    {
+        "email": "cash",
+        "phishing": false,
+        "timestamp": "2025-06-13T18:46:50.916718"
+    },
+    {
+        "email": "cash",
+        "phishing": true,
+        "timestamp": "2025-06-13T18:47:24.586011"
+    },
+    {
+        "email": "congratulations you won!",
+        "phishing": true,
+        "timestamp": "2025-06-14T10:29:59.432500"
+    },
+    {
+        "email": "congratulations  you won 20000$",
+        "phishing": true,
+        "timestamp": "2025-06-16T21:13:46.589081"
+    },
+    {
+        "email": "urgent log in your account",
+        "phishing": true,
+        "timestamp": "2025-06-24T19:19:46.350085"
+    },
+    {
+        "email": "money\r\n",
+        "phishing": true,
+        "timestamp": "2025-06-24T20:45:43.822925"
+    },
+    {
+        "email": "urgent please update your account",
+        "phishing": true,
+        "timestamp": "2025-06-24T20:47:00.725883"
+    },
+    {
+        "email": "please update your account",
+        "phishing": false,
+        "timestamp": "2025-06-24T20:48:34.092724"
+    },
+    {
+        "email": "please update your account urgent",
+        "phishing": true,
+        "timestamp": "2025-06-24T20:48:38.666342"
+    },
+    {
+        "email": "urgent\r\n",
+        "phishing": true,
+        "timestamp": "2025-06-24T20:49:24.425946"
+    },
+    {
+        "email": "urgent\r\n",
+        "phishing": true,
+        "timestamp": "2025-06-25T09:27:48.403466"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: https://paypal-security-check.com/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": true,
+        "timestamp": "2025-06-27T10:27:12.841352"
+    },
+    {
+        "email": "\tDear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: https://paypal-security-check.com/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": true,
+        "timestamp": "2025-06-27T10:27:40.607015"
+    },
+    {
+        "email": "\tdear customer, you won a lotto of 1,000,000.00 . please provide me your Gcash with OTP Urgent: Confirm your bank details immediately!",
+        "phishing": true,
+        "timestamp": "2025-06-27T10:30:17.202201"
+    },
+    {
+        "email": "dear customer, you won a lotto of 1,000,000.00 . please provide me your Gcash with OTP Urgent: Confirm your bank details immediately!",
+        "phishing": true,
+        "timestamp": "2025-07-03T13:42:26.414037"
+    },
+    {
+        "email": "dear mr. x \r\nwould you like me to boots youre affiliate  sells..?\r\nonly have to do is to click the link below\r\nhttps//www.moneysaver.xxx\r\n\r\n\r\nplease sign in and provide me your one time password ",
+        "phishing": true,
+        "timestamp": "2025-07-03T13:48:18.545414"
+    },
+    {
+        "email": "congratualation you won! 1000000$ to claim the prize  \r\nproceed  to this link https//www.example.com\r\n\r\nupdate us if you already  submit",
+        "phishing": true,
+        "timestamp": "2025-07-03T18:42:59.477670"
+    },
+    {
+        "email": "dear mr. x would you like me to boots youre affiliate sells..? only have to do is to click the link below https//www.moneysaver.xxx please sign in and provide me your one time password",
+        "phishing": true,
+        "timestamp": "2025-07-03T18:45:32.593481"
+    },
+    {
+        "email": "dear mr. x would you like me to boots youre affiliate sells..? only have to do is to click the link below https//www.facebook.xxx please sign in and provide me your one time password",
+        "phishing": false,
+        "timestamp": "2025-07-03T18:46:03.963283"
+    },
+    {
+        "email": "dear mr. x would you like me to boots youre affiliate sells..? only have to do is to click the link below https//www.iphone.xxx please sign in and provide me your one time password",
+        "phishing": true,
+        "timestamp": "2025-07-03T18:47:07.422260"
+    },
+    {
+        "email": "\tdear mr. x would you like me to boots youre affiliate sells..? only have to do is to click the link below https//www.facebook.xxx please sign in and provide me your one time password",
+        "phishing": false,
+        "timestamp": "2025-07-03T19:08:18.371927"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: https://paypal-security-check.com/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": true,
+        "timestamp": "2025-07-03T19:08:41.386243"
+    },
+    {
+        "email": "Jobseeker,  \r\n\r\n \r\n\r\nWe’ve found some jobs that match your profile, but a small update is needed to improve your chances: your nationality!\r\n\r\n  \r\n\r\nNo worries—it’s quick and easy. Simply update your details below, and you'll be all set to get 3x more recruiter calls! \r\n\r\nNationality*\r\n\r\n\r\nChoose Option\r\n^\r\nWork Authorization*\r\n\r\nPhilippines\r\nMalaysia\r\nSingapore\r\nOthers\r\n\r\nSubmit",
+        "phishing": false,
+        "timestamp": "2025-07-03T19:09:29.290685"
+    },
+    {
+        "email": "gcash",
+        "phishing": true,
+        "timestamp": "2025-07-03T19:09:38.990033"
+    },
+    {
+        "email": "faceb0ok.com",
+        "phishing": true,
+        "timestamp": "2025-07-03T19:27:44.467579"
+    },
+    {
+        "email": "facebook.com",
+        "phishing": false,
+        "timestamp": "2025-07-03T19:27:56.193422"
+    },
+    {
+        "email": "facebook.com",
+        "phishing": false,
+        "timestamp": "2025-07-03T19:33:59.913432"
+    },
+    {
+        "email": "faceb0ok.com",
+        "phishing": true,
+        "timestamp": "2025-07-03T19:34:04.184361"
+    },
+    {
+        "email": "Security alert: unusual login detected. Login now to secure your account.",
+        "phishing": true,
+        "timestamp": "2025-07-03T19:34:33.873540"
+    },
+    {
+        "email": "Hi there,\r\n\r\nPlease update your billing info here: https://secure-login-update.com/verify\r\nThanks!",
+        "phishing": true,
+        "timestamp": "2025-07-03T19:56:42.370817"
+    },
+    {
+        "email": "Hi there,\r\n\r\nPlease update your billing info here: https://secure-login-update.com/\r\nThanks!",
+        "phishing": false,
+        "timestamp": "2025-07-03T19:56:52.209082"
+    },
+    {
+        "email": "Hi there,\r\n\r\nPlease update your billing info here: https://secure-login-update.com/\r\nThanks!",
+        "phishing": true,
+        "timestamp": "2025-07-03T19:57:12.629649"
+    },
+    {
+        "email": "Subject: Final Warning: Account Suspended\r\n\r\nDear Customer,\r\n\r\nYour PayPal account has been suspended due to suspicious activity.\r\nPlease click here to re-activate: http://bit.ly/secure-pay\r\n\r\nThank you,\r\nPayPal Security Team",
+        "phishing": true,
+        "timestamp": "2025-07-03T20:01:36.237427"
+    },
+    {
+        "email": "Subject: Final Warning: Account Suspended\r\n\r\nDear Customer,\r\n\r\nYour PayPal \r\nPlease click here to re-activate: http://bit.ly/secure-pay\r\n\r\nThank you,\r\nPayPal Security Team",
+        "phishing": true,
+        "timestamp": "2025-07-03T20:02:01.558765"
+    },
+    {
+        "email": "Subject: Final Warning: Account Suspended\r\n\r\nDear Customer,\r\n\r\nYour PayPal \r\n\r\n\r\nThank you,\r\nPayPal Security Team",
+        "phishing": true,
+        "timestamp": "2025-07-03T20:02:11.612446"
+    },
+    {
+        "email": "Subject: Final Warning: \r\n\r\nDear Customer,\r\n\r\nYour PayPal \r\n\r\n\r\nThank you,\r\nPayPal Security Team",
+        "phishing": false,
+        "timestamp": "2025-07-03T20:02:21.222464"
+    },
+    {
+        "email": "ok",
+        "phishing": false,
+        "timestamp": "2025-07-03T20:32:56.364202"
+    },
+    {
+        "email": "yah00.com",
+        "phishing": false,
+        "timestamp": "2025-07-03T20:54:39.341078"
+    },
+    {
+        "email": "yah00.com",
+        "phishing": true,
+        "timestamp": "2025-07-03T20:54:42.026322"
+    },
+    {
+        "email": "dear customer, you won a lotto of 1,000,000.00 . please provide me your Gcash with OTP ASAP!",
+        "phishing": true,
+        "timestamp": "2025-07-03T20:55:02.115650"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: https://paypal-security-check.com/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": true,
+        "timestamp": "2025-07-04T02:07:32.879723"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to  your details: https://paypal-security-check.com/ If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": true,
+        "timestamp": "2025-07-04T02:12:55.941174"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please  your account information. Click the link below to  your details: https://paypal-security-check.com/ If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": true,
+        "timestamp": "2025-07-04T02:13:05.784603"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please  your account information. Click the link below to  your details: https://paypal-security-check.com/ If you don’t within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": false,
+        "timestamp": "2025-07-04T02:13:38.654867"
+    },
+    {
+        "email": "dear customer, you won a lotto of 1,000,000.00 . please provide me your Gcash with OTP Urgent: Confirm your bank details immediately!",
+        "phishing": true,
+        "timestamp": "2025-07-04T03:11:39.378152"
+    },
+    {
+        "email": "dear customer, you won a lotto of 1,000,000.00 . please provide me your Gcash with OTP Urgent: Confirm your bank details immediately!",
+        "phishing": true,
+        "timestamp": "2025-07-04T03:12:11.550769"
+    },
+    {
+        "email": "dear customer, you won a lotto of 1,000,000.00 . please provide me your Gcash with OTP Urgent: Confirm your bank details immediately!",
+        "phishing": true,
+        "timestamp": "2025-07-04T03:12:45.016270"
+    },
+    {
+        "email": "you won",
+        "phishing": true,
+        "timestamp": "2025-07-04T03:16:31.003520"
+    },
+    {
+        "email": "you won",
+        "phishing": true,
+        "timestamp": "2025-07-04T03:19:11.648545"
+    },
+    {
+        "email": "dear customer, you won a lotto of 1,000,000.00 . please provide me your Gcash with OTP Urgent: Confirm your bank details immediately!",
+        "phishing": true,
+        "timestamp": "2025-07-04T03:20:30.332612"
+    },
+    {
+        "email": "Steam\r\nHello Cyka Blyat!\r\nThe Steam Summer Sale Is Here\r\n1 game from your wishlist − and thousands more − are on sale now through 11 Jul 1:00am PST.\r\nEvent Banner\r\nBrowse the Sale\r\n1 GAME YOU’VE WISHED FOR IS ON SALE!\r\nAssassin's Creed® III Remastered\r\nAssassin's Creed® III Remastered\r\n-75%\tP1,500.00  P375.00\r\nSPECIAL PROMOTION! Offer ends 11 Jul 1:00am PST\r\nRelive the American Revolution or experience it for the first time in Assassin's Creed® III Remastered, with enhanced graphics and improved gameplay mechanics. Also includes Assassin's Creed Liberation remastered and all solo DLC content.\r\nView your Wishlist",
+        "phishing": false,
+        "timestamp": "2025-07-04T03:24:07.110297"
+    },
+    {
+        "email": "Event Banner Browse the Sale 1 GAME YOU’VE WISHED FOR IS ON SALE! Assassin's Creed® III Remastered Assassin's Creed® III Remastered -75% P1,500.00 P375.00 SPECIAL PROMOTION! Offer ends 11 Jul 1:00am PST Relive the American Revolution or experience it for the first time in Assassin's Creed® III Remastered, with enhanced graphics and improved gameplay mechanics. Also includes Assassin's Creed Liberation remastered and all solo DLC content. View your Wishlist",
+        "phishing": false,
+        "timestamp": "2025-07-04T03:25:23.418403"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to your details: https://paypal-security-check.com/ If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": true,
+        "timestamp": "2025-07-04T12:00:50.908926"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: https://paypal-security-check.com/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": true,
+        "timestamp": "2025-07-04T12:22:55.782110"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please your account information. Click the link below to your details: https://paypal-security-check.com/ If you don’t within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": false,
+        "timestamp": "2025-07-04T12:37:05.604915"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please your account information. Click the link below to your details: https://paypal-security-check.com/ If you don’t within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": false,
+        "timestamp": "2025-07-04T14:25:29.607431"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: https://paypal-security-check.com/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": true,
+        "timestamp": "2025-07-04T14:25:53.645213"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please your account information. Click the link below to your details: https://paypal-security-check.com/ If you don’t within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": false,
+        "timestamp": "2025-07-04T14:26:57.461297"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: https://paypal-security-check.com/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": true,
+        "timestamp": "2025-07-04T14:34:07.818940"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please your account information. Click the link below to your details: https://paypal-security-check.com/ If you don’t within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": false,
+        "timestamp": "2025-07-04T14:40:48.226794"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: https://paypal-security-check.com/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": true,
+        "timestamp": "2025-07-04T22:47:40.375712"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: https://paypal-security-check.com/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": true,
+        "timestamp": "2025-07-04T22:49:55.836062"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please your account information. Click the link below to your details: https://paypal-security-check.com/ If you don’t within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": false,
+        "timestamp": "2025-07-04T22:50:12.359280"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: https://paypal-security-check.com/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": true,
+        "timestamp": "2025-07-04T22:51:58.487172"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please your account information. Click the link below to your details: https://paypal-security-check.com/ If you don’t within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": false,
+        "timestamp": "2025-07-04T22:52:04.158137"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: https://paypal-security-check.com/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": true,
+        "timestamp": "2025-07-04T22:53:09.797835"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please your account information. Click the link below to your details: https://paypal-security-check.com/ If you don’t within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": false,
+        "timestamp": "2025-07-04T22:53:15.845401"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: https://paypal-security-check.com/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": true,
+        "timestamp": "2025-07-04T23:02:12.385841"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: https://paypal-security-check.com/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": true,
+        "timestamp": "2025-07-04T23:02:52.730124"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: https://paypal-security-check.com/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": true,
+        "timestamp": "2025-07-04T23:09:30.078675"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: https://paypal-security-check.com/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal won",
+        "phishing": true,
+        "timestamp": "2025-07-04T23:09:56.151958"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: https://paypal-security-check.com/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": true,
+        "timestamp": "2025-07-04T23:10:04.732807"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please your account information. Click the link below to your details: https://paypal-security-check.com/ If you don’t within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": false,
+        "timestamp": "2025-07-04T23:11:04.524579"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please your account information. Click the link below to your details: https://paypal-security-check.com/ If you don’t within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal won",
+        "phishing": true,
+        "timestamp": "2025-07-04T23:11:36.472214"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please your account information. Click the link below to your details: https://paypal-security-check.com/ If you don’t within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal won lotto",
+        "phishing": true,
+        "timestamp": "2025-07-04T23:11:46.174164"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: https://paypal-security-check.com/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": true,
+        "timestamp": "2025-07-04T23:12:09.466074"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: https://paypal-security-check.com/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal won",
+        "phishing": true,
+        "timestamp": "2025-07-04T23:13:25.185972"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: https://paypal-security-check.com/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": true,
+        "timestamp": "2025-07-04T23:13:53.759702"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please your account information. Click the link below to your details: https://paypal-security-check.com/ If you don’t within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": false,
+        "timestamp": "2025-07-04T23:17:27.575642"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please your account information. Click the link below to your details: https://paypal-security-check.com/ If you don’t within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal won",
+        "phishing": true,
+        "timestamp": "2025-07-04T23:17:31.252360"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please your account information. Click the link below to your details: https://paypal-security-check.com/ If you don’t within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal won lotto",
+        "phishing": true,
+        "timestamp": "2025-07-04T23:17:38.100333"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please your account information. Click the link below to your details: https://paypal-security-check.com/ If you don’t within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal won lotto",
+        "phishing": true,
+        "timestamp": "2025-07-04T23:43:53.114488"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please your account information. Click the link below to your details: https://paypal-security-check.com/ If you don’t within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal won lotto",
+        "phishing": true,
+        "timestamp": "2025-07-04T23:51:05.622185"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please your account information. Click the link below to your details: https://paypal-security-check.com/ If you don’t within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal won",
+        "phishing": true,
+        "timestamp": "2025-07-04T23:51:15.508770"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please your account information. Click the link below to your details: https://paypal-security-check.com/ If you don’t within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": false,
+        "timestamp": "2025-07-04T23:51:22.201768"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: https://paypal-security-check.com/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": true,
+        "timestamp": "2025-07-07T15:58:02.550072"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: https://paypal-security-check.com/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": true,
+        "timestamp": "2025-07-07T15:58:14.077905"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: https://paypal-security-check.com/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal won",
+        "phishing": true,
+        "timestamp": "2025-07-07T15:58:22.574683"
+    },
+    {
+        "email": "congrats",
+        "phishing": false,
+        "timestamp": "2025-08-02T13:30:03.350222"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: https://paypal-security-check.com/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": true,
+        "timestamp": "2025-08-02T13:30:56.856603"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: https://paypal-security-check.com/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal won",
+        "phishing": true,
+        "timestamp": "2025-08-02T13:31:11.237299"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: https://paypal-security-check.com/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": true,
+        "timestamp": "2025-08-02T13:31:24.578766"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: https://paypal-security-check.com/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": true,
+        "timestamp": "2025-08-02T13:35:55.345512"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: https://paypal-security-check.com/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal https//www.facebo0k.com",
+        "phishing": true,
+        "timestamp": "2025-08-02T13:36:38.162725"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: https://paypal-security-check.com/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": true,
+        "timestamp": "2025-08-02T13:37:24.703888"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to  your details: https://paypal-security-check.com/ If you don’t within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": true,
+        "timestamp": "2025-08-02T13:37:37.996526"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please your account information. Click the link below to  your details: https://paypal-security-check.com/ If you don’t within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": false,
+        "timestamp": "2025-08-02T13:37:50.311248"
+    },
+    {
+        "email": "100000000",
+        "phishing": false,
+        "timestamp": "2025-08-02T13:42:09.835760"
+    },
+    {
+        "email": "100000000",
+        "phishing": false,
+        "timestamp": "2025-08-02T13:42:10.982806"
+    },
+    {
+        "email": "100000000",
+        "phishing": true,
+        "timestamp": "2025-08-02T13:42:11.944377"
+    },
+    {
+        "email": "100000",
+        "phishing": false,
+        "timestamp": "2025-08-02T13:42:44.901027"
+    },
+    {
+        "email": "1000000",
+        "phishing": false,
+        "timestamp": "2025-08-02T13:42:48.997169"
+    },
+    {
+        "email": "1000000",
+        "phishing": true,
+        "timestamp": "2025-08-02T13:42:56.607477"
+    },
+    {
+        "email": "1000",
+        "phishing": false,
+        "timestamp": "2025-08-02T13:43:02.393358"
+    },
+    {
+        "email": "1000",
+        "phishing": true,
+        "timestamp": "2025-08-02T13:43:07.387346"
+    },
+    {
+        "email": "1000",
+        "phishing": true,
+        "timestamp": "2025-08-02T13:43:11.711644"
+    },
+    {
+        "email": "100000000",
+        "phishing": true,
+        "timestamp": "2025-08-02T13:44:56.033570"
+    },
+    {
+        "email": "Urgent: Your account has been suspended!\r\nClick here to verify your details immediately: http://tinyurl.com/verify-paypal",
+        "phishing": true,
+        "detection_type": "TP",
+        "timestamp": "2025-08-03T14:25:44.407934"
+    },
+    {
+        "email": "Warning! Your account is compromised.\r\nDownload the attached \"security_tool.exe\" to fix it.",
+        "phishing": false,
+        "detection_type": "Safe",
+        "timestamp": "2025-08-03T14:26:10.851941"
+    },
+    {
+        "email": "Warning! Your account is compromised.\r\nDownload the attached \"security_tool.exe\" to fix it.",
+        "phishing": false,
+        "detection_type": "Safe",
+        "timestamp": "2025-08-03T14:26:25.083641"
+    },
+    {
+        "email": "Warning! Your account is compromised.\r\nDownload the attached \"security_tool.exe\" to fix it.",
+        "phishing": false,
+        "detection_type": "Safe",
+        "timestamp": "2025-08-03T14:31:19.775933"
+    },
+    {
+        "email": "Warning! Your account is compromised.\r\nDownload the attached \"security_tool.exe\" to fix it.",
+        "phishing": false,
+        "detection_type": "Safe",
+        "timestamp": "2025-08-03T14:32:16.407668"
+    },
+    {
+        "email": "Warning! Your account is compromised. Download the attached \"security_tool.exe\" to fix it.",
+        "phishing": false,
+        "detection_type": "Safe",
+        "timestamp": "2025-08-03T14:34:00.415412"
+    },
+    {
+        "email": "Warning! Your account is compromised. Download the attached \"security_tool.exe\" to fix it.",
+        "phishing": false,
+        "detection_type": "Safe",
+        "timestamp": "2025-08-03T14:34:02.242681"
+    },
+    {
+        "email": "Warning! Your account is compromised. Download the attached \"security_tool.exe\" to fix it.",
+        "phishing": false,
+        "detection_type": "Safe",
+        "timestamp": "2025-08-03T14:37:26.052452"
+    },
+    {
+        "email": "Warning! Your account is compromised. Download the attached \"security_tool.exe\" to fix it.",
+        "phishing": false,
+        "detection_type": "Safe",
+        "timestamp": "2025-08-03T14:38:15.712207"
+    },
+    {
+        "email": "Warning! Your account is compromised. Download the attached \"security_tool.exe\" to fix it. won",
+        "phishing": true,
+        "detection_type": "FN",
+        "timestamp": "2025-08-03T14:38:21.051451"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: https://paypal-security-check.com/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": true,
+        "detection_type": "Safe",
+        "timestamp": "2025-08-03T14:38:32.147644"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: https://paypal-security-check.com/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal won",
+        "phishing": true,
+        "detection_type": "Safe",
+        "timestamp": "2025-08-03T14:38:36.227609"
+    },
+    {
+        "email": "Warning! Your account is compromised. Download the attached \"security_tool.exe\" to fix it.",
+        "phishing": false,
+        "detection_type": "Safe",
+        "timestamp": "2025-08-03T14:43:33.284389"
+    },
+    {
+        "email": "Warning! Your account is compromised. Download the attached \"security_tool.exe\" to fix it.",
+        "phishing": false,
+        "detection_type": "Safe",
+        "timestamp": "2025-08-03T14:45:50.716177"
+    },
+    {
+        "email": "Warning! Your account is compromised. Download the attached \"security_tool.exe\" to fix it. won",
+        "phishing": true,
+        "detection_type": "FN",
+        "timestamp": "2025-08-03T14:46:02.838252"
+    },
+    {
+        "email": "Warning! Your account has been compromised.\r\nDownload the attached \"security_patch.exe\" to fix it immediately.",
+        "phishing": true,
+        "detection_type": "FN",
+        "timestamp": "2025-08-03T14:46:35.073679"
+    },
+    {
+        "email": "Hello,  \r\nPlease find the attached \"Invoice_2025.scr\" for your recent order.  \r\nThank you for your business.",
+        "phishing": true,
+        "detection_type": "FN",
+        "timestamp": "2025-08-03T14:46:47.458872"
+    },
+    {
+        "email": "Congratulations! You've been shortlisted for the position.  \r\nPlease download \"offer_details.bat\" to proceed.",
+        "phishing": true,
+        "detection_type": "FN",
+        "timestamp": "2025-08-03T14:46:55.494552"
+    },
+    {
+        "email": "Dear Customer,  \r\nWe detected unusual activity in your bank account.  \r\nClick the link below to verify your details immediately:  \r\nhttp://secure-bank-login.xyz/verify",
+        "phishing": true,
+        "detection_type": "TP",
+        "timestamp": "2025-08-03T14:47:17.894294"
+    },
+    {
+        "email": "Dear Customer, We detected unusual activity in your bank account. Click the link below to verify your details immediately: http://secure-bank-login.xyz/verify",
+        "phishing": true,
+        "detection_type": "TP",
+        "timestamp": "2025-08-03T15:05:57.229682"
+    },
+    {
+        "email": "Warning! Your account has been compromised. Download the attached \"security_patch.exe\" to fix it immediately.",
+        "phishing": true,
+        "detection_type": "FN",
+        "timestamp": "2025-08-03T15:06:23.986301"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: https://paypal-security-check.com/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal",
+        "phishing": true,
+        "detection_type": "Safe",
+        "timestamp": "2025-08-03T15:07:17.419349"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: https://paypal-security-check.com/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal won",
+        "phishing": true,
+        "detection_type": "Safe",
+        "timestamp": "2025-08-03T15:07:21.881619"
+    },
+    {
+        "email": "Dear Customer, We detected unusual activity in your bank account. Click the link below to verify your details immediately: http://secure-bank-login.xyz/verify",
+        "phishing": true,
+        "detection_type": "TP",
+        "timestamp": "2025-08-03T15:08:01.028769"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: https://paypal-security-check.com/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal won",
+        "phishing": true,
+        "detection_type": "Safe",
+        "timestamp": "2025-08-03T15:08:09.433760"
+    },
+    {
+        "email": "Congratulations! You've been shortlisted for the position. Please download \"offer_details.bat\" to proceed.",
+        "phishing": true,
+        "detection_type": "FN",
+        "timestamp": "2025-08-03T15:08:20.939482"
+    },
+    {
+        "email": "Congratulations! You've been shortlisted for the position. Please download \"offer_details.bat\" to proceed.",
+        "phishing": true,
+        "detection_type": "FN",
+        "timestamp": "2025-08-03T15:11:15.569022"
+    },
+    {
+        "email": "Congratulations! You've been shortlisted for the position. Please download \"offer_details.bat\" to proceed.won",
+        "phishing": true,
+        "detection_type": "FN",
+        "timestamp": "2025-08-03T15:12:37.834675"
+    },
+    {
+        "email": "Congratulations! You've been shortlisted for the position. Please download \"offer_details.bat\" to proceed.won lottory",
+        "phishing": true,
+        "detection_type": "FN",
+        "timestamp": "2025-08-03T15:12:45.698210"
+    },
+    {
+        "email": "Congratulations! You've been shortlisted for the position. Please download \"offer_details.bat\" to proceed.won lotto money",
+        "phishing": true,
+        "detection_type": "FN",
+        "timestamp": "2025-08-03T15:12:52.474350"
+    },
+    {
+        "email": "Congratulations! You've been shortlisted for the position. Please download \"offer_details.bat\" to proceed.won lotto money verify",
+        "phishing": true,
+        "detection_type": "FN",
+        "timestamp": "2025-08-03T15:13:02.721771"
+    },
+    {
+        "email": "Congratulations! You've been shortlisted for the position. Please download \"offer_details.bat\" to proceed.won lotto money verify",
+        "phishing": true,
+        "detection_type": "FN",
+        "timestamp": "2025-08-03T15:25:36.546468"
+    },
+    {
+        "email": "Dear Customer, We detected unusual activity in your bank account. Click the link below to verify your details immediately: http://secure-bank-login.xyz/verify",
+        "phishing": true,
+        "detection_type": "TP",
+        "timestamp": "2025-08-03T15:26:26.288070"
+    },
+    {
+        "email": "Dear Customer, We detected unusual activity in your bank account. Click the link below to verify your details immediately: http://secure-bank-login.xyz/verify",
+        "phishing": true,
+        "detection_type": "TP",
+        "details": "ML Probability: 0.04<br>Keywords: verify<br>",
+        "detection_reason": "",
+        "timestamp": "2025-08-03T15:33:38.457250"
+    },
+    {
+        "email": "Dear Customer, We detected unusual activity in your bank account. Click the link below to verify your details immediately: http://secure-bank-login.xyz/verify",
+        "phishing": true,
+        "detection_type": "TP",
+        "details": "ML Probability: 0.04<br>Keywords: verify<br>",
+        "detection_reason": "",
+        "timestamp": "2025-08-03T15:40:59.568162"
+    },
+    {
+        "email": "Dear Customer, We detected unusual activity in your bank account. Click the link below to verify your details immediately: http://secure-bank-login.xyz/verifi",
+        "phishing": true,
+        "detection_type": "TP",
+        "details": "ML Probability: 0.05<br>Keywords: verify<br>",
+        "detection_reason": "Detected by phishing keyword/URL rules",
+        "timestamp": "2025-08-03T15:41:05.491154"
+    },
+    {
+        "email": "Dear Customer, We detected unusual activity in your bank account. Click the link below to verify your details immediately: http://secure-bank-login.xyw/verifi",
+        "phishing": true,
+        "detection_type": "TP",
+        "details": "ML Probability: 0.05<br>Keywords: verify<br>",
+        "detection_reason": "Detected by phishing keyword/URL rules",
+        "timestamp": "2025-08-03T15:41:13.775048"
+    },
+    {
+        "email": "Congratulations! You've been shortlisted for the position. Please download \"offer_details.bat\" to proceed.",
+        "phishing": true,
+        "detection_type": "FN",
+        "details": "ML Probability: 0.10<br>",
+        "detection_reason": "",
+        "timestamp": "2025-08-03T15:41:30.543195"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: https://paypal-security-check.com/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal won",
+        "phishing": true,
+        "detection_type": "Safe",
+        "details": " Triggered Keywords: won, verify, confirm<br>",
+        "detection_reason": "",
+        "timestamp": "2025-08-03T15:42:20.071764"
+    },
+    {
+        "email": "Congratulations! You've been shortlisted for the position. Please download \"offer_details.bat\" to proceed.",
+        "phishing": true,
+        "detection_type": "FN",
+        "details": "ML Probability: 0.10<br>",
+        "detection_reason": "",
+        "timestamp": "2025-08-11T15:59:43.926349"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: https://paypal-security-check.com/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal won",
+        "phishing": true,
+        "detection_type": "Safe",
+        "details": " Triggered Keywords: won, verify, confirm<br>",
+        "detection_reason": "",
+        "timestamp": "2025-08-13T14:25:15.023307"
+    },
+    {
+        "email": "Congratulations! You've been shortlisted for the position. Please download \"offer_details.bat\" to proceed.",
+        "phishing": true,
+        "detection_type": "FN",
+        "details": "ML Probability: 0.10<br>",
+        "detection_reason": "",
+        "timestamp": "2025-08-13T14:26:01.244410"
+    },
+    {
+        "email": "won",
+        "phishing": true,
+        "detection_type": "TP",
+        "details": "ML Probability: 0.94<br>Keywords: won<br>",
+        "detection_reason": "Detected by phishing keyword/URL rules",
+        "timestamp": "2025-08-13T14:31:00.572164"
+    },
+    {
+        "email": "won verify",
+        "phishing": true,
+        "detection_type": "TP",
+        "details": "ML Probability: 0.58<br>Keywords: won, verify<br>",
+        "detection_reason": "Detected by phishing keyword/URL rules",
+        "timestamp": "2025-08-13T14:31:08.032276"
+    },
+    {
+        "email": "Google Verification Code\t\r\nHi JULLIUS TYRONE A.,\r\n\r\nWe received a request to access your Google Account juar.valdevieso.ui@phinmaed.com through your email address. Your Google verification code is:\r\n\r\n663432\r\n\r\nIf you did not request this code, it is possible that someone else is trying to access the Google Account juar.valdevieso.ui@phinmaed.com. Do not forward or give this code to anyone.\r\n\r\nYou received this message because this email address is listed as the recovery email for the Google Account juar.valdevieso.ui@phinmaed.com. If that is incorrect, please click here to remove your email address from that Google Account.\r\n\r\nSincerely yours,\r\n\r\nThe Google Accounts team",
+        "phishing": true,
+        "detection_type": "TP",
+        "details": "ML Probability: 0.18<br>Keywords: click here<br>",
+        "detection_reason": "Detected by phishing keyword/URL rules",
+        "timestamp": "2025-08-14T22:58:52.879794"
+    },
+    {
+        "email": "This is a copy of a security alert sent to juar.valdevieso.ui@phinmaed.com. ezrealvaldevieso@gmail.com is the recovery email for this account. If you don't recognize this account, remove it.\r\nGoogle\r\nAccount recovered successfully\r\n\tjuar.valdevieso.ui@phinmaed.com\r\nWelcome back to your account\r\nIf you suspect you were locked out of your account because of changes made by someone else, you should review & protect your accoun",
+        "phishing": true,
+        "detection_type": "TP",
+        "details": "ML Probability: 0.37<br>Keywords: security alert<br>",
+        "detection_reason": "Detected by phishing keyword/URL rules",
+        "timestamp": "2025-08-14T22:59:08.348732"
+    },
+    {
+        "email": "Verify Email\r\nThanks for using Maya, Jullius Tyrone! We are glad to have you with us! To continue, please verify your email address by clicking the button below.\r\n\r\nVerify Email Address\r\n\r\nThis is a system-generated email. Please do not reply.\r\n\r\nConnect with us! Follow Maya on Facebook and Twitter\r\n\r\nIf you have any questions, email Customer Service or go to Maya Customer Support\r\n\r\n© Copyright Maya. All Rights Reserved.",
+        "phishing": true,
+        "detection_type": "TP",
+        "details": "ML Probability: 0.05<br>Keywords: verify<br>",
+        "detection_reason": "Detected by phishing keyword/URL rules",
+        "timestamp": "2025-08-14T22:59:26.365026"
+    },
+    {
+        "email": "Verify Email Thanks for using Maya, Jullius Tyrone! We are glad to have you with us! To continue, please verify your email address by clicking the button below. Verify Email Address This is a system-generated email. Please do not reply. Connect with us! Follow Maya on Facebook and Twitter If you have any questions, email Customer Service or go to Maya Customer Support © Copyright Maya. All Rights Reserved.",
+        "phishing": true,
+        "detection_type": "TP",
+        "details": "ML Probability: 0.05<br>Keywords: verify<br>",
+        "detection_reason": "Detected by phishing keyword/URL rules",
+        "timestamp": "2025-08-14T23:41:41.024214"
+    },
+    {
+        "email": "Verify Email Thanks for using Maya, Jullius Tyrone! We are glad to have you with us! To continue, please verify your email address by clicking the button below. Verify Email Address This is a system-generated email. Please do not reply. Connect with us! Follow Maya on Facebook and Twitter If you have any questions, email Customer Service or go to Maya Customer Support © Copyright Maya. All Rights Reserved.",
+        "phishing": true,
+        "detection_type": "TP",
+        "details": "ML Probability: 0.05<br>Keywords: verify<br>",
+        "detection_reason": "Detected by phishing keyword/URL rules",
+        "timestamp": "2025-08-15T18:30:49.014593"
+    },
+    {
+        "email": "Dear Customer, We detected unusual activity in your bank account. Click the link below to verify your details immediately: http://secure-bank-login.xyz/verify",
+        "phishing": true,
+        "detection_type": "TP",
+        "details": "ML Probability: 0.04<br>Keywords: verify<br>",
+        "detection_reason": "",
+        "timestamp": "2025-08-15T18:33:56.792440"
+    },
+    {
+        "email": "Dear Customer, We detected unusual activity in your bank account. Click the link below to verify your details immediately: http://secure-bank-login.xyz/verify",
+        "phishing": true,
+        "detection_type": "TP",
+        "details": "ML Probability: 0.04<br>Keywords: verify<br>",
+        "detection_reason": "",
+        "timestamp": "2025-08-15T18:35:07.778008"
+    },
+    {
+        "email": "Dear Customer, We detected unusual activity in your bank account. Click the link below to verify your details immediately: http://secure-bank-login.xyz/verify",
+        "phishing": true,
+        "detection_type": "TP",
+        "details": "ML Probability: 0.04<br>Keywords: verify<br>",
+        "detection_reason": "",
+        "timestamp": "2025-08-15T18:53:38.392857"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: https://paypal-security-check.com/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal won",
+        "phishing": true,
+        "detection_type": "Safe",
+        "details": " Triggered Keywords: won, verify, confirm<br>",
+        "detection_reason": "",
+        "timestamp": "2025-08-15T18:54:13.780557"
+    },
+    {
+        "email": "Dear Customer, We detected unusual activity in your bank account. Click the link below to verify your details immediately: http://secure-bank-login.xyz/verify",
+        "phishing": true,
+        "detection_type": "TP",
+        "details": "ML Probability: 0.04<br>Keywords: verify<br>",
+        "detection_reason": "",
+        "timestamp": "2025-08-15T18:54:39.308191"
+    },
+    {
+        "email": "Dear Customer, We detected unusual activity in your bank account. Click the link below to verify your details immediately: http://secure-bank-login.xyz/verify",
+        "phishing": true,
+        "detection_type": "TP",
+        "details": "ML Probability: 0.04<br>Keywords: verify<br>",
+        "detection_reason": "",
+        "timestamp": "2025-08-15T19:23:21.916988"
+    },
+    {
+        "email": "verify",
+        "phishing": false,
+        "detection_type": "Safe",
+        "details": "<strong>Risk Score: 0</strong><br>ML Probability: 0.029 (threshold 0.50)<br>",
+        "detection_reason": "No significant risk factors",
+        "timestamp": "2025-08-15T19:27:31.132928"
+    },
+    {
+        "email": "Dear Customer, We detected unusual activity in your bank account. Click the link below to verify your details immediately: http://secure-bank-login.xyz/verify",
+        "phishing": false,
+        "detection_type": "Suspicious",
+        "details": "<strong>Risk Score: 20</strong><br>ML Probability: 0.038 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Suspicious links (20 pts): 1 found<br><br><strong>Suspicious Links:</strong><br>• http://secure-bank-login.xyz/verify (score: 20)<br>",
+        "detection_reason": "Low risk indicators present",
+        "timestamp": "2025-08-15T19:27:39.667390"
+    },
+    {
+        "email": "Hi code12, Thanks for signing up for PythonAnywhere! Please click this link to confirm your email address. This means you will be able to reset your password if you forget it later, which is especially important if you have a paid account! If you can't click the link from your email program, please copy this URL and paste it into your web browser: https://www.pythonanywhere.com/registration/confirm_email/4354562f726bf6ecbf896db0268c6a87a8d7d018be88b9a546e81223/ If you don't want to use PythonAnywhere, just ignore this message and we won't bother you again. Cheers, The PythonAnywhere team PythonAnywhere: Develop and host Python from your browser http://www.pythonanywhere.com/ <<<<<<:>~ A product from PythonAnywhere LLP UK VAT No.: 893564379 EU VAT No.: EU372015865 Registered in England and Wales as company number OC378414. Registered address: 5 The Green, Richmond, TW9 1PL, UK",
+        "phishing": false,
+        "detection_type": "Suspicious",
+        "details": "<strong>Risk Score: 24</strong><br>ML Probability: 0.340 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Keywords (4 pts): won<br>• Suspicious links (20 pts): 1 found<br><br><strong>Suspicious Links:</strong><br>• https://www.pythonanywhere.com/registration/confirm_email/4354562f726bf6ecbf896db0268c6a87a8d7d018be88b9a546e81223/ (score: 20)<br>",
+        "detection_reason": "Low risk indicators present",
+        "timestamp": "2025-08-15T19:28:38.115444"
+    },
+    {
+        "email": "URGENT: Your account has been suspended. Please login to restore access immediately at http://paypal-login.com/secure",
+        "phishing": false,
+        "detection_type": "Suspicious",
+        "details": "<strong>Risk Score: 62</strong><br>ML Probability: 0.032 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Keywords (10 pts): urgent<br>• Suspicious links (52 pts): 1 found<br><br><strong>Suspicious Links:</strong><br>• http://paypal-login.com/secure (score: 52)<br>",
+        "detection_reason": "High risk, but ML below threshold",
+        "timestamp": "2025-08-15T19:37:01.794002"
+    },
+    {
+        "email": "Successfully Transferred!\r\nSent via GCash\r\n\r\nBank\tBDO Unibank, Inc.\r\nAccount No.\t004990265389\r\nAccount Name\tJullius tyrone A. valdevieso\r\nReceipt sent to\tezrealvaldevieso@gmail.com\r\nTransfer Date\t10 August 2025, 02:09:57PM\r\nTransfer Amount\t485.00\r\n+Fee\t15.00\r\nTotal\t 500.00\r\nInstaPay Invoice No.\t4026782\r\nInstaPay Trace No.\t000000004026782\r\nRef No.\t6031529611883\r\n \r\n \r\nPowered By   \r\n \r\n \r\n \r\n\r\n\r\nIn case funds were not credited to your nominated bank account, please contact the receiving bank and provide the InstaPay Trace No. to confirm status of your transaction.\r\n\r\nFor assistance, please visit our Help Center.",
+        "phishing": false,
+        "detection_type": "Safe",
+        "details": "<strong>Risk Score: 4</strong><br>ML Probability: 0.087 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Keywords (4 pts): gcash<br>",
+        "detection_reason": "No significant risk factors",
+        "timestamp": "2025-08-15T19:38:45.516129"
+    },
+    {
+        "email": "Tick tock tick tock tick tock. It's the passage of time -- so familiar and yet, so mysterious; there's no good explanation for it in Physics! Will we ever truly understand it? Who knows...\r\n\r\nBut one thing's for sure, and that's the fact that you can HARNESS THE POWER OF TIME using PythonAnywhere Scheduled Tasks. Something we see you haven't had time to do yet, ho ho.[1]\r\n\r\nSo head on over to the Tasks tab where you'll be able to set any Python script (or, indeed, any other kind of script) to run on a regular basis\r\n\r\nWith your free account, you can set tasks to run once a day.\r\n\r\nHere's a few ideas to get you started\r\n\r\nSend yourself an email once a day reminding you to floss your teeth\r\nWrite a script to scrape daily prices 3D-printed plastic models of classic designs for fire hydrants. Finally you'll be able to make those crucial buying decisions at the best time!\r\nWrite a twitter bot that posts the time of day once a day, and helpfully @-mentions random people informing them of what time it is\r\nDownload all the books on project gutenberg that were written on that day in history, and compute a hash of their text contents, just because!\r\nThe possibilities are endless.\r\n\r\n[1]The original author of this email was already on their final warning for bad puns, and has now been summarily dismissed.\r\n\r\nHappy Scheduling!\r\n\r\nLee + the PythonAnywhere team.\r\n\r\nLee Cartwright\r\n\r\nDeveloper\r\n\r\nPS These emails are designed to help you get the most out of PythonAnywhere, including pointing you towards some cool features that are a bit hidden. We'll only send out one a week, but if you want to, you can unsubscribe here.\r\n\r\nPythonAnywhere: Develop and host Python from your browser\r\nhttp://www.pythonanywhere.com/\r\n<<<<<<:>~\r\nA product from PythonAnywhere LLP\r\nUK VAT No.: 893564379\r\nEU VAT No.: EU372015865\r\nRegistered in England and Wales as company number OC378414.\r\nRegistered address: 5 The Green, Richmond, TW9 1PL, UK",
+        "phishing": false,
+        "detection_type": "Suspicious",
+        "details": "<strong>Risk Score: 20</strong><br>ML Probability: 0.405 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Keywords (4 pts): free<br>• ML prediction (16 pts): 0.40 confidence<br>",
+        "detection_reason": "Low risk indicators present",
+        "timestamp": "2025-08-15T19:38:57.774469"
+    },
+    {
+        "email": "Hi Jobseeker,\r\n\r\n\r\nRecruiters are reviewing your profile for 3 open roles, but they couldn’t proceed without your skills info. Just take 30 seconds to update your skills below — it helps you get shortlisted faster.\r\n\r\nSelect Your Skills\r\nMS Office\r\nProject Management\r\nInformation Technologies\r\nMS Excel\r\nCommunication\r\nSoftware Developer\r\nCustomer Service\r\nOthers\r\nUpdate Skills\r\nTo add more skills, click here after submitting the form.",
+        "phishing": false,
+        "detection_type": "Safe",
+        "details": "<strong>Risk Score: 0</strong><br>ML Probability: 0.208 (threshold 0.50)<br>",
+        "detection_reason": "No significant risk factors",
+        "timestamp": "2025-08-15T19:39:30.091843"
+    },
+    {
+        "email": "Candidate,  \r\n\r\n \r\n\r\nWe’ve found some jobs that match your profile, but a small update is needed to improve your chances: your nationality!\r\n\r\n  \r\n\r\nNo worries—it’s quick and easy. Simply update your details below, and you'll be all set to get 3x more recruiter calls! \r\n\r\nNationality*\r\n\r\n\r\nChoose Option\r\n^\r\nWork Authorization*\r\n\r\nPhilippines\r\nMalaysia\r\nSingapore\r\nOthers\r\n\r\nSubmit",
+        "phishing": false,
+        "detection_type": "Suspicious",
+        "details": "<strong>Risk Score: 17</strong><br>ML Probability: 0.427 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• ML prediction (17 pts): 0.43 confidence<br>",
+        "detection_reason": "Low risk indicators present",
+        "timestamp": "2025-08-15T19:39:46.042596"
+    },
+    {
+        "email": "URGENT: Your account has been suspended. Please login to restore access immediately at http://paypal-login.com/secure",
+        "phishing": false,
+        "detection_type": "FN",
+        "details": "<strong>Risk Score: 62</strong><br>ML Probability: 0.032 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Keywords (10 pts): urgent<br>• Suspicious links (52 pts): 1 found<br><br><strong>Suspicious Links:</strong><br>• http://paypal-login.com/secure (score: 52)<br>",
+        "detection_reason": "Heuristic high risk; ML below threshold",
+        "timestamp": "2025-08-15T20:53:08.331751"
+    },
+    {
+        "email": "Dear Customer, We detected unusual activity in your bank account. Click the link below to verify your details immediately: http://secure-bank-login.xyz/verify",
+        "phishing": false,
+        "detection_type": "Suspicious",
+        "details": "<strong>Risk Score: 20</strong><br>ML Probability: 0.038 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Suspicious links (20 pts): 1 found<br><br><strong>Suspicious Links:</strong><br>• http://secure-bank-login.xyz/verify (score: 20)<br>",
+        "detection_reason": "Low risk indicators present",
+        "timestamp": "2025-08-15T20:53:40.062619"
+    },
+    {
+        "email": "Congratulations! You've been shortlisted for the position. Please download \"offer_details.bat\" to proceed.",
+        "phishing": false,
+        "detection_type": "FN",
+        "details": "<strong>Risk Score: 4</strong><br>ML Probability: 0.101 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Keywords (4 pts): congratulations<br>",
+        "detection_reason": "Heuristic high risk; ML below threshold",
+        "timestamp": "2025-08-15T20:53:55.617854"
+    },
+    {
+        "email": "Dear Customer, We detected unusual activity in your bank account. Click the link below to verify your details immediately: http://secure-bank-login.xyz/verify",
+        "phishing": false,
+        "detection_type": "Suspicious",
+        "details": "<strong>Risk Score: 20</strong><br>ML Probability: 0.038 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Suspicious links (20 pts): 1 found<br><br><strong>Suspicious Links:</strong><br>• http://secure-bank-login.xyz/verify (score: 20)<br>",
+        "detection_reason": "Low risk indicators present",
+        "timestamp": "2025-08-15T23:09:35.833227"
+    },
+    {
+        "email": "Dear Customer, We detected unusual activity in your bank account. Click the link below to verify your details immediately: http://secure-bank-login.xyz/verify",
+        "phishing": false,
+        "detection_type": "Suspicious",
+        "details": "<strong>Risk Score: 20</strong><br>ML Probability: 0.038 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Suspicious links (20 pts): 1 found<br><br><strong>Suspicious Links:</strong><br>• http://secure-bank-login.xyz/verify (score: 20)<br>",
+        "detection_reason": "Low risk indicators present",
+        "timestamp": "2025-08-15T23:09:52.684800"
+    },
+    {
+        "email": "Dear Customer, We detected unusual activity in your bank account. Click the link below to verify your details immediately: http://secure-bank-login.xyz/verify",
+        "phishing": false,
+        "detection_type": "Suspicious",
+        "details": "<strong>Risk Score: 20</strong><br>ML Probability: 0.038 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Suspicious links (20 pts): 1 found<br><br><strong>Suspicious Links:</strong><br>• http://secure-bank-login.xyz/verify (score: 20)<br>",
+        "detection_reason": "Low risk indicators present",
+        "timestamp": "2025-08-15T23:14:46.689604"
+    },
+    {
+        "email": "Dear Customer, We detected unusual activity in your bank account. Click the link below to verify your details immediately: http://secure-bank-login.xyz/verify",
+        "phishing": false,
+        "detection_type": "Suspicious",
+        "details": "<strong>Risk Score: 20</strong><br>ML Probability: 0.038 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Suspicious links (20 pts): 1 found<br><br><strong>Suspicious Links:</strong><br>• http://secure-bank-login.xyz/verify (score: 20)<br>",
+        "detection_reason": "Low risk indicators present",
+        "timestamp": "2025-08-15T23:15:50.232412"
+    },
+    {
+        "email": "Dear Customer, We detected unusual activity in your bank account. Click the link below to verify your details immediately: http://secure-bank-login.xyz/verify",
+        "phishing": false,
+        "detection_type": "Suspicious",
+        "details": "<strong>Risk Score: 20</strong><br>ML Probability: 0.038 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Suspicious links (20 pts): 1 found<br><br><strong>Suspicious Links:</strong><br>• http://secure-bank-login.xyz/verify (score: 20)<br>",
+        "detection_reason": "Low risk heuristics",
+        "timestamp": "2025-08-15T23:18:00.555746"
+    },
+    {
+        "email": "Dear Customer, We detected unusual activity in your bank account. Click the link below to verify your details immediately: http://secure-bank-login.xyz/verify",
+        "phishing": false,
+        "detection_type": "Suspicious",
+        "details": "<strong>Risk Score: 20</strong><br>ML Probability: 0.038 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Suspicious links (20 pts): 1 found<br><br><strong>Suspicious Links:</strong><br>• http://secure-bank-login.xyz/verify (score: 20)<br>",
+        "detection_reason": "Low risk heuristics",
+        "timestamp": "2025-08-16T00:07:10.588727"
+    },
+    {
+        "email": "Verify Email Thanks for using Maya, Jullius Tyrone! We are glad to have you with us! To continue, please verify your email address by clicking the button below. Verify Email Address This is a system-generated email. Please do not reply. Connect with us! Follow Maya on Facebook and Twitter If you have any questions, email Customer Service or go to Maya Customer Support © Copyright Maya. All Rights Reserved.",
+        "phishing": false,
+        "detection_type": "Safe",
+        "details": "<strong>Risk Score: 10</strong><br>ML Probability: 0.054 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Keywords (10 pts): verify email<br>",
+        "detection_reason": "No significant risk factors",
+        "timestamp": "2025-08-17T04:04:44.185646"
+    },
+    {
+        "email": "Dear Customer, We’ve noticed unusual activity in your PayPal account and have temporarily limited your access for security reasons. To restore full access, please verify your account information. Click the link below to confirm your details: https://paypal-security-check.com/verify If you don’t verify within 24 hours, your account may be permanently restricted. Thank you for choosing PayPal. Security Team, PayPal won",
+        "phishing": false,
+        "detection_type": "Suspicious",
+        "details": "<strong>Risk Score: 26</strong><br>ML Probability: 0.208 (threshold 0.50)<br><br><strong>Risk Factors:</strong><br>• Keywords (4 pts): won<br>• Suspicious links (22 pts): 1 found<br><br><strong>Suspicious Links:</strong><br>• https://paypal-security-check.com/verify (score: 22)<br>",
+        "detection_reason": "Low risk heuristics",
+        "timestamp": "2025-08-17T04:04:55.368710"
+    }
+]

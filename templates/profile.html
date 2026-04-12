@@ -1,0 +1,213 @@
+{% extends "base.html" %}
+{% block title %}My Profile{% endblock %}
+
+{% block content %}
+<div class="dashboard-card profile-card">
+    <div class="dashboard-header">
+        <h4>My Profile</h4>
+        <small>Account identity and access details</small>
+    </div>
+
+    <div class="card-body-custom">
+        {% if user %}
+            <div class="profile-grid">
+                <div class="profile-panel">
+                    <div class="profile-row">
+                        <span class="profile-label">Name</span>
+                        <span class="profile-value">{{ user.name }}</span>
+                    </div>
+
+                    <div class="profile-row">
+                        <span class="profile-label">Email</span>
+                        <span class="profile-value">{{ user.email }}</span>
+                    </div>
+
+                    {% if user.role is defined %}
+                    <div class="profile-row">
+                        <span class="profile-label">Role</span>
+                        <span class="profile-value role-badge">{{ user.role }}</span>
+                    </div>
+                    {% endif %}
+
+                    <div class="profile-row">
+                        <span class="profile-label">Member Since</span>
+                        <span class="profile-value">{{ user.created_at }}</span>
+                    </div>
+
+                    <div class="profile-row">
+                        <span class="profile-label">Logged in at</span>
+                        <span class="profile-value">{{ session.get('login_time', '—') }}</span>
+                    </div>
+                </div>
+
+                <div class="profile-side-panel">
+                    <div class="status-box">
+                        <div class="status-title">Session Status</div>
+                        <div class="status-value">Authenticated</div>
+                    </div>
+
+                    <div class="status-box">
+                        <div class="status-title">Access Level</div>
+                        <div class="status-value">
+                            {% if user.role is defined %}
+                                {{ user.role|upper }}
+                            {% else %}
+                                USER
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-actions">
+                <a class="btn-cyber-secondary action-link" href="{{ url_for('index') }}">Go to Dashboard</a>
+                <a class="btn-cyber-secondary action-link" href="{{ url_for('account_password') }}">Change Password</a>
+                <a class="btn-cyber-danger action-link" href="{{ url_for('auth_logout') }}">Log Out</a>
+            </div>
+        {% else %}
+            <div class="profile-alert">
+                You’re not logged in.
+                <a href="{{ url_for('auth_login') }}">Login</a>
+            </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+    .profile-card {
+        max-width: 980px;
+    }
+
+    .profile-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 18px;
+    }
+
+    .profile-panel,
+    .profile-side-panel {
+        background: rgba(255,255,255,0.02);
+        border: 1px solid rgba(0,255,159,0.12);
+        border-radius: 14px;
+        padding: 20px;
+    }
+
+    .profile-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 14px 0;
+        border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .profile-row:last-child {
+        border-bottom: none;
+    }
+
+    .profile-label {
+        color: #00ff9f;
+        font-weight: 700;
+        min-width: 150px;
+    }
+
+    .profile-value {
+        color: #dbe9ee;
+        text-align: right;
+        word-break: break-word;
+    }
+
+    .role-badge {
+        display: inline-block;
+        padding: 6px 12px;
+        border-radius: 999px;
+        background: rgba(89,208,255,0.10);
+        color: #8edfff;
+        border: 1px solid rgba(89,208,255,0.20);
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+
+    .profile-side-panel {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .status-box {
+        background: #0a0f18;
+        border: 1px solid rgba(255,255,255,0.06);
+        border-radius: 12px;
+        padding: 18px;
+    }
+
+    .status-title {
+        color: #9db0bd;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+        margin-bottom: 8px;
+    }
+
+    .status-value {
+        color: #57ffb1;
+        font-size: 18px;
+        font-weight: 800;
+    }
+
+    .profile-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 22px;
+    }
+
+    .action-link {
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .profile-alert {
+        background: rgba(255, 193, 7, 0.10);
+        border: 1px solid rgba(255, 217, 90, 0.30);
+        color: #ffd95a;
+        padding: 16px;
+        border-radius: 12px;
+    }
+
+    .profile-alert a {
+        color: #fff;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    .profile-alert a:hover {
+        text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+        .profile-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .profile-row {
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .profile-value {
+            text-align: left;
+        }
+
+        .profile-actions {
+            flex-direction: column;
+        }
+
+        .profile-actions a {
+            width: 100%;
+        }
+    }
+</style>
+{% endblock %}

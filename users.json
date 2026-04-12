@@ -1,0 +1,10 @@
+[
+  {
+    "email": "ezrealvaldevieso@gmail.com",
+    "name": "frost23",
+    "password_hash": "scrypt:32768:8:1$ymgL3bieSxWWBSJT$3609f39c4925ea0bcee4918fc684307e20b4fde0569069c50b9c04e86a6aecfd47302103978e01d28f8b9cd2753ccd138758b121045336d38da25c92066687cb",
+    "role": "user",
+    "created_at": "2025-08-15T15:07:56",
+    "last_login": "2025-08-16T20:04:25"
+  }
+]

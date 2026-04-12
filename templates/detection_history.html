@@ -1,0 +1,195 @@
+{% extends "base.html" %}
+
+{% block title %}Detection History{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-center">
+    <div class="dashboard-card history-card">
+        <div class="dashboard-header">
+            <h4>Detection History</h4>
+            <small>Email phishing detection logs and review records</small>
+        </div>
+
+        <div class="card-body-custom">
+            <div class="table-responsive">
+                <table class="table align-middle cyber-table mb-0">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Email Text</th>
+                            <th>Phishing?</th>
+                            <th>Detection Type</th>
+                            <th>Timestamp</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for item in detections %}
+                            {% set dtype = item.get('detection_type') %}
+                            {% set is_phish = dtype in ['TP', 'FN', 'Suspicious'] or item.get('phishing') %}
+
+                            <tr class="
+                                {% if dtype == 'TP' %}
+                                    row-danger
+                                {% elif dtype == 'FN' or dtype == 'Suspicious' %}
+                                    row-warning
+                                {% else %}
+                                    row-safe
+                                {% endif %}
+                            ">
+                                <td>{{ loop.index }}</td>
+
+                                <td class="email-cell">{{ item.get('email','') }}</td>
+
+                                <td>
+                                    {% if is_phish %}
+                                        <span class="status-badge status-danger">Phishing</span>
+                                    {% else %}
+                                        <span class="status-badge status-safe">Safe</span>
+                                    {% endif %}
+                                </td>
+
+                                <td>
+                                    {% if dtype == 'TP' %}
+                                        <span class="status-badge status-danger">True Positive</span>
+                                    {% elif dtype == 'FN' %}
+                                        <span class="status-badge status-warning">False Negative</span>
+                                    {% elif dtype == 'Suspicious' %}
+                                        <span class="status-badge status-warning">Suspicious</span>
+                                    {% else %}
+                                        <span class="status-badge status-safe">Safe</span>
+                                    {% endif %}
+                                </td>
+
+                                <td>{{ item.get('timestamp','') }}</td>
+                            </tr>
+                        {% else %}
+                            <tr>
+                                <td colspan="5" class="empty-state">No history yet.</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+    .history-card {
+        width: 100%;
+        max-width: 1180px;
+        margin: 20px auto;
+    }
+
+    .cyber-table {
+        color: #e6fef5;
+        border-collapse: separate;
+        border-spacing: 0;
+    }
+
+    .cyber-table thead tr {
+        background: #0b1220;
+    }
+
+    .cyber-table thead th {
+        color: #00ff9f;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        padding: 16px;
+        border-bottom: 1px solid rgba(0, 255, 159, 0.18) !important;
+        background: #0b1220 !important;
+    }
+
+    .cyber-table td {
+        padding: 16px;
+        vertical-align: middle;
+        color: #d8e6ee;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
+        background: #0a0f18 !important;
+    }
+
+    .cyber-table tbody tr:hover td {
+        background: #101827 !important;
+    }
+
+    .row-safe td {
+        background: #0a0f18 !important;
+    }
+
+    .row-warning td {
+        background: rgba(255, 193, 7, 0.06) !important;
+    }
+
+    .row-danger td {
+        background: rgba(220, 53, 69, 0.08) !important;
+    }
+
+    .row-warning:hover td {
+        background: rgba(255, 193, 7, 0.12) !important;
+    }
+
+    .row-danger:hover td {
+        background: rgba(220, 53, 69, 0.14) !important;
+    }
+
+    .email-cell {
+        max-width: 700px;
+        white-space: pre-wrap;
+        word-break: break-word;
+        color: #dce8ef !important;
+    }
+
+    .status-badge {
+        display: inline-block;
+        padding: 7px 12px;
+        border-radius: 999px;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.3px;
+        border: 1px solid transparent;
+    }
+
+    .status-danger {
+        color: #ff6b7d;
+        background: rgba(255, 77, 109, 0.14);
+        border-color: rgba(255, 107, 125, 0.35);
+        box-shadow: 0 0 10px rgba(255, 107, 125, 0.08);
+    }
+
+    .status-warning {
+        color: #ffd95a;
+        background: rgba(255, 193, 7, 0.14);
+        border-color: rgba(255, 217, 90, 0.35);
+        box-shadow: 0 0 10px rgba(255, 217, 90, 0.08);
+    }
+
+    .status-safe {
+        color: #57ffb1;
+        background: rgba(0, 255, 159, 0.12);
+        border-color: rgba(87, 255, 177, 0.30);
+        box-shadow: 0 0 10px rgba(87, 255, 177, 0.08);
+    }
+
+    .empty-state {
+        text-align: center;
+        color: #7f95a3 !important;
+        padding: 26px !important;
+        background: #0a0f18 !important;
+    }
+
+    @media (max-width: 768px) {
+        .cyber-table thead th,
+        .cyber-table td {
+            font-size: 13px;
+            padding: 12px;
+        }
+
+        .email-cell {
+            max-width: 260px;
+        }
+    }
+</style>
+{% endblock %}

@@ -1,0 +1,898 @@
+[
+  {
+    "link_text": "https//www.facebo0k.com",
+    "suspicious": true,
+    "link_score": 48,
+    "timestamp": "2025-08-19T10:07:55.206971",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https//www.facebook.com/\"\"login\"\"",
+    "suspicious": true,
+    "link_score": 10,
+    "timestamp": "2025-08-19T10:08:07.855381",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://allegrolokalnie.oferta33.sbs",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2025-08-30T09:46:50.273041",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "\thttp://allegrolokalnie.pl-oferta196873.cfd/",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2025-08-30T09:48:20.096296",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://trackfieloutletfitness.site/web-pixels@2ddfe27cwacf934f7p7355b...",
+    "suspicious": true,
+    "link_score": 16,
+    "timestamp": "2025-08-30T09:52:46.428387",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "80aa0cbo65f.test",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2025-08-30T10:13:35.897994",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://xn--80ak6aa92e.test/verify",
+    "suspicious": true,
+    "link_score": 30,
+    "timestamp": "2025-08-30T10:14:13.472321",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "ada",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2025-08-30T17:42:21.849012",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "\thttps://trackfieloutletfitness.site/web-pixels@2ddfe27cwacf934f7p7355b.",
+    "suspicious": true,
+    "link_score": 16,
+    "timestamp": "2025-08-30T17:48:02.143454",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "\thttps://oportunidadesbrasil.lat/",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2025-09-10T23:55:22.035867",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://www.oportunidadesbrasil.lat/",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2025-09-10T23:55:37.587886",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://csl-onestreamxf.com",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2025-09-10T23:55:44.156098",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://nordllb.com/",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2025-09-10T23:55:49.524709",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://icositedra507765809.blob.core.windows.net/...",
+    "suspicious": true,
+    "link_score": 8,
+    "timestamp": "2025-09-10T23:55:58.507713",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://resolvepanetoken.web.app/app/",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2025-09-10T23:56:06.682961",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "\thttps://www.bing.com/ck/a?!",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2025-09-10T23:56:15.139707",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "\thttps://oportunidadesbrasil.lat/",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2025-09-11T00:06:36.468902",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "\thttps://www.oportunidadesbrasil.lat/",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2025-09-11T00:06:42.196181",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "\thttps://csl-onestreamxf.com",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2025-09-11T00:06:47.020179",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://nordllb.com/",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2025-09-11T00:06:51.659953",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "\thttp://amongola.uk/out.php?email=pamelacaliandro@att.net...",
+    "suspicious": true,
+    "link_score": 10,
+    "timestamp": "2025-09-11T00:07:53.900229",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "\thttps://creditossss.z13.web.core.windows.net/",
+    "suspicious": true,
+    "link_score": 38,
+    "timestamp": "2025-09-11T00:08:03.827284",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "http://allegro.pi-przedmiot905744.icu",
+    "suspicious": true,
+    "link_score": 55,
+    "timestamp": "2025-09-11T00:08:16.786808",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "http://allegrolokalnie.pi-przedmiot905744.icu",
+    "suspicious": true,
+    "link_score": 55,
+    "timestamp": "2025-09-11T00:08:22.051742",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://oportunidadesbrasil.lat/",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2025-09-11T00:17:06.307275",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://gsuplemenntss.myshopify.com/web-pixels@6d6b7627w2a248e10p4b3c3...",
+    "suspicious": true,
+    "link_score": 16,
+    "timestamp": "2025-09-11T00:17:18.843726",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "\thttps://6r40121y.xpages.co/",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2025-09-11T00:17:24.764213",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "\thttp://allegro.pi-przedmiot905744.icu",
+    "suspicious": true,
+    "link_score": 55,
+    "timestamp": "2025-09-11T00:17:30.556321",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "\thttp://allegrolokalnie.pi-przedmiot905744.icu",
+    "suspicious": true,
+    "link_score": 55,
+    "timestamp": "2025-09-11T00:17:37.883933",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "\thttp://amongola.uk/out.php?email=pamelacaliandro@att.net...",
+    "suspicious": true,
+    "link_score": 10,
+    "timestamp": "2025-09-11T00:17:43.651965",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "\thttps://gsuplemenntss.myshopify.com/web-pixels@6d6b7627w2a248e10p4b3c3...",
+    "suspicious": true,
+    "link_score": 16,
+    "timestamp": "2025-09-11T00:21:44.691945",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "\t\thttp://amongola.uk/vXTE.AAbs?od=1syl68b74b06de7b6t...",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2025-09-11T00:22:08.939697",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "\thttp://amongola.uk/vXTE.AAbs?od=1syl68b74b06de7b6t...",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2025-09-11T00:22:22.572159",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "\thttp://allegro.pi-przedmiot905744.icu",
+    "suspicious": true,
+    "link_score": 55,
+    "timestamp": "2025-09-11T00:29:34.909825",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "\thttp://allegrolokalnie.pi-przedmiot905744.icu",
+    "suspicious": true,
+    "link_score": 55,
+    "timestamp": "2025-09-11T00:29:39.876640",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "\thttps://gsuplemenntss.myshopify.com/web-pixels@6d6...",
+    "suspicious": true,
+    "link_score": 10,
+    "timestamp": "2025-09-11T00:29:57.108769",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "\thttps://6r40121y.xpages.co/",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2025-09-11T00:30:03.517288",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "\thttp://allegro.pi-przedmiot905744.icu",
+    "suspicious": true,
+    "link_score": 55,
+    "timestamp": "2025-09-11T00:30:09.917498",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "\thttps://www.oportunidadesbrasil.lat/",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2025-09-11T00:30:19.676957",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://www.oportunidadesbrasil.lat/",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2025-09-11T00:30:24.773141",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "\thttps://gsuplemenntss.myshopify.com/web-pixels@6d6...",
+    "suspicious": true,
+    "link_score": 10,
+    "timestamp": "2025-09-11T00:30:33.804522",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "\thttps://6r40121y.xpages.co/",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2025-09-11T00:30:40.379463",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "\thttp://trezor.io-web.app",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2025-09-11T00:30:51.908234",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "\thttps://trezor.io-web.app/",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2025-09-11T00:30:56.228577",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "\thttps://bancamigas.blob.core.windows.net/ves/index...",
+    "suspicious": true,
+    "link_score": 8,
+    "timestamp": "2025-09-11T00:31:00.869909",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "\thttps://creditossss.z13.web.core.windows.net/",
+    "suspicious": true,
+    "link_score": 38,
+    "timestamp": "2025-09-11T00:31:06.045496",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "\thttps://gsuplemenntss.myshopify.com/web-pixels@6d6...",
+    "suspicious": true,
+    "link_score": 10,
+    "timestamp": "2025-09-11T00:35:45.788492",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://6r40121y.xpages.co/",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2025-09-11T00:35:50.988079",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "http://allegro.pi-przedmiot905744.icu",
+    "suspicious": true,
+    "link_score": 55,
+    "timestamp": "2025-09-11T00:35:57.452615",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "\thttps://oportunidadesbrasil.lat/",
+    "suspicious": true,
+    "link_score": 8,
+    "timestamp": "2025-09-11T00:36:01.371643",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "\thttp://allegrolokalnie.pl-oferta4223249.icu",
+    "suspicious": true,
+    "link_score": 77,
+    "timestamp": "2025-09-11T00:36:36.414146",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://storicard.infinititv.com.mx/",
+    "suspicious": true,
+    "link_score": 8,
+    "timestamp": "2025-09-11T00:37:02.428181",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "\thttps://gov.uk-subseiy.click/uk",
+    "suspicious": true,
+    "link_score": 25,
+    "timestamp": "2025-09-11T00:37:08.260544",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "\thttp://trezor.io-web.app",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2025-09-11T00:37:12.667299",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://trezor.io-web.app/",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2025-09-11T00:37:19.643867",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "\thttps://bancamigas.blob.core.windows.net/ves/index...",
+    "suspicious": true,
+    "link_score": 8,
+    "timestamp": "2025-09-11T00:37:24.068850",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://creditossss.z13.web.core.windows.net/",
+    "suspicious": true,
+    "link_score": 38,
+    "timestamp": "2025-09-11T00:37:29.148803",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "\thttp://amongola.uk/vXTE.AAbs?od=1syl68b74b06de7b6t...",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2025-09-11T00:37:35.059163",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://amongola.uk/vXTE.AAbs?od=1syl68b74b06de7b6t...",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2025-09-11T00:37:39.252436",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "\thttp://amongola.uk/out.php?email=pamelacaliandro@a...",
+    "suspicious": true,
+    "link_score": 22,
+    "timestamp": "2025-09-11T00:37:51.371105",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "\thttp://allegrolokalnie.pi-przedmiot905744.icu",
+    "suspicious": true,
+    "link_score": 67,
+    "timestamp": "2025-09-11T00:37:56.036191",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "\thttps://amongola.uk/vXTE.AAbs?od=1syl68b74b06de7b6t...",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2025-09-11T00:47:34.771761",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "\thttps://gsuplemenntss.myshopify.com/web-pixels@6d6...",
+    "suspicious": true,
+    "link_score": 10,
+    "timestamp": "2025-09-11T00:47:50.340118",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "\thttps://desconto-quiz.shop/c/",
+    "suspicious": true,
+    "link_score": 33,
+    "timestamp": "2025-09-11T09:56:08.613089",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://amongola.uk/vXTE.AAbs?od=1syl68b74b06de7b6t...",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2025-12-16T15:04:59.124093",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "\thttps://reviewcompany.mobi/review-company-tap-doan-ct-group-vietnam/...",
+    "suspicious": true,
+    "link_score": 14,
+    "timestamp": "2026-01-14T12:33:14.783987",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://www.qcsyqh.com/LYtSxu/?Control=nChsc8x2HXUQAmgrrKCadBBA...",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2026-01-14T12:33:21.215248",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://login.krunqy.com/PwEY6J",
+    "suspicious": true,
+    "link_score": 10,
+    "timestamp": "2026-01-14T12:33:26.616237",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://login.uqaovi.com/PwEY6J",
+    "suspicious": true,
+    "link_score": 10,
+    "timestamp": "2026-01-14T12:33:31.512814",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://ptt.ate.no",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2026-01-14T12:33:40.371302",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://reviewcompany.mobi/review-company-tap-doan-ct-group-vietnam/...",
+    "suspicious": true,
+    "link_score": 14,
+    "timestamp": "2026-01-14T12:52:01.990250",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://www.qcsyqh.com/LYtSxu/?Control=nChsc8x2HXUQAmgrrKCadBBA...",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2026-01-14T12:52:06.894881",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://started-site.ghost.io/desktop-en/",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2026-02-02T00:25:07.662937",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://started-global.ghost.io/en-desktop/",
+    "suspicious": true,
+    "link_score": 8,
+    "timestamp": "2026-02-02T00:25:15.429849",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://device-started.ghost.io/desktop/",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2026-02-02T00:25:22.928850",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://app-suivi-colis.com/",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2026-02-02T00:25:41.070316",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://app-suivi-colis.com/calcul",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2026-02-02T00:25:45.550503",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://app-suivi-colis.com/calcul\r\n",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2026-02-02T00:32:14.680299",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://www.app-suivi-colis.com/",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2026-02-02T00:32:37.110834",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://9eb48638.conwl.pages.dev/",
+    "suspicious": true,
+    "link_score": 33,
+    "timestamp": "2026-02-02T00:33:03.349770",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://started-portfolio.ghost.io/suite-en/",
+    "suspicious": true,
+    "link_score": 8,
+    "timestamp": "2026-02-02T00:33:08.673360",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://started-portfolio.ghost.io/suite-en/",
+    "suspicious": true,
+    "link_score": 8,
+    "timestamp": "2026-02-02T00:33:12.609906",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://started-portfolio.ghost.io/suite-en/",
+    "suspicious": true,
+    "link_score": 8,
+    "timestamp": "2026-02-02T00:33:16.478422",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://started-new.ghost.io/en-bridge/",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2026-02-02T00:33:21.191417",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://started-new.ghost.io/en-bridge",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2026-02-02T00:33:34.695401",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://started-new.ghost.io/en-bridge/",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2026-02-02T00:33:50.917444",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://www.evital-assur.com/",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2026-02-02T00:33:56.719812",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://wtn-access.link/",
+    "suspicious": true,
+    "link_score": 25,
+    "timestamp": "2026-02-02T00:35:19.286761",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://darkmatter.sbs/",
+    "suspicious": true,
+    "link_score": 25,
+    "timestamp": "2026-02-02T00:35:25.245738",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://darkmatter.ltd/",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2026-02-02T00:35:29.800978",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://darkmatter.ltd/",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2026-02-02T00:37:42.114793",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://www.evital-assur.com/",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2026-02-02T00:38:01.165849",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://www.evital-assur.com/",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2026-02-02T00:59:46.975921",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://darkmatter.ltd/",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2026-02-02T00:59:51.709074",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://darkmatter.sbs/",
+    "suspicious": true,
+    "link_score": 25,
+    "timestamp": "2026-02-02T01:00:09.901466",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://chatgpt.com/g/g-p-696d39884a708191ad80d258120c8b5b-link-improvement/c/690c4930-19b4-8324-b547-ede4d0bda9f9",
+    "suspicious": true,
+    "link_score": 10,
+    "timestamp": "2026-02-02T01:00:16.701990",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "\thttps://chatgpt.com/g/g-p-696d39884a708191ad80d258120c8b5b-link-improvement/c/690c4930-19b4-8324-b547-ede4d0bda9f9",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2026-02-02T01:17:46.258956",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://darkmatter.ltd/",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2026-02-02T01:17:52.495012",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "\thttps://darkmatter.sbs/",
+    "suspicious": true,
+    "link_score": 25,
+    "timestamp": "2026-02-02T01:18:00.702496",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "\thttps://darkmatter.ltd/",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2026-02-02T01:24:27.931792",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://started-portfolio.ghost.io/suite-en",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2026-02-02T01:24:42.918310",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://trz0r-vc8.fdg87fd.workers.dev/",
+    "suspicious": true,
+    "link_score": 33,
+    "timestamp": "2026-02-02T01:24:47.256116",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://assurance-sant-vitale.com/captcha/captcha.php...",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2026-02-02T01:24:53.270248",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://drughub.help/",
+    "suspicious": true,
+    "link_score": 25,
+    "timestamp": "2026-02-02T01:24:57.845958",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://secure-paypal-login.com/verify",
+    "suspicious": true,
+    "link_score": 30,
+    "timestamp": "2026-04-09T18:50:48.937047",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://apple.com,",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2026-04-09T18:51:09.760171",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "bit.ly/reset-paypal-login",
+    "suspicious": true,
+    "link_score": 88,
+    "timestamp": "2026-04-09T19:31:54.664665",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "http://paypal-login.xyz/verify/account",
+    "suspicious": true,
+    "link_score": 110,
+    "timestamp": "2026-04-09T19:54:46.752538",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://google.com",
+    "suspicious": false,
+    "link_score": 0,
+    "timestamp": "2026-04-09T20:25:19.047412",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "http://paypal-login.xyz/verify/account",
+    "suspicious": true,
+    "link_score": 111,
+    "timestamp": "2026-04-09T20:25:24.966144",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://allegrolokalnie.pl-oferta293457909.sbs/,http://www.phishtank.com/phish_detail.php?phish_id=9329293,2026-02-01T14:48:54+00:00,yes,2026-02-01T15:03:05+00:00,yes,Allegro",
+    "suspicious": true,
+    "link_score": 162,
+    "timestamp": "2026-04-09T20:26:53.879160",
+    "detection_type": "Safe",
+    "phishing": false
+  },
+  {
+    "link_text": "https://site-1enk6s1fm.godaddysites.com/,http://www.phishtank.com/phish_detail.php?phish_id=9329249,2026-02-01T13:39:22+00:00,yes,2026-02-01T13:52:10+00:00,yes,Other",
+    "suspicious": true,
+    "link_score": 93,
+    "timestamp": "2026-04-09T20:27:31.717772",
+    "detection_type": "Safe",
+    "phishing": false
+  }
+]
